@@ -1,0 +1,107 @@
+$checkDimention:(
+    base:1,
+    elm:2,
+    covered:3,
+    ball:5
+);
+
+.checkbox-doc{
+    z-index: map-get($checkDimention,base);
+    $checkColor:rgb(93, 95, 252);
+    margin: 10px 0px;
+    @include flex-std();
+    cursor: pointer;
+    width: 100px;
+    border: 1px solid #fff;
+    padding: 3px;
+    .checkbox-doc__input{
+        display: none;
+    }
+    .checkbox-doc__display{
+        z-index: map-get($checkDimention,ball);
+        width: 20px;
+        height: 20px;
+        border: 2px solid lighten($checkColor,30%);
+        border-radius: 2px;
+        position: relative;
+        margin-right: 5px;
+        .checkbox-doc__square{
+            width: 15px;
+            height: 15px;
+            background: $checkColor;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%) scale(0);
+            transition: transform .3s ease;
+        }
+    }
+    .checkbox-doc__name{
+        z-index: map-get($checkDimention,elm);
+        display: block;
+    }
+}
+
+.checkbox-doc__input:checked + .checkbox-doc__display > .checkbox-doc__square{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.checkboxRange{
+    @include flex-std();
+}
+.checkbox-std{
+    z-index: map-get($checkDimention,base);
+    $hsize:25px;
+    $wsize:80px;
+    width: $wsize;
+    height: $hsize;
+    background: rgb(57, 59, 190);
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    .checkbox-std__display{
+        z-index: map-get($checkDimention,ball);
+        position: absolute;
+        background: rgb(255, 255, 255);
+        @include formBall($hsize);
+        left: $wsize - $hsize;
+        transition: .3s ease;
+    }
+    .checkbox-std__cover{
+        z-index: map-get($checkDimention,covered);
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: .3s ease;
+    }
+
+    .checkbox-std__text{
+        z-index: map-get($checkDimention,elm);
+        color: #999;
+        position: absolute;
+        @include onCenter();
+        transition: .3s ease;
+    }
+
+    .checkbox-std__input{
+        display: none;
+        &:checked + .checkbox-std__display{
+            left: 0px;
+        }
+        &:checked + .checkbox-std__display + .checkbox-std__cover{
+            opacity: 0;
+        }
+        &:checked + .checkbox-std__display + .checkbox-std__cover + .checkbox-std__text{
+            color: #fff;
+        }
+    }
+    
+}

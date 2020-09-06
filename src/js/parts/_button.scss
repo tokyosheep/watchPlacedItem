@@ -1,0 +1,36 @@
+.button-watch{
+    $mainColor:rgb(69, 137, 240);
+    border: none;
+    width: 100px;
+    height: 20px;
+    background: $mainColor;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 2px 5px 0px darken($mainColor,30%);
+    border-radius: 3px;
+    &:active{
+        background: darken($mainColor,20%);
+    }
+    &:disabled{
+
+    }
+}
+
+.button-std{
+    $btnColor:rgb(112, 112, 112);
+    border: none;
+    width: 100px;
+    height: 20px;
+    background: $btnColor;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 2px 2px darken($btnColor,30%);
+    &:active{
+        background: darken($btnColor,20%);
+    }
+    &:disabled{
+        background: #000;
+        color: #555555;
+    }
+}

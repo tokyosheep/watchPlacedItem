@@ -1,0 +1,8 @@
+.ButtonRange{
+    ul{
+        @include flex-std();
+        li{
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.radiobox-doc{
+    @include flex-std();
+    padding: 5px;
+    cursor: pointer;
+    .radiobox-doc__input{
+        display: none;
+    }
+    .radiobox-doc__display{
+        @include formBall($size:20px);
+        background: rgb(170, 170, 170);
+        position: relative;
+        .radiobox-doc__ball{
+            @include formBall($size:15px);
+            background: rgb(150, 255, 102);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%) scale(0);
+            transition: transform .3s ease;
+        }
+    }
+}
+
+.radiobox-doc__input:checked + .radiobox-doc__display > .radiobox-doc__ball{
+    transform: translate(-50% ,-50%) scale(1);
+}

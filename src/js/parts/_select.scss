@@ -1,0 +1,40 @@
+.selectBox-std{
+    position: relative;
+    $selectorWidht:200px;
+    width: $selectorWidht;
+    height: 30px;
+    overflow: hidden;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    .selectBox-std__input{
+        @include selectInit();
+        width: 100%;
+        height: 100%;
+        background: rgb(173, 173, 173);
+        cursor: pointer;
+        option{
+            position: absolute;
+            font-size: 15px;
+        }
+    }
+    .selectBox-std__plate{
+        position: absolute;
+        $plateWidth:30px;
+        width: $plateWidth;
+        height: 100%;
+        background: rgb(94, 94, 94);
+        top: 0;
+        left: $selectorWidht - $plateWidth;
+        pointer-events: none;
+        .selectBox-std__arrow{
+            $size:10px;
+            $line:2px solid rgb(26, 33, 34);
+            width: $size;
+            height: $size;
+            border-bottom: $line;
+            border-left: $line;
+            @include onCenter($top:40%,$add:rotate(-45deg));
+        }
+    }
+}

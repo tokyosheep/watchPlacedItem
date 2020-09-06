@@ -1,0 +1,72 @@
+@import "./mixin";
+@import "./LayerDimention";
+@import "../js/components/rootForm";
+@import "../js/components/buttonRange";
+@import "../js/pages/optionsForm";
+@import "../js/components/watchingCover";
+
+@import "../js/parts/check";
+@import "../js/parts/radio";
+@import "../js/parts/button";
+@import "../js/parts/select";
+
+body{
+    background: rgb(53, 52, 52);
+    color: #ffffff;
+    margin: 0;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.head-top{
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.head-small{
+    margin: 3px;
+    font-size: 15px;
+}
+
+.watchForm{
+    display: grid;
+    grid-template-rows: 50px 1fr 100px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "docList"
+        "buttonRange"
+        "footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.documentList{
+    grid-area:docList;
+}
+
+.ButtonRange{
+    grid-area: buttonRange;
+}
+
+.footer{
+    grid-area: footer;;
+}
+
+.none{
+    display: none;
+}

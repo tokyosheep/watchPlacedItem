@@ -1,0 +1,49 @@
+
+.rootForm{
+    //border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgb(36, 39, 56);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.documentForm{
+    @include flex-std();
+    width: 100%;
+}
+
+.dropForm{
+    cursor: pointer;
+    position: relative;
+    //border: 1px solid #fff;
+    padding: 10px;
+    width: 130px;
+    margin-right: 10px;   
+    background: rgb(69, 78, 97);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    &:hover{
+        background: rgb(87, 90, 94);
+    }
+    p{
+        margin: 2px;
+    }
+    .rootBox{
+        position: absolute;
+        padding: 3px;
+        background: rgb(243, 232, 167);
+        color: #000;
+        opacity: 0;
+        transition: opacity .2s .5s ease;
+        border-radius: 5px;
+        pointer-events: none;
+        z-index: map-get($dimention,rootBox);
+    }
+    &:hover > .rootBox{
+        opacity: 1;
+    }
+}
+
+.dropOver{
+    background: rgb(164, 174, 194);
+}

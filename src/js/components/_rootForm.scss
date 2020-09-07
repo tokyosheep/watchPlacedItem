@@ -44,6 +44,11 @@
     }
 }
 
+.dropForm__rootName{
+    //display: block;
+    word-break: break-all;
+}
+
 .dropOver{
     background: rgb(164, 174, 194);
 }

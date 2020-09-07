@@ -35,6 +35,9 @@
   .dropForm:hover > .rootBox {
     opacity: 1; }
 
+.dropForm__rootName {
+  word-break: break-all; }
+
 .dropOver {
   background: #a4aec2; }
 

@@ -50,4 +50,6 @@ const callPathDialog = callType =>{/*callType folder or image */
     return callType === "folder" ? openFolderDialog : openImageDialog;
 }
 
-export {csInterface,extensionId,extFolder,extensionRoot,init,reload,callPathDialog};
+const alertFromJSX = msg => csInterface.evalScript(`$.evalFile(alert("${msg}"))`);
+
+export {csInterface,extensionId,extFolder,extensionRoot,init,reload,callPathDialog,alertFromJSX};

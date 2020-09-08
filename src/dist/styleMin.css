@@ -136,6 +136,11 @@
   100% {
     opacity: 1; } }
 
+.footer p {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 12px; }
+
 .checkbox-doc {
   z-index: 1;
   margin: 10px 0px;

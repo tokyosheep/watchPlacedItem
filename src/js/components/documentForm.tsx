@@ -1,10 +1,12 @@
 import * as React from "react";
 import * as path from "path";
 import * as fs from "fs";
+import * as url from "url";
 import {useState,useMemo,useCallback} from "react";
 import {mapStateToProps} from "../redux/actions/mapStateProps";
 import {mapDispatchProps} from "../redux/actions/mapDispatchProps";
 import {connect} from "react-redux";
+import {alertFromJSX} from "../fileSystem/init";
 
 import DropConnection from "./dropForm";
 import {callPathDialog} from "../fileSystem/init";
@@ -36,18 +38,20 @@ const DocumentForm = (props) =>{
         const obj = {...data};
         const f = decodeURI(callPathDialog(arg.type)());
         if(f===""||f===null||f===undefined||f==="undefined")return false;
-        if(!validateExt(f,arg.type)){
-            alert("please choice file properly");
+        console.log(f);
+        const parsed = url.parse(f);
+        if(!validateExt(parsed.path,arg.type)){
+            alertFromJSX("please choice file properly");
             return false;
         }
-        obj[arg.prop].path = f;
-        obj[arg.prop].name = getFileName(f);
+        obj[arg.prop].path = parsed.path;
+        obj[arg.prop].name = getFileName(parsed.path);
         props.set_WatchProp(obj,arg.index);
     },[data]);
 
     const receiveDropped = (file,arg:{index:number,prop:string,type:string}) =>{
         if(!validateExt(file.path,arg.type)){
-            alert("please choice file properly");
+            alertFromJSX("please choice file properly");
             return false;
         }
         const obj = {...data};
@@ -60,8 +64,12 @@ const DocumentForm = (props) =>{
         console.log(path.extname(root));
         if(type==="document") return path.extname(root)===".ai"||path.extname(root)===".pdf";
         if(type==="folder"){
-            const stat = fs.statSync(root);
-            return stat.isDirectory();
+            try{
+                const stat = fs.statSync(root);
+                return stat.isDirectory();
+            }catch(e){
+                return false;
+            }
         }
         return true;
     }

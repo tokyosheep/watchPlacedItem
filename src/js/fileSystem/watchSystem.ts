@@ -4,12 +4,21 @@ import * as path from "path";
 import {extensionRoot} from "../fileSystem/init";
 import {SendHostScript,HostObj} from "./connectHostScript";
 import {Watched,OptionType} from "../redux/reduce/type";
+import {alertFromJSX} from "../fileSystem/init";
 
 export interface WatchDataType {
     watchOption:{watch:Watched,option:OptionType},
     action:HostObj,
     launchToWatch:()=>void,
     stopWatch:()=>void
+}
+
+const obj = {
+    number:[1,2,3,4,5],
+    person:{
+        name:"takei",
+        age:14
+    }
 }
 
 class WatchData implements WatchDataType{
@@ -32,17 +41,21 @@ class WatchData implements WatchDataType{
 
         this.watcher
         .on("ready",()=>console.log("ready"))
-        .on("change",async(path)=>{
+        .on("change",async(path,stats)=>{
+            console.log(stats);
             console.log(path);
             //fs.writeFileSync(`${extensionRoot}data.json`,JSON.stringify(obj));
             const flag = await this.action.callHostScript(this.watchOption);
-            console.log(flag);
         })
-        .on("error",err=>console.log(err));
+        .on("error",err=>alertFromJSX(err))
+        .on("unlink",path=>{
+            console.log(path);
+            alertFromJSX("watched file renamed or removed!");
+        })
     }
 
-    stopWatch(){
-        this.watcher = null;
+    async stopWatch():Promise<void>{
+        await this.watcher.close();
         console.log("stop");
     }
 

@@ -11,7 +11,7 @@
 			Make sure to change these tags to use realistic version ranges before releasing your extensions, not 99.9!
 			You may also need to change the CEP version in order to support certain apps. -->
             
-            <!-- Photoshop
+            <!-- Photoshop 
             <Host Name="PHXS" Version="[16.0,99.9]" />
             <Host Name="PHSP" Version="[16.0,99.9]" />
             -->

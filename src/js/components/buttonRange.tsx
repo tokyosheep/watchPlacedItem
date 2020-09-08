@@ -5,6 +5,7 @@ import {mapDispatchProps} from "../redux/actions/mapDispatchProps";
 import {connect} from "react-redux";
 import {WatchButtons,StdButton} from "../parts/button";
 import {initWatch,WatchDataType} from "../fileSystem/watchSystem";
+import {alertFromJSX} from "../fileSystem/init";
 
 const MainButtonRange = (props) =>{
     console.log(props);
@@ -13,13 +14,15 @@ const MainButtonRange = (props) =>{
         const watchObjects = initWatch(props.state.WatchedTypes,props.state.Options);
         setWatchSwitch(watchObjects);
         props.set_WatchFlag(true);
-        alert("watch start");
+        alertFromJSX("watch start");
     };
-    const watchStop = () =>{
-        WatchSwitch.forEach(w=>w.stopWatch());
+    const watchStop = async() =>{
+        await Promise.all(WatchSwitch.map(async(w)=>{
+            await w.stopWatch();
+        }));
         setWatchSwitch([]);
         props.set_WatchFlag(false);
-        alert("watchStop");
+        alertFromJSX("watchStop");
     };
     const shiftMode = useCallback(()=>props.switch_Mode("options"),[props.state.ModeSwitch]);
     const watchFlag = WatchSwitch.length < 1;

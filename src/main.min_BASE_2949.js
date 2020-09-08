@@ -87,9 +87,9 @@
 /******/ ({
 
 /***/ "../../node_modules/@babel/runtime/helpers/esm/extends.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -117,9 +117,9 @@ function _extends() {
 /***/ }),
 
 /***/ "../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
-/*!***************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
-  \***************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -144,9 +144,9 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 /***/ }),
 
 /***/ "../../node_modules/@react-dnd/asap/dist/esm/browser/asap.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/asap.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/asap.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: asap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -225,9 +225,9 @@ function () {
 /***/ }),
 
 /***/ "../../node_modules/@react-dnd/asap/dist/esm/browser/index.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/index.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/index.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: asap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -241,9 +241,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/@react-dnd/asap/dist/esm/browser/raw.js":
-/*!********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/raw.js ***!
-  \********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/asap/dist/esm/browser/raw.js ***!
+  \************************************************************************************************************************************************/
 /*! exports provided: rawAsap */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -462,9 +462,9 @@ rawAsap.makeRequestCallFromTimer = makeRequestCallFromTimer; // ASAP was origina
 /***/ }),
 
 /***/ "../../node_modules/@react-dnd/invariant/dist/invariant.esm.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/invariant/dist/invariant.esm.js ***!
-  \***********************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/invariant/dist/invariant.esm.js ***!
+  \***************************************************************************************************************************************************/
 /*! exports provided: invariant */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -518,9 +518,9 @@ function invariant(condition, format) {
 /***/ }),
 
 /***/ "../../node_modules/@react-dnd/shallowequal/dist/shallowequal.esm.js":
-/*!*****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/shallowequal/dist/shallowequal.esm.js ***!
-  \*****************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/@react-dnd/shallowequal/dist/shallowequal.esm.js ***!
+  \*********************************************************************************************************************************************************/
 /*! exports provided: shallowEqual */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -577,9 +577,9 @@ function shallowEqual(objA, objB, compare, compareContext) {
 /***/ }),
 
 /***/ "../../node_modules/anymatch/index.js":
-/*!**********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/anymatch/index.js ***!
-  \**********************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/anymatch/index.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -691,9 +691,9 @@ module.exports = anymatch;
 /***/ }),
 
 /***/ "../../node_modules/binary-extensions/binary-extensions.json":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/binary-extensions/binary-extensions.json ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/binary-extensions/binary-extensions.json ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, default */
 /***/ (function(module) {
 
@@ -702,9 +702,9 @@ module.exports = JSON.parse("[\"3dm\",\"3ds\",\"3g2\",\"3gp\",\"7z\",\"a\",\"aac
 /***/ }),
 
 /***/ "../../node_modules/binary-extensions/index.js":
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/binary-extensions/index.js ***!
-  \*******************************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/binary-extensions/index.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -714,9 +714,9 @@ module.exports = __webpack_require__(/*! ./binary-extensions.json */ "../../node
 /***/ }),
 
 /***/ "../../node_modules/braces/index.js":
-/*!********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/index.js ***!
-  \********************************************************************************************************************/
+/*!************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/index.js ***!
+  \************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -896,9 +896,9 @@ module.exports = braces;
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/compile.js":
-/*!**************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/compile.js ***!
-  \**************************************************************************************************************************/
+/*!******************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/compile.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -965,9 +965,9 @@ module.exports = compile;
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/constants.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/constants.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/constants.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1034,9 +1034,9 @@ module.exports = {
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/expand.js":
-/*!*************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/expand.js ***!
-  \*************************************************************************************************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/expand.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1159,9 +1159,9 @@ module.exports = expand;
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/parse.js":
-/*!************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/parse.js ***!
-  \************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/parse.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1504,9 +1504,9 @@ module.exports = parse;
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/stringify.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/stringify.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/stringify.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1548,9 +1548,9 @@ module.exports = (ast, options = {}) => {
 /***/ }),
 
 /***/ "../../node_modules/braces/lib/utils.js":
-/*!************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/utils.js ***!
-  \************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/braces/lib/utils.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1672,9 +1672,9 @@ exports.flatten = (...args) => {
 /***/ }),
 
 /***/ "../../node_modules/chokidar/index.js":
-/*!**********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/index.js ***!
-  \**********************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/index.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2642,9 +2642,9 @@ exports.watch = watch;
 /***/ }),
 
 /***/ "../../node_modules/chokidar/lib/constants.js":
-/*!******************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/constants.js ***!
-  \******************************************************************************************************************************/
+/*!**********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/constants.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2717,9 +2717,9 @@ exports.isLinux = platform === 'linux';
 /***/ }),
 
 /***/ "../../node_modules/chokidar/lib/fsevents-handler.js":
-/*!*************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/fsevents-handler.js ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/fsevents-handler.js ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3253,9 +3253,9 @@ module.exports.canUse = canUse;
 /***/ }),
 
 /***/ "../../node_modules/chokidar/lib/nodefs-handler.js":
-/*!***********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/nodefs-handler.js ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/chokidar/lib/nodefs-handler.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3910,9 +3910,9 @@ module.exports = NodeFsHandler;
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/DragDropManagerImpl.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/DragDropManagerImpl.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/DragDropManagerImpl.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: DragDropManagerImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4039,9 +4039,9 @@ var DragDropManagerImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/DragDropMonitorImpl.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/DragDropMonitorImpl.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/DragDropMonitorImpl.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: DragDropMonitorImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4293,9 +4293,9 @@ var DragDropMonitorImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/HandlerRegistryImpl.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/HandlerRegistryImpl.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/HandlerRegistryImpl.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: HandlerRegistryImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4513,9 +4513,9 @@ var HandlerRegistryImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/beginDrag.js":
-/*!****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/beginDrag.js ***!
-  \****************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/beginDrag.js ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: createBeginDrag */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4624,9 +4624,9 @@ function getDraggableSource(sourceIds, monitor) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/drop.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/drop.js ***!
-  \***********************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/drop.js ***!
+  \***************************************************************************************************************************************************/
 /*! exports provided: createDrop */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4696,9 +4696,9 @@ function getDroppableTargets(monitor) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/endDrag.js":
-/*!**************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/endDrag.js ***!
-  \**************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/endDrag.js ***!
+  \******************************************************************************************************************************************************/
 /*! exports provided: createEndDrag */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4735,9 +4735,9 @@ function verifyIsDragging(monitor) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/hover.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/hover.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/hover.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: createHover */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4814,9 +4814,9 @@ function hoverAllTargets(targetIds, monitor, registry) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/index.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/index.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/index.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: INIT_COORDS, BEGIN_DRAG, PUBLISH_DRAG_SOURCE, HOVER, DROP, END_DRAG, createDragDropActions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4860,9 +4860,9 @@ function createDragDropActions(manager) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/local/setClientOffset.js":
-/*!****************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/local/setClientOffset.js ***!
-  \****************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/local/setClientOffset.js ***!
+  \********************************************************************************************************************************************************************/
 /*! exports provided: setClientOffset */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4884,9 +4884,9 @@ function setClientOffset(clientOffset, sourceClientOffset) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/publishDragSource.js":
-/*!************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/publishDragSource.js ***!
-  \************************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/publishDragSource.js ***!
+  \****************************************************************************************************************************************************************/
 /*! exports provided: createPublishDragSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4910,9 +4910,9 @@ function createPublishDragSource(manager) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/dragDrop/types.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/types.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/dragDrop/types.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: INIT_COORDS, BEGIN_DRAG, PUBLISH_DRAG_SOURCE, HOVER, DROP, END_DRAG */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4934,9 +4934,9 @@ var END_DRAG = 'dnd-core/END_DRAG';
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/actions/registry.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/registry.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/actions/registry.js ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: ADD_SOURCE, ADD_TARGET, REMOVE_SOURCE, REMOVE_TARGET, addSource, addTarget, removeSource, removeTarget */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4990,9 +4990,9 @@ function removeTarget(targetId) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/contracts.js":
-/*!***********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/contracts.js ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/contracts.js ***!
+  \***************************************************************************************************************************************/
 /*! exports provided: validateSourceContract, validateTargetContract, validateType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5029,9 +5029,9 @@ function validateType(type, allowArray) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/factories.js":
-/*!***********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/factories.js ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/factories.js ***!
+  \***************************************************************************************************************************************/
 /*! exports provided: createDragDropManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5050,9 +5050,9 @@ function createDragDropManager(backendFactory, globalContext, backendOptions, de
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/index.js":
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/index.js ***!
-  \*******************************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/index.js ***!
+  \***********************************************************************************************************************************/
 /*! exports provided: HandlerRole, createDragDropManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5070,9 +5070,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/interfaces.js":
-/*!************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/interfaces.js ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/interfaces.js ***!
+  \****************************************************************************************************************************************/
 /*! exports provided: HandlerRole */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5089,9 +5089,9 @@ var HandlerRole;
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/dirtyHandlerIds.js":
-/*!**************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dirtyHandlerIds.js ***!
-  \**************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dirtyHandlerIds.js ***!
+  \******************************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5164,9 +5164,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/dragOffset.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dragOffset.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dragOffset.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5223,9 +5223,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/dragOperation.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dragOperation.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/dragOperation.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5314,9 +5314,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/index.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/index.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/index.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5361,9 +5361,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/refCount.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/refCount.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/refCount.js ***!
+  \***********************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5393,9 +5393,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/reducers/stateId.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/stateId.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/reducers/stateId.js ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: reduce */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5410,9 +5410,9 @@ function reduce() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/coords.js":
-/*!**************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/coords.js ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/coords.js ***!
+  \******************************************************************************************************************************************/
 /*! exports provided: add, subtract, getSourceClientOffset, getDifferenceFromInitialOffset */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5485,9 +5485,9 @@ function getDifferenceFromInitialOffset(state) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/dirtiness.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/dirtiness.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/dirtiness.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: NONE, ALL, areDirty */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5525,9 +5525,9 @@ function areDirty(dirtyIds, handlerIds) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/equality.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/equality.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/equality.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: strictEquality, areCoordsEqual, areArraysEqual */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5579,9 +5579,9 @@ function areArraysEqual(a, b) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/getNextUniqueId.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/getNextUniqueId.js ***!
-  \***********************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/getNextUniqueId.js ***!
+  \***************************************************************************************************************************************************/
 /*! exports provided: getNextUniqueId */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5596,9 +5596,9 @@ function getNextUniqueId() {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/js_utils.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/js_utils.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/js_utils.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: get, without, isString, isObject, xor, intersection */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5688,9 +5688,9 @@ function intersection(itemsA, itemsB) {
 /***/ }),
 
 /***/ "../../node_modules/dnd-core/dist/esm/utils/matchesType.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/matchesType.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/dnd-core/dist/esm/utils/matchesType.js ***!
+  \***********************************************************************************************************************************************/
 /*! exports provided: matchesType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5710,9 +5710,9 @@ function matchesType(targetType, draggedItemType) {
 /***/ }),
 
 /***/ "../../node_modules/fill-range/index.js":
-/*!************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/fill-range/index.js ***!
-  \************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/fill-range/index.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5971,9 +5971,9 @@ module.exports = fill;
 /***/ }),
 
 /***/ "../../node_modules/glob-parent/index.js":
-/*!*************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/glob-parent/index.js ***!
-  \*************************************************************************************************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/glob-parent/index.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6024,9 +6024,9 @@ module.exports = function globParent(str, opts) {
 /***/ }),
 
 /***/ "../../node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
-/*!****************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
-  \****************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6139,9 +6139,9 @@ module.exports = hoistNonReactStatics;
 /***/ }),
 
 /***/ "../../node_modules/is-binary-path/index.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-binary-path/index.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-binary-path/index.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6158,9 +6158,9 @@ module.exports = filePath => extensions.has(path.extname(filePath).slice(1).toLo
 /***/ }),
 
 /***/ "../../node_modules/is-extglob/index.js":
-/*!************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-extglob/index.js ***!
-  \************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-extglob/index.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -6189,9 +6189,9 @@ module.exports = function isExtglob(str) {
 /***/ }),
 
 /***/ "../../node_modules/is-glob/index.js":
-/*!*********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-glob/index.js ***!
-  \*********************************************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-glob/index.js ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6248,9 +6248,9 @@ module.exports = function isGlob(str, options) {
 /***/ }),
 
 /***/ "../../node_modules/is-number/index.js":
-/*!***********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-number/index.js ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/is-number/index.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6278,9 +6278,9 @@ module.exports = function(num) {
 /***/ }),
 
 /***/ "../../node_modules/normalize-path/index.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/normalize-path/index.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/normalize-path/index.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -6324,9 +6324,9 @@ module.exports = function(path, stripTrailing) {
 /***/ }),
 
 /***/ "../../node_modules/object-assign/index.js":
-/*!***************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/object-assign/index.js ***!
-  \***************************************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/object-assign/index.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6426,9 +6426,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ }),
 
 /***/ "../../node_modules/picomatch/index.js":
-/*!***********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/index.js ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/index.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6441,9 +6441,9 @@ module.exports = __webpack_require__(/*! ./lib/picomatch */ "../../node_modules/
 /***/ }),
 
 /***/ "../../node_modules/picomatch/lib/constants.js":
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/constants.js ***!
-  \*******************************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/constants.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6632,9 +6632,9 @@ module.exports = {
 /***/ }),
 
 /***/ "../../node_modules/picomatch/lib/parse.js":
-/*!***************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/parse.js ***!
-  \***************************************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/parse.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7722,9 +7722,9 @@ module.exports = parse;
 /***/ }),
 
 /***/ "../../node_modules/picomatch/lib/picomatch.js":
-/*!*******************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/picomatch.js ***!
-  \*******************************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/picomatch.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8073,9 +8073,9 @@ module.exports = picomatch;
 /***/ }),
 
 /***/ "../../node_modules/picomatch/lib/scan.js":
-/*!**************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/scan.js ***!
-  \**************************************************************************************************************************/
+/*!******************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/scan.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8468,9 +8468,9 @@ module.exports = scan;
 /***/ }),
 
 /***/ "../../node_modules/picomatch/lib/utils.js":
-/*!***************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/utils.js ***!
-  \***************************************************************************************************************************/
+/*!*******************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/picomatch/lib/utils.js ***!
+  \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8544,9 +8544,9 @@ exports.wrapOutput = (input, state = {}, options = {}) => {
 /***/ }),
 
 /***/ "../../node_modules/prop-types/checkPropTypes.js":
-/*!*********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/checkPropTypes.js ***!
-  \*********************************************************************************************************************************/
+/*!*************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/checkPropTypes.js ***!
+  \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8658,9 +8658,9 @@ module.exports = checkPropTypes;
 /***/ }),
 
 /***/ "../../node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9261,9 +9261,9 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /***/ }),
 
 /***/ "../../node_modules/prop-types/index.js":
-/*!************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/index.js ***!
-  \************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/index.js ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9287,9 +9287,9 @@ if (true) {
 /***/ }),
 
 /***/ "../../node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9311,9 +9311,9 @@ module.exports = ReactPropTypesSecret;
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/BrowserDetector.js":
-/*!********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/BrowserDetector.js ***!
-  \********************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/BrowserDetector.js ***!
+  \************************************************************************************************************************************************************/
 /*! exports provided: isFirefox, isSafari */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9333,9 +9333,9 @@ var isSafari = Object(_utils_js_utils__WEBPACK_IMPORTED_MODULE_0__["memoize"])(f
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/EnterLeaveCounter.js":
-/*!**********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/EnterLeaveCounter.js ***!
-  \**********************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/EnterLeaveCounter.js ***!
+  \**************************************************************************************************************************************************************/
 /*! exports provided: EnterLeaveCounter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -9392,9 +9392,9 @@ var EnterLeaveCounter = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/HTML5BackendImpl.js":
-/*!*********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/HTML5BackendImpl.js ***!
-  \*********************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/HTML5BackendImpl.js ***!
+  \*************************************************************************************************************************************************************/
 /*! exports provided: HTML5BackendImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10077,9 +10077,9 @@ var HTML5BackendImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/MonotonicInterpolant.js":
-/*!*************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/MonotonicInterpolant.js ***!
-  \*************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/MonotonicInterpolant.js ***!
+  \*****************************************************************************************************************************************************************/
 /*! exports provided: MonotonicInterpolant */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10210,9 +10210,9 @@ var MonotonicInterpolant = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/NativeDragSource.js":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/NativeDragSource.js ***!
-  \***************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/NativeDragSource.js ***!
+  \*******************************************************************************************************************************************************************************/
 /*! exports provided: NativeDragSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10295,9 +10295,9 @@ var NativeDragSource = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/getDataFromDataTransfer.js":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/getDataFromDataTransfer.js ***!
-  \**********************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/getDataFromDataTransfer.js ***!
+  \**************************************************************************************************************************************************************************************/
 /*! exports provided: getDataFromDataTransfer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10314,9 +10314,9 @@ function getDataFromDataTransfer(dataTransfer, typesToTry, defaultValue) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/index.js":
-/*!****************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/index.js ***!
-  \****************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/index.js ***!
+  \********************************************************************************************************************************************************************/
 /*! exports provided: createNativeDragSource, matchNativeItemType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10350,9 +10350,9 @@ function matchNativeItemType(dataTransfer) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/nativeTypesConfig.js":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/nativeTypesConfig.js ***!
-  \****************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/nativeTypesConfig.js ***!
+  \********************************************************************************************************************************************************************************/
 /*! exports provided: nativeTypesConfig */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10396,9 +10396,9 @@ var nativeTypesConfig = (_nativeTypesConfig = {}, _defineProperty(_nativeTypesCo
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/NativeTypes.js":
-/*!****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeTypes.js ***!
-  \****************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/NativeTypes.js ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: FILE, URL, TEXT */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10414,9 +10414,9 @@ var TEXT = '__NATIVE_TEXT__';
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/OffsetUtils.js":
-/*!****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/OffsetUtils.js ***!
-  \****************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/OffsetUtils.js ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: getNodeClientOffset, getEventClientOffset, getDragPreviewOffset */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10532,9 +10532,9 @@ function getDragPreviewOffset(sourceNode, dragPreview, clientOffset, anchorPoint
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/OptionsReader.js":
-/*!******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/OptionsReader.js ***!
-  \******************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/OptionsReader.js ***!
+  \**********************************************************************************************************************************************************/
 /*! exports provided: OptionsReader */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10582,9 +10582,9 @@ var OptionsReader = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/getEmptyImage.js":
-/*!******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/getEmptyImage.js ***!
-  \******************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/getEmptyImage.js ***!
+  \**********************************************************************************************************************************************************/
 /*! exports provided: getEmptyImage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10604,9 +10604,9 @@ function getEmptyImage() {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/index.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/index.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/index.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: getEmptyImage, NativeTypes, HTML5Backend */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10630,9 +10630,9 @@ var HTML5Backend = function createBackend(manager, context) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd-html5-backend/dist/esm/utils/js_utils.js":
-/*!*******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/utils/js_utils.js ***!
-  \*******************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd-html5-backend/dist/esm/utils/js_utils.js ***!
+  \***********************************************************************************************************************************************************/
 /*! exports provided: memoize, without, union */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10683,9 +10683,9 @@ function union(itemsA, itemsB) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/DndContext.js":
-/*!********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DndContext.js ***!
-  \********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DndContext.js ***!
+  \************************************************************************************************************************************************/
 /*! exports provided: DndContext, createDndContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10720,9 +10720,9 @@ function createDndContext(backend, context, options, debugMode) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/DndProvider.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DndProvider.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DndProvider.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: DndProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10829,9 +10829,9 @@ function getGlobalContext() {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/DragPreviewImage.js":
-/*!**************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DragPreviewImage.js ***!
-  \**************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DragPreviewImage.js ***!
+  \******************************************************************************************************************************************************/
 /*! exports provided: DragPreviewImage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10872,9 +10872,9 @@ DragPreviewImage.displayName = 'DragPreviewImage';
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/DragSourceMonitorImpl.js":
-/*!*******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DragSourceMonitorImpl.js ***!
-  \*******************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DragSourceMonitorImpl.js ***!
+  \***********************************************************************************************************************************************************/
 /*! exports provided: DragSourceMonitorImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11035,9 +11035,9 @@ var DragSourceMonitorImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/DropTargetMonitorImpl.js":
-/*!*******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DropTargetMonitorImpl.js ***!
-  \*******************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/DropTargetMonitorImpl.js ***!
+  \***********************************************************************************************************************************************************/
 /*! exports provided: DropTargetMonitorImpl */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11157,9 +11157,9 @@ var DropTargetMonitorImpl = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/SourceConnector.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/SourceConnector.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/SourceConnector.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: SourceConnector */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11391,9 +11391,9 @@ var SourceConnector = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/TargetConnector.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/TargetConnector.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/TargetConnector.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: TargetConnector */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11536,9 +11536,9 @@ var TargetConnector = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/index.js":
-/*!***************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/index.js ***!
-  \***************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/index.js ***!
+  \*******************************************************************************************************************************************/
 /*! exports provided: DndContext, createDndContext, DndProvider, DragPreviewImage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11562,9 +11562,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/registration.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/registration.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/registration.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: registerTarget, registerSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11590,9 +11590,9 @@ function registerSource(type, source, manager) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/common/wrapConnectorHooks.js":
-/*!****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/wrapConnectorHooks.js ***!
-  \****************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/common/wrapConnectorHooks.js ***!
+  \********************************************************************************************************************************************************/
 /*! exports provided: wrapConnectorHooks */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11664,9 +11664,9 @@ function wrapConnectorHooks(hooks) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/DragLayer.js":
-/*!***********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DragLayer.js ***!
-  \***********************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DragLayer.js ***!
+  \***************************************************************************************************************************************************/
 /*! exports provided: DragLayer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11850,9 +11850,9 @@ function DragLayer(collect) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/DragSource.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DragSource.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DragSource.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: DragSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11924,9 +11924,9 @@ function DragSource(type, spec, collect) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/DropTarget.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DropTarget.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/DropTarget.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: DropTarget */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -11990,9 +11990,9 @@ function DropTarget(type, spec, collect) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/createSourceFactory.js":
-/*!*********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/createSourceFactory.js ***!
-  \*********************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/createSourceFactory.js ***!
+  \*************************************************************************************************************************************************************/
 /*! exports provided: createSourceFactory */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12106,9 +12106,9 @@ function createSourceFactory(spec) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/createTargetFactory.js":
-/*!*********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/createTargetFactory.js ***!
-  \*********************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/createTargetFactory.js ***!
+  \*************************************************************************************************************************************************************/
 /*! exports provided: createTargetFactory */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12200,9 +12200,9 @@ function createTargetFactory(spec) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/decorateHandler.js":
-/*!*****************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/decorateHandler.js ***!
-  \*****************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/decorateHandler.js ***!
+  \*********************************************************************************************************************************************************/
 /*! exports provided: decorateHandler */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12465,9 +12465,9 @@ function decorateHandler(_ref) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/disposables.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/disposables.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/disposables.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: Disposable, CompositeDisposable, SerialDisposable */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12724,9 +12724,9 @@ var SerialDisposable = /*#__PURE__*/function () {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/index.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/index.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/index.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12752,9 +12752,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/interfaces.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/interfaces.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/interfaces.js ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -12763,9 +12763,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/decorators/utils.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/utils.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/decorators/utils.js ***!
+  \***********************************************************************************************************************************************/
 /*! exports provided: getDecoratedComponent, isClassComponent, isRefForwardingComponent, isRefable, checkDecoratorArguments */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12817,9 +12817,9 @@ function checkDecoratorArguments(functionName, signature) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/index.js":
-/*!**************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/index.js ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/index.js ***!
+  \******************************************************************************************************************************************/
 /*! exports provided: useDrag, useDrop, useDragLayer, useDragDropManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12845,9 +12845,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/internal/drag.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/drag.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/drag.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: useDragSourceMonitor, useDragHandler */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -12950,9 +12950,9 @@ function useDragHandler(spec, monitor, connector) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/internal/drop.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/drop.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/drop.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: useDropTargetMonitor, useDropHandler */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13034,9 +13034,9 @@ function useDropHandler(spec, monitor, connector) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/internal/useCollector.js":
-/*!******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useCollector.js ***!
-  \******************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useCollector.js ***!
+  \**********************************************************************************************************************************************************/
 /*! exports provided: useCollector */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13097,9 +13097,9 @@ function useCollector(monitor, collect, onUpdate) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/internal/useIsomorphicLayoutEffect.js":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useIsomorphicLayoutEffect.js ***!
-  \*******************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useIsomorphicLayoutEffect.js ***!
+  \***********************************************************************************************************************************************************************/
 /*! exports provided: useIsomorphicLayoutEffect */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13115,9 +13115,9 @@ var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? react__WEBPACK_I
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/internal/useMonitorOutput.js":
-/*!**********************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useMonitorOutput.js ***!
-  \**********************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/internal/useMonitorOutput.js ***!
+  \**************************************************************************************************************************************************************/
 /*! exports provided: useMonitorOutput */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13163,9 +13163,9 @@ function useMonitorOutput(monitor, collect, onCollect) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/useDrag.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDrag.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDrag.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: useDrag */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13238,9 +13238,9 @@ function useDrag(spec) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/useDragDropManager.js":
-/*!***************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDragDropManager.js ***!
-  \***************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDragDropManager.js ***!
+  \*******************************************************************************************************************************************************/
 /*! exports provided: useDragDropManager */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13269,9 +13269,9 @@ function useDragDropManager() {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/useDragLayer.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDragLayer.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDragLayer.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: useDragLayer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13323,9 +13323,9 @@ function useDragLayer(collect) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/hooks/useDrop.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDrop.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/hooks/useDrop.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: useDrop */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13389,9 +13389,9 @@ function useDrop(spec) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/index.js":
-/*!********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/index.js ***!
-  \********************************************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/index.js ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13427,9 +13427,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/interfaces/connectors.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/connectors.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/connectors.js ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13438,9 +13438,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/interfaces/hooksApi.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/hooksApi.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/hooksApi.js ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13449,9 +13449,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/interfaces/index.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/index.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/index.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13477,9 +13477,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/interfaces/monitors.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/monitors.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/monitors.js ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13488,9 +13488,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/interfaces/options.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/options.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/interfaces/options.js ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -13499,9 +13499,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/utils/cloneWithRef.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/cloneWithRef.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/cloneWithRef.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: cloneWithRef */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13544,9 +13544,9 @@ function cloneWithRef(element, newRef) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/utils/isRef.js":
-/*!**************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/isRef.js ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/isRef.js ***!
+  \******************************************************************************************************************************************/
 /*! exports provided: isRef */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13564,9 +13564,9 @@ function isRef(obj) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/utils/isValidType.js":
-/*!********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/isValidType.js ***!
-  \********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/isValidType.js ***!
+  \************************************************************************************************************************************************/
 /*! exports provided: isValidType */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13584,9 +13584,9 @@ function isValidType(type, allowArray) {
 /***/ }),
 
 /***/ "../../node_modules/react-dnd/dist/esm/utils/js_utils.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/js_utils.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dnd/dist/esm/utils/js_utils.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: isFunction, noop, isPlainObject */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13629,9 +13629,9 @@ function isPlainObject(input) {
 /***/ }),
 
 /***/ "../../node_modules/react-dom/cjs/react-dom.development.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dom/cjs/react-dom.development.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dom/cjs/react-dom.development.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38653,9 +38653,9 @@ exports.version = ReactVersion;
 /***/ }),
 
 /***/ "../../node_modules/react-dom/index.js":
-/*!***********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dom/index.js ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-dom/index.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38698,9 +38698,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "../../node_modules/react-is/cjs/react-is.development.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-is/cjs/react-is.development.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-is/cjs/react-is.development.js ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38891,9 +38891,9 @@ exports.typeOf = typeOf;
 /***/ }),
 
 /***/ "../../node_modules/react-is/index.js":
-/*!**********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-is/index.js ***!
-  \**********************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-is/index.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38908,9 +38908,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/components/Context.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/Context.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/Context.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: ReactReduxContext, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38933,9 +38933,9 @@ if (true) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/components/Provider.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/Provider.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/Provider.js ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39003,9 +39003,9 @@ if (true) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/components/connectAdvanced.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/connectAdvanced.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/components/connectAdvanced.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39396,9 +39396,9 @@ _ref) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/connect.js":
-/*!**************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/connect.js ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/connect.js ***!
+  \******************************************************************************************************************************************/
 /*! exports provided: createConnect, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39515,9 +39515,9 @@ function createConnect(_temp) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/mapDispatchToProps.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mapDispatchToProps.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mapDispatchToProps.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39550,9 +39550,9 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/mapStateToProps.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mapStateToProps.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mapStateToProps.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39575,9 +39575,9 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/mergeProps.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mergeProps.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/mergeProps.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: defaultMergeProps, wrapMergePropsFunc, whenMergePropsIsFunction, whenMergePropsIsOmitted, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39629,9 +39629,9 @@ function whenMergePropsIsOmitted(mergeProps) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/selectorFactory.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/selectorFactory.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/selectorFactory.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: impureFinalPropsSelectorFactory, pureFinalPropsSelectorFactory, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39733,9 +39733,9 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/verifySubselectors.js":
-/*!*************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/verifySubselectors.js ***!
-  \*************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/verifySubselectors.js ***!
+  \*****************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39764,9 +39764,9 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/connect/wrapMapToProps.js":
-/*!*********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/wrapMapToProps.js ***!
-  \*********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/connect/wrapMapToProps.js ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: wrapMapToPropsConstant, getDependsOnOwnProps, wrapMapToPropsFunc */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39844,9 +39844,9 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/hooks/useDispatch.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useDispatch.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useDispatch.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: createDispatchHook, useDispatch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39905,9 +39905,9 @@ createDispatchHook();
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/hooks/useReduxContext.js":
-/*!********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useReduxContext.js ***!
-  \********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useReduxContext.js ***!
+  \************************************************************************************************************************************************/
 /*! exports provided: useReduxContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39949,9 +39949,9 @@ function useReduxContext() {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/hooks/useSelector.js":
-/*!****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useSelector.js ***!
-  \****************************************************************************************************************************************/
+/*!********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useSelector.js ***!
+  \********************************************************************************************************************************************/
 /*! exports provided: createSelectorHook, useSelector */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40106,9 +40106,9 @@ createSelectorHook();
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/hooks/useStore.js":
-/*!*************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useStore.js ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/hooks/useStore.js ***!
+  \*****************************************************************************************************************************************/
 /*! exports provided: createStoreHook, useStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40168,9 +40168,9 @@ createStoreHook();
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/index.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/index.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/index.js ***!
+  \********************************************************************************************************************************/
 /*! exports provided: Provider, connectAdvanced, ReactReduxContext, connect, batch, useDispatch, createDispatchHook, useSelector, createSelectorHook, useStore, createStoreHook, shallowEqual */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40226,9 +40226,9 @@ Object(_utils_batch__WEBPACK_IMPORTED_MODULE_7__["setBatch"])(_utils_reactBatche
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/Subscription.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/Subscription.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/Subscription.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40364,9 +40364,9 @@ function () {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/batch.js":
-/*!**********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/batch.js ***!
-  \**********************************************************************************************************************************/
+/*!**************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/batch.js ***!
+  \**************************************************************************************************************************************/
 /*! exports provided: setBatch, getBatch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40392,9 +40392,9 @@ var getBatch = function getBatch() {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/isPlainObject.js":
-/*!******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/isPlainObject.js ***!
-  \******************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/isPlainObject.js ***!
+  \**********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40421,9 +40421,9 @@ function isPlainObject(obj) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/reactBatchedUpdates.js":
-/*!************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/reactBatchedUpdates.js ***!
-  \************************************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/reactBatchedUpdates.js ***!
+  \****************************************************************************************************************************************************/
 /*! exports provided: unstable_batchedUpdates */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40439,9 +40439,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/shallowEqual.js":
-/*!*****************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/shallowEqual.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/shallowEqual.js ***!
+  \*********************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40479,9 +40479,9 @@ function shallowEqual(objA, objB) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js":
-/*!******************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js ***!
-  \******************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js ***!
+  \**********************************************************************************************************************************************************/
 /*! exports provided: useIsomorphicLayoutEffect */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40504,9 +40504,9 @@ var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.d
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/verifyPlainObject.js":
-/*!**********************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/verifyPlainObject.js ***!
-  \**********************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/verifyPlainObject.js ***!
+  \**************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40526,9 +40526,9 @@ function verifyPlainObject(value, displayName, methodName) {
 /***/ }),
 
 /***/ "../../node_modules/react-redux/es/utils/warning.js":
-/*!************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/warning.js ***!
-  \************************************************************************************************************************************/
+/*!****************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react-redux/es/utils/warning.js ***!
+  \****************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -40563,9 +40563,9 @@ function warning(message) {
 /***/ }),
 
 /***/ "../../node_modules/react/cjs/react.development.js":
-/*!***********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react/cjs/react.development.js ***!
-  \***********************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react/cjs/react.development.js ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42487,9 +42487,9 @@ exports.version = ReactVersion;
 /***/ }),
 
 /***/ "../../node_modules/react/index.js":
-/*!*******************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react/index.js ***!
-  \*******************************************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/react/index.js ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42504,9 +42504,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "../../node_modules/readdirp/index.js":
-/*!**********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/readdirp/index.js ***!
-  \**********************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/readdirp/index.js ***!
+  \**************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42791,9 +42791,9 @@ module.exports = readdirp;
 /***/ }),
 
 /***/ "../../node_modules/redux/es/redux.js":
-/*!**********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/redux/es/redux.js ***!
-  \**********************************************************************************************************************/
+/*!**************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/redux/es/redux.js ***!
+  \**************************************************************************************************************************/
 /*! exports provided: __DO_NOT_USE__ActionTypes, applyMiddleware, bindActionCreators, combineReducers, compose, createStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -43474,9 +43474,9 @@ if ( true && typeof isCrushed.name === 'string' && isCrushed.name !== 'isCrushed
 /***/ }),
 
 /***/ "../../node_modules/scheduler/cjs/scheduler-tracing.development.js":
-/*!***************************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
-  \***************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
+  \*******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43835,9 +43835,9 @@ exports.unstable_wrap = unstable_wrap;
 /***/ }),
 
 /***/ "../../node_modules/scheduler/cjs/scheduler.development.js":
-/*!*******************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/cjs/scheduler.development.js ***!
-  \*******************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/cjs/scheduler.development.js ***!
+  \***********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44705,9 +44705,9 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /***/ }),
 
 /***/ "../../node_modules/scheduler/index.js":
-/*!***********************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/index.js ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/index.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44722,9 +44722,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "../../node_modules/scheduler/tracing.js":
-/*!*************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/tracing.js ***!
-  \*************************************************************************************************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/scheduler/tracing.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44739,9 +44739,9 @@ if (false) {} else {
 /***/ }),
 
 /***/ "../../node_modules/symbol-observable/es/index.js":
-/*!**********************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/symbol-observable/es/index.js ***!
-  \**********************************************************************************************************************************/
+/*!**************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/symbol-observable/es/index.js ***!
+  \**************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -44771,9 +44771,9 @@ var result = Object(_ponyfill_js__WEBPACK_IMPORTED_MODULE_0__["default"])(root);
 /***/ }),
 
 /***/ "../../node_modules/symbol-observable/es/ponyfill.js":
-/*!*************************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/symbol-observable/es/ponyfill.js ***!
-  \*************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/symbol-observable/es/ponyfill.js ***!
+  \*****************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -44802,9 +44802,9 @@ function symbolObservablePonyfill(root) {
 /***/ }),
 
 /***/ "../../node_modules/to-regex-range/index.js":
-/*!****************************************************************************************************************************!*\
-  !*** /Users/ink_004/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/to-regex-range/index.js ***!
-  \****************************************************************************************************************************/
+/*!********************************************************************************************************************************!*\
+  !*** /Users/kawanoshuji/Library/Application Support/Adobe/CEP/extensions/watchPlacedItem/node_modules/to-regex-range/index.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45163,44 +45163,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "../../node_modules/react-redux/es/index.js");
 /* harmony import */ var _parts_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../parts/button */ "./parts/button.tsx");
 /* harmony import */ var _fileSystem_watchSystem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../fileSystem/watchSystem */ "./fileSystem/watchSystem.ts");
-/* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fileSystem/init */ "./fileSystem/init.js");
-var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
 
 
 
@@ -45215,30 +45177,14 @@ var MainButtonRange = function (props) {
         var watchObjects = Object(_fileSystem_watchSystem__WEBPACK_IMPORTED_MODULE_5__["initWatch"])(props.state.WatchedTypes, props.state.Options);
         setWatchSwitch(watchObjects);
         props.set_WatchFlag(true);
-        Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_6__["alertFromJSX"])("watch start");
+        alert("watch start");
     };
-    var watchStop = function () { return __awaiter(void 0, void 0, void 0, function () {
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, Promise.all(WatchSwitch.map(function (w) { return __awaiter(void 0, void 0, void 0, function () {
-                        return __generator(this, function (_a) {
-                            switch (_a.label) {
-                                case 0: return [4 /*yield*/, w.stopWatch()];
-                                case 1:
-                                    _a.sent();
-                                    return [2 /*return*/];
-                            }
-                        });
-                    }); }))];
-                case 1:
-                    _a.sent();
-                    setWatchSwitch([]);
-                    props.set_WatchFlag(false);
-                    Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_6__["alertFromJSX"])("watchStop");
-                    return [2 /*return*/];
-            }
-        });
-    }); };
+    var watchStop = function () {
+        WatchSwitch.forEach(function (w) { return w.stopWatch(); });
+        setWatchSwitch([]);
+        props.set_WatchFlag(false);
+        alert("watchStop");
+    };
     var shiftMode = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function () { return props.switch_Mode("options"); }, [props.state.ModeSwitch]);
     var watchFlag = WatchSwitch.length < 1;
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "ButtonRange" },
@@ -45268,17 +45214,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! fs */ "fs");
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! url */ "url");
-/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(url__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _redux_actions_mapStateProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/mapStateProps */ "./redux/actions/mapStateProps.ts");
-/* harmony import */ var _redux_actions_mapDispatchProps__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../redux/actions/mapDispatchProps */ "./redux/actions/mapDispatchProps.ts");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "../../node_modules/react-redux/es/index.js");
+/* harmony import */ var _redux_actions_mapStateProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/actions/mapStateProps */ "./redux/actions/mapStateProps.ts");
+/* harmony import */ var _redux_actions_mapDispatchProps__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../redux/actions/mapDispatchProps */ "./redux/actions/mapDispatchProps.ts");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "../../node_modules/react-redux/es/index.js");
+/* harmony import */ var _dropForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./dropForm */ "./components/dropForm.tsx");
 /* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../fileSystem/init */ "./fileSystem/init.js");
-/* harmony import */ var _dropForm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dropForm */ "./components/dropForm.tsx");
-/* harmony import */ var _parts_radioBox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../parts/radioBox */ "./parts/radioBox.tsx");
-/* harmony import */ var _parts_checkBox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../parts/checkBox */ "./parts/checkBox.tsx");
-/* harmony import */ var _fileSystem_basic__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../fileSystem/basic */ "./fileSystem/basic.ts");
-/* harmony import */ var _watchingCover__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./watchingCover */ "./components/watchingCover.tsx");
+/* harmony import */ var _parts_radioBox__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../parts/radioBox */ "./parts/radioBox.tsx");
+/* harmony import */ var _parts_checkBox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../parts/checkBox */ "./parts/checkBox.tsx");
+/* harmony import */ var _fileSystem_basic__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../fileSystem/basic */ "./fileSystem/basic.ts");
+/* harmony import */ var _watchingCover__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./watchingCover */ "./components/watchingCover.tsx");
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -45290,8 +45234,6 @@ var __assign = (undefined && undefined.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
-
-
 
 
 
@@ -45325,19 +45267,17 @@ var DocumentForm = function (props) {
         var f = decodeURI(Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_7__["callPathDialog"])(arg.type)());
         if (f === "" || f === null || f === undefined || f === "undefined")
             return false;
-        console.log(f);
-        var parsed = url__WEBPACK_IMPORTED_MODULE_3__["parse"](f);
-        if (!validateExt(parsed.path, arg.type)) {
-            Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_7__["alertFromJSX"])("please choice file properly");
+        if (!validateExt(f, arg.type)) {
+            alert("please choice file properly");
             return false;
         }
-        obj[arg.prop].path = parsed.path;
-        obj[arg.prop].name = Object(_fileSystem_basic__WEBPACK_IMPORTED_MODULE_11__["getFileName"])(parsed.path);
+        obj[arg.prop].path = f;
+        obj[arg.prop].name = Object(_fileSystem_basic__WEBPACK_IMPORTED_MODULE_10__["getFileName"])(f);
         props.set_WatchProp(obj, arg.index);
     }, [data]);
     var receiveDropped = function (file, arg) {
         if (!validateExt(file.path, arg.type)) {
-            Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_7__["alertFromJSX"])("please choice file properly");
+            alert("please choice file properly");
             return false;
         }
         var obj = __assign({}, data);
@@ -45350,35 +45290,30 @@ var DocumentForm = function (props) {
         if (type === "document")
             return path__WEBPACK_IMPORTED_MODULE_1__["extname"](root) === ".ai" || path__WEBPACK_IMPORTED_MODULE_1__["extname"](root) === ".pdf";
         if (type === "folder") {
-            try {
-                var stat = fs__WEBPACK_IMPORTED_MODULE_2__["statSync"](root);
-                return stat.isDirectory();
-            }
-            catch (e) {
-                return false;
-            }
+            var stat = fs__WEBPACK_IMPORTED_MODULE_2__["statSync"](root);
+            return stat.isDirectory();
         }
         return true;
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "rootForm" },
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_watchingCover__WEBPACK_IMPORTED_MODULE_12__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_watchingCover__WEBPACK_IMPORTED_MODULE_11__["default"], null),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("header", { className: "rootForm__header" },
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", { className: "head-small" },
                 "document ",
                 props.index + 1)),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "documentForm" },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_8__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "document", type: "document" }, root: { classType: "documentForm__doc", name: "document", path: data.document } }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_8__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "placed", type: "image" }, root: { classType: "documentForm__placed", name: "placed item", path: data.placed } }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_6__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "document", type: "document" }, root: { classType: "documentForm__doc", name: "document", path: data.document } }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_6__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "placed", type: "image" }, root: { classType: "documentForm__placed", name: "placed item", path: data.placed } }),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null,
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_radioBox__WEBPACK_IMPORTED_MODULE_9__["DocumentRadio"], { func: handleRadioBox, arg: { index: props.index, prop: "ai" }, checked: data.ext.ai, name: "ai" })),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_radioBox__WEBPACK_IMPORTED_MODULE_8__["DocumentRadio"], { func: handleRadioBox, arg: { index: props.index, prop: "ai" }, checked: data.ext.ai, name: "ai" })),
                 react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", null,
-                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_radioBox__WEBPACK_IMPORTED_MODULE_9__["DocumentRadio"], { func: handleRadioBox, arg: { index: props.index, prop: "pdf" }, checked: data.ext.pdf, name: "pdf" })))),
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_radioBox__WEBPACK_IMPORTED_MODULE_8__["DocumentRadio"], { func: handleRadioBox, arg: { index: props.index, prop: "pdf" }, checked: data.ext.pdf, name: "pdf" })))),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "exportForm" },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_checkBox__WEBPACK_IMPORTED_MODULE_10__["DocmentCheckBox"], { func: handleCheckBox, name: "export", checked: data.export, arg: { index: props.index, type: "image" } }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_8__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "extFolder", type: "folder" }, root: { classType: "exportForm__path", name: "export path", path: data.extFolder } }))));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_parts_checkBox__WEBPACK_IMPORTED_MODULE_9__["DocmentCheckBox"], { func: handleCheckBox, name: "export", checked: data.export, arg: { index: props.index, type: "image" } }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_dropForm__WEBPACK_IMPORTED_MODULE_6__["default"], { setDrop: receiveDropped, func: setPath, arg: { index: props.index, prop: "extFolder", type: "folder" }, root: { classType: "exportForm__path", name: "export path", path: data.extFolder } }))));
 };
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(_redux_actions_mapStateProps__WEBPACK_IMPORTED_MODULE_4__["mapStateToProps"], _redux_actions_mapDispatchProps__WEBPACK_IMPORTED_MODULE_5__["mapDispatchProps"])(DocumentForm));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_5__["connect"])(_redux_actions_mapStateProps__WEBPACK_IMPORTED_MODULE_3__["mapStateToProps"], _redux_actions_mapDispatchProps__WEBPACK_IMPORTED_MODULE_4__["mapDispatchProps"])(DocumentForm));
 
 
 /***/ }),
@@ -45434,7 +45369,7 @@ var RootForm = function (props) {
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { ref: drop, className: "dropForm " + (isActive ? "dropOver" : ""), onClick: function (e) { return props.func(e, props.arg); }, onMouseOver: function (e) { return handleMousePosition(e); } },
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_rootBox__WEBPACK_IMPORTED_MODULE_1__["default"], { root: root.path.path, point: point }),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, root.name),
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", { className: "dropForm__rootName" }, root.path.name)));
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("span", null, root.path.name)));
 };
 var DropConnection = function (props) {
     var handleFileDrop = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(function (item, monitor) {
@@ -45631,7 +45566,7 @@ var SendHostScript = /** @class */ (function () {
 /*!****************************!*\
   !*** ./fileSystem/init.js ***!
   \****************************/
-/*! exports provided: csInterface, extensionId, extFolder, extensionRoot, init, reload, callPathDialog, alertFromJSX */
+/*! exports provided: csInterface, extensionId, extFolder, extensionRoot, init, reload, callPathDialog */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45643,7 +45578,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "init", function() { return init; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reload", function() { return reload; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "callPathDialog", function() { return callPathDialog; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "alertFromJSX", function() { return alertFromJSX; });
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ "fs");
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ "path");
@@ -45700,8 +45634,6 @@ const callPathDialog = callType =>{/*callType folder or image */
     return callType === "folder" ? openFolderDialog : openImageDialog;
 }
 
-const alertFromJSX = msg => csInterface.evalScript(`$.evalFile(alert("${msg}"))`);
-
 
 
 /***/ }),
@@ -45718,11 +45650,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initWatch", function() { return initWatch; });
 /* harmony import */ var chokidar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! chokidar */ "../../node_modules/chokidar/index.js");
 /* harmony import */ var chokidar__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(chokidar__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _connectHostScript__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./connectHostScript */ "./fileSystem/connectHostScript.ts");
-<<<<<<< HEAD
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fs */ "fs");
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../fileSystem/init */ "./fileSystem/init.js");
-=======
->>>>>>> origin/master
+/* harmony import */ var _connectHostScript__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./connectHostScript */ "./fileSystem/connectHostScript.ts");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -45761,7 +45692,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 };
 
 
-<<<<<<< HEAD
+
 
 var obj = {
     number: [1, 2, 3, 4, 5],
@@ -45770,8 +45701,6 @@ var obj = {
         age: 14
     }
 };
-=======
->>>>>>> origin/master
 var WatchData = /** @class */ (function () {
     function WatchData(watchOption, action) {
         this.watchOption = watchOption;
@@ -45789,45 +45718,33 @@ var WatchData = /** @class */ (function () {
         });
         this.watcher
             .on("ready", function () { return console.log("ready"); })
-            .on("change", function (path, stats) { return __awaiter(_this, void 0, void 0, function () {
+            .on("change", function (path) { return __awaiter(_this, void 0, void 0, function () {
             var flag;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        console.log(stats);
                         console.log(path);
+                        fs__WEBPACK_IMPORTED_MODULE_1__["writeFileSync"](_fileSystem_init__WEBPACK_IMPORTED_MODULE_2__["extensionRoot"] + "data.json", JSON.stringify(obj));
                         return [4 /*yield*/, this.action.callHostScript(this.watchOption)];
                     case 1:
                         flag = _a.sent();
+                        console.log(flag);
                         return [2 /*return*/];
                 }
             });
         }); })
-            .on("error", function (err) { return Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_2__["alertFromJSX"])(err); })
-            .on("unlink", function (path) {
-            console.log(path);
-            Object(_fileSystem_init__WEBPACK_IMPORTED_MODULE_2__["alertFromJSX"])("watched file renamed or removed!");
-        });
+            .on("error", function (err) { return console.log(err); });
     };
     WatchData.prototype.stopWatch = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.watcher.close()];
-                    case 1:
-                        _a.sent();
-                        console.log("stop");
-                        return [2 /*return*/];
-                }
-            });
-        });
+        this.watcher = null;
+        console.log("stop");
     };
     return WatchData;
 }());
 var initWatch = function (watches, option) {
     console.log(watches);
     var watchObjects = watches.map(function (watch) {
-        var action = new _connectHostScript__WEBPACK_IMPORTED_MODULE_1__["SendHostScript"]();
+        var action = new _connectHostScript__WEBPACK_IMPORTED_MODULE_3__["SendHostScript"]();
         return new WatchData({ watch: watch, option: option }, action);
     });
     watchObjects.forEach(function (w) { return w.launchToWatch(); });
@@ -46451,17 +46368,6 @@ module.exports = require("path");
 /***/ (function(module, exports) {
 
 module.exports = require("stream");
-
-/***/ }),
-
-/***/ "url":
-/*!**********************!*\
-  !*** external "url" ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("url");
 
 /***/ }),
 

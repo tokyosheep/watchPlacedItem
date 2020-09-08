@@ -43,7 +43,7 @@ const RootForm = (props) =>{
         <div ref={drop} className={"dropForm " + (isActive ? "dropOver" : "")} onClick={(e)=>props.func(e,props.arg)} onMouseOver={(e)=>handleMousePosition(e)}>
             <RootBox root={root.path.path} point={point}/>
             <p>{root.name}</p>
-            <span>{root.path.name}</span>
+            <span className="dropForm__rootName">{root.path.name}</span>
         </div>
     )
 }

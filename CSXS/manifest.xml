@@ -16,7 +16,7 @@
             <Host Name="PHSP" Version="[16.0,99.9]" />
             -->
             <!-- Illustrator -->
-            <Host Name="ILST" Version="[18.0,99.9]" />
+            <Host Name="ILST" Version="[23.0,99.9]" />
             
             <!-- InDesign -->
             <!-- <Host Name="IDSN" Version="[10.0,99.9]" /> -->

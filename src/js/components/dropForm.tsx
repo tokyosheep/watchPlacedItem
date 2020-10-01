@@ -40,11 +40,11 @@ const RootForm = (props) =>{
     const isActive = canDrop && isOver;
     const root:RootType = props.root;
     return(
-        <div ref={drop} className={"dropForm " + (isActive ? "dropOver" : "")} onClick={(e)=>props.func(e,props.arg)} onMouseOver={(e)=>handleMousePosition(e)}>
+        <button ref={drop} className={"dropForm " + (isActive ? "dropOver" : "")} onClick={(e)=>props.func(e,props.arg)} onMouseOver={(e)=>handleMousePosition(e)}>
             <RootBox root={root.path.path} point={point}/>
             <p>{root.name}</p>
             <span className="dropForm__rootName">{root.path.name}</span>
-        </div>
+        </button>
     )
 }
 

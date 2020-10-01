@@ -32,10 +32,16 @@ function hostScript(obj){
     "use strinct";
     var watch = obj.watch;
     var option = obj.option;
-    if(!openDoc(watch.document.path))return false;
+    if(!openDoc(watch.document.path)){
+        alert("the document path is invalid");
+        return false;
+    }
     if(watch.export){
         var folderObj = validateExport(watch.extFolder.path);
-        if(!folderObj)return false;
+        if(!folderObj){
+            alert("the folder path is invalid");
+            return false;
+        }
         if(!getSaveMethod(watch.ext,folderObj+"/"+activeDocument.name,option.PDFver))return false;;
     }else{
         if(!getSaveMethod(watch.ext,app.activeDocument.fullName,option.PDFver))return false;;
@@ -45,7 +51,6 @@ function hostScript(obj){
     function openDoc(doc){
         try{
             var f = new File(doc);
-            $.writeln(f);
             app.open(f);
             return true;
         }catch(e){
@@ -55,9 +60,7 @@ function hostScript(obj){
     }
     function validateExport(extFolder){
         var f = new Folder(extFolder);
-        $.writeln(f);
         flag = f.exists;
-        $.writeln(f);
         return flag ? f : false;
     }
 }

@@ -16,12 +16,14 @@
 .dropForm{
     cursor: pointer;
     position: relative;
+    border: none;
     //border: 1px solid #fff;
     padding: 10px;
     width: 130px;
     margin-right: 10px;   
     background: rgb(69, 78, 97);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    color: #ffffff;
     &:hover{
         background: rgb(87, 90, 94);
     }

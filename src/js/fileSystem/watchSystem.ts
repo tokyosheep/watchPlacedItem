@@ -13,13 +13,6 @@ export interface WatchDataType {
     stopWatch:()=>void
 }
 
-const obj = {
-    number:[1,2,3,4,5],
-    person:{
-        name:"takei",
-        age:14
-    }
-}
 
 class WatchData implements WatchDataType{
     private watcher:chokidar.FSWatcher|null;
@@ -47,11 +40,13 @@ class WatchData implements WatchDataType{
             //fs.writeFileSync(`${extensionRoot}data.json`,JSON.stringify(obj));
             const flag = await this.action.callHostScript(this.watchOption);
         })
-        .on("error",err=>alertFromJSX(err))
+        .on("error",err=>alertFromJSX(err));
+        /*
         .on("unlink",path=>{
             console.log(path);
             alertFromJSX("watched file renamed or removed!");
-        })
+        });
+        */
     }
 
     async stopWatch():Promise<void>{

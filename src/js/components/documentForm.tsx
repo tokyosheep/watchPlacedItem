@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as path from "path";
 import * as fs from "fs";
-import * as url from "url";
+import * as url from "url"; 
 import {useState,useMemo,useCallback} from "react";
 import {mapStateToProps} from "../redux/actions/mapStateProps";
 import {mapDispatchProps} from "../redux/actions/mapDispatchProps";
@@ -20,6 +20,7 @@ import WatchingPlate from "./watchingCover";
 
 const DocumentForm = (props) =>{
     const [data,setData]:[Watched,(v:Watched)=>void] = useState(props.data);
+    const [disable,setDisable] = useState(false);
     console.log(data);
     useMemo(()=>setData(props.data),[props]);
     const handleCheckBox = useCallback((e,arg)=>{
@@ -33,8 +34,8 @@ const DocumentForm = (props) =>{
         obj.ext[arg.prop] = e.target.checked;
         props.set_WatchProp(obj,arg.index);
     },[data]);
-
     const setPath = useCallback((e:React.MouseEvent,arg:{index:number,prop:string,type:string})=>{
+        setDisable(true);
         const obj = {...data};
         const f = decodeURI(callPathDialog(arg.type)());
         if(f===""||f===null||f===undefined||f==="undefined")return false;

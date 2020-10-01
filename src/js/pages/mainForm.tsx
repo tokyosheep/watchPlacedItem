@@ -10,7 +10,7 @@ import {connect} from "react-redux";
 
 const MainForm = (props) =>{
     useMemo(()=>{
-        reload(); 
+        //reload();//デバッグ用イベント 
         init();
     },[]);
     const getMode = () =>{

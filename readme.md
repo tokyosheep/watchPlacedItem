@@ -4,7 +4,7 @@
 
 <img src="readmeImg/panel.png">
 
-<img src="readImg/watching.png">
+<img src="readmeImg/watching.png">
 
 <p>download</p>
 <a href="https://exchange.adobe.com/creativecloud.details.104709.watchplaceditem.html">you could get Extension from here</a>

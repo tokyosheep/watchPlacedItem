@@ -6,7 +6,8 @@
 
 <img src="readmeImg/watching.png">
 
-<p>download</p>
+<h3>download</h3>
 <a href="https://exchange.adobe.com/creativecloud.details.104709.watchplaceditem.html">you could get Extension from here</a>
 
+<h3>Japanese explanation</h3>
 <a href="https://kawano-shuji.com/justdiary/2020/09/08/extension-watch-placed-image/">Japanese explanation is here</a>

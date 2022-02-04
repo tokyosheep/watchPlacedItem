@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="9.0" ExtensionBundleId="watchPlacedItem" ExtensionBundleVersion="1.0.0"
+<ExtensionManifest Version="9.0" ExtensionBundleId="watchPlacedItem" ExtensionBundleVersion="2.0.0"
 		ExtensionBundleName="watchPlacedItem" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="watchPlacedItem" Version="1.0.0" />
+		<Extension Id="watchPlacedItem" Version="2.0.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
@@ -69,15 +69,15 @@
 					<Menu>watchPlacedItem</Menu>
 					<Geometry>
 						<Size>
-							<Height>300</Height>
-							<Width>300</Width>
+							<Height>600</Height>
+							<Width>400</Width>
 						</Size>
                     	<MinSize>
-                            <Height>250</Height>
-                            <Width>200</Width>
+                            <Height>300</Height>
+                            <Width>400</Width>
                         </MinSize>
                         <MaxSize>
-                            <Height>750</Height>
+                            <Height>800</Height>
                             <Width>400</Width>
                         </MaxSize>
                         

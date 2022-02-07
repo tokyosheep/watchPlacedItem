@@ -26,14 +26,15 @@ const loadJsx = async(jsxFolder) =>{
     jsxes.forEach(jsx =>  csInterface.evalScript(`$.evalFile("${jsxFolder}/${jsx}")`));
 }
 
-const init = async() =>{
-    csInterface.evalScript(`$.evalFile("${extensionRoot}json2.js")`);//json2読み込み
-    await loadJsx(jsxParts);
-    await loadJsx(polyFillFolder);
-}
-
 const reload = () =>{
     csInterface.addEventListener("com.adobe.csxs.events.WindowVisibilityChanged",()=>{location.reload(true)},false);
+}
+
+const init = async() =>{
+    reload();
+    csInterface.evalScript(`$.evalFile("${extensionRoot}json2.js")`);//json2読み込み
+    await loadJsx(jsxParts);
+    //await loadJsx(polyFillFolder);
 }
 
 const openFolderDialog = () =>{

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 
-type Format = 'PDF'|'AI';
+export type Format = 'PDF'|'AI';
 
 export type PlacedImage = {
     name:string,
@@ -37,11 +37,17 @@ const documentsSlice = createSlice({
     load document from Illustrator
     */
     loadDocument: (state, action:PayloadAction<Document>) => {
+      if (state.value.some(v => v.path === action.payload.path)) return;
       state.value = [...state.value, action.payload];
     },
     /* initialize all of documents */
     resetDocus: (state, action) => {
       state.value = [];
+    },
+    checkDoc: (state, action:PayloadAction<{docPath:string, checked:boolean}>) => {
+      const docIndex = getIndex(state.value, action.payload.docPath);
+      if (docIndex === undefined) return;
+      state.value[docIndex].checked = action.payload.checked;
     },
     /*
         switching check on image
@@ -50,6 +56,11 @@ const documentsSlice = createSlice({
       const docIndex = getIndex(state.value, action.payload.docPath);
       if (docIndex === undefined) return;
       state.value[docIndex].images[action.payload.ImgIndex].checked = action.payload.checked;
+    },
+    checkAllImgs: (state, action:PayloadAction<{docPath:string, checked:boolean}>) => {
+      const docIndex = getIndex(state.value, action.payload.docPath);
+      if (docIndex === undefined) return;
+      state.value[docIndex].images.forEach(i => { i.checked = action.payload.checked });
     },
     setExportPath: (state, action:PayloadAction<{docPath:string, exportPath:string}>) => {
       const docIndex = getIndex(state.value, action.payload.docPath);
@@ -69,7 +80,7 @@ const documentsSlice = createSlice({
   }
 });
 
-export const { loadDocument, resetDocus, checkImage, setExportPath, setExportOption, setFormat } = documentsSlice.actions;
+export const { checkDoc, loadDocument, resetDocus, checkImage, setExportPath, setExportOption, setFormat, checkAllImgs } = documentsSlice.actions;
 
 export const documents = (state:RootState) => state.documents;
 

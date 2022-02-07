@@ -1,4 +1,4 @@
-import {csInterface,extensionRoot} from "./init";
+import { csInterface, extensionRoot } from './init';
 
 export interface HostObj{
     jsx:string,
@@ -9,28 +9,25 @@ export interface HostObj{
 
 type Return = string|boolean;
 
-export class SendHostScript implements HostObj{
-    constructor(public jsx:string = "hostScript",public arg?:object){
+export class SendHostScript implements HostObj {
+  constructor (public jsx:string = 'hostScript', public arg?:object) {
+    this.jsx = jsx;
+    this.arg = arg;
+  }
 
-    }
+  callJsx ():Promise<string|boolean> {
+    return new Promise((resolve, reject) => {
+      csInterface.evalScript(`$.evalFile("${extensionRoot}singleProcess/${this.jsx}")`, (o:Return) => {
+        resolve(o);
+      });
+    });
+  }
 
-    callJsx():Promise<string|boolean>{
-        return new Promise((resolve,reject)=>{
-            csInterface.evalScript(`$.evalFile("${extensionRoot}${this.jsx}")`,(o:Return)=>{
-                if(!o||o==="false")reject(false);
-                resolve(o);
-            });
-        })
-    }
-
-    callHostScript(obj):Promise<string|boolean>{
-        return new Promise((resolve,reject)=>{
-            csInterface.evalScript(`${this.jsx}(${JSON.stringify(obj)})`,(o:Return)=>{
-                if(!o||o === "false"){
-                    reject(false);
-                }                
-                resolve(o);
-            });
-        });
-    }
-}   
+  callHostScript (obj):Promise<string|boolean> {
+    return new Promise((resolve, reject) => {
+      csInterface.evalScript(`${this.jsx}(${JSON.stringify(obj)})`, (o:Return) => {
+        resolve(o);
+      });
+    });
+  }
+}

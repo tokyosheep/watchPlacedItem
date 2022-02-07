@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import documentsSlice from '../features/documents/documentsSlice';
+import imagePageSlice from '../features/pages/imagePage';
 
 export const store = configureStore({
   reducer: {
-    documents: documentsSlice
+    documents: documentsSlice,
+    imagePageStatus: imagePageSlice
   }
 });
 

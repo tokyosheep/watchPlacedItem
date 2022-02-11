@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as chokidar from 'chokidar';
-import { useAppDispatch, useAppSelector } from '../../../redux/app/hooks';
+import { useAppSelector } from '../../../redux/app/hooks';
 import { Document } from '../../../redux/features/documents/documentsSlice';
 import { alertFromJSX } from '../../../fileSystem/init';
 
@@ -34,7 +34,23 @@ class WatchData {
 
 const useWatch = () => {
   const [targets, setTargets] = useState<Document[]>([]);
+  const [targetImgs, setTargetImgs] = useState<CencoredImgs[]>([]);
   const docs = useAppSelector(state => state.documents.value);
+
+  const dispatchChange = imgPath => {
+    const checkedTargets = targets.map(doc => {
+      const imgs = doc.images.map(img => {
+        const flag = img.path === imgPath ? true : img.checked;
+        return { ...img, checked: flag };
+      });
+      return { ...doc, images: imgs };
+    });
+    const finished = checkedTargets.filter(ta => ta.images.every(img => img.checked === true));
+    if (finished.length >= 1) {
+      // func something
+      
+    }
+  }
 
   const watchDocs = () => {
     const initTargets = docs.filter(doc => doc.checked === true);
@@ -43,17 +59,9 @@ const useWatch = () => {
       return;
     }
     initTargets.forEach(t => {
-      t.images = t.images.filter(img => img.checked === true).map(img => {
-        return {
-          name: img.name,
-          path: img.path,
-          checked: false,
-          setCheck: function () {
-            this.checked = true;
-          }
-        };
-      });
+      t.images = t.images.filter(img => img.checked === true).map(img => ({ path: img.path, name: img.name, checked: false }));
     });
     setTargets(initTargets);
+
   }
 }

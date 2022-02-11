@@ -2685,6 +2685,9 @@ var Footer = function Footer() {
   var theme = (0,react__WEBPACK_IMPORTED_MODULE_4__.useContext)(styled_components__WEBPACK_IMPORTED_MODULE_10__.ThemeContext);
   var btnColor = theme.gray;
   var dispatch = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_7__.useAppDispatch)();
+  var documents = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_7__.useAppSelector)(function (state) {
+    return state.documents.value;
+  });
 
   var loadDocumentFromAI = /*#__PURE__*/function () {
     var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default().mark(function _callee() {
@@ -2750,13 +2753,50 @@ var Footer = function Footer() {
     color: btnColor,
     name: "load"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_parts_buttons__WEBPACK_IMPORTED_MODULE_6__.StdButton, {
-    func: function func() {},
+    func: function func() {
+      return dispatch((0,_redux_features_documents_documentsSlice__WEBPACK_IMPORTED_MODULE_8__.deleteDocs)());
+    },
     color: btnColor,
     name: "delete"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_parts_buttons__WEBPACK_IMPORTED_MODULE_6__.StdButton, {
-    func: function func() {},
+    func: /*#__PURE__*/_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default().mark(function _callee2() {
+      var targets, connect;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              targets = documents.filter(function (doc) {
+                return doc.checked === true;
+              });
+
+              if (!(targets.length < 1)) {
+                _context2.next = 3;
+                break;
+              }
+
+              return _context2.abrupt("return");
+
+            case 3:
+              connect = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_9__.SendHostScript();
+              _context2.next = 6;
+              return connect.callHostScript({
+                documents: documents,
+                func: 'open'
+              });
+
+            case 6:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    })),
     color: btnColor,
     name: "open"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4__.createElement(_parts_buttons__WEBPACK_IMPORTED_MODULE_6__.StdButton, {
+    func: function func() {},
+    color: btnColor,
+    name: "options"
   }))));
 };
 
@@ -3344,7 +3384,9 @@ var PathBox = function PathBox(_ref) {
 var ExportFilePathBase = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(BasePathBox).withConfig({
   displayName: "pathBox__ExportFilePathBase",
   componentId: "sc-19063b7-1"
-})(["border:1px solid #000;transition:.3s linear;&:hover{background:rgba(255,255,255,0.1);}color:", ";background:", ";color:", ";cursor:pointer;"], function (props) {
+})(["border:1px solid #000;transition:.3s linear;&:hover{background:", ";}color:", ";background:", ";color:", ";cursor:pointer;"], function (props) {
+  return props.checked ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0)';
+}, function (props) {
   return props.checked ? '#fff' : '222';
 }, function (props) {
   return props.checked ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0)';
@@ -3478,6 +3520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "checkDoc": () => (/* binding */ checkDoc),
 /* harmony export */   "loadDocument": () => (/* binding */ loadDocument),
 /* harmony export */   "resetDocus": () => (/* binding */ resetDocus),
+/* harmony export */   "deleteDocs": () => (/* binding */ deleteDocs),
 /* harmony export */   "checkImage": () => (/* binding */ checkImage),
 /* harmony export */   "setExportPath": () => (/* binding */ setExportPath),
 /* harmony export */   "setExportOption": () => (/* binding */ setExportOption),
@@ -3513,6 +3556,12 @@ var documentsSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_1__.createSlic
         return v.path === action.payload.path;
       })) return;
       state.value = [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(state.value), [action.payload]);
+    },
+    deleteDocs: function deleteDocs(state, action) {
+      var deletedState = state.value.filter(function (s) {
+        return s.checked === true;
+      });
+      state.value = deletedState;
     },
 
     /* initialize all of documents */
@@ -3561,6 +3610,7 @@ var _documentsSlice$actio = documentsSlice.actions,
     checkDoc = _documentsSlice$actio.checkDoc,
     loadDocument = _documentsSlice$actio.loadDocument,
     resetDocus = _documentsSlice$actio.resetDocus,
+    deleteDocs = _documentsSlice$actio.deleteDocs,
     checkImage = _documentsSlice$actio.checkImage,
     setExportPath = _documentsSlice$actio.setExportPath,
     setExportOption = _documentsSlice$actio.setExportOption,

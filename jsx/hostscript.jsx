@@ -1,35 +1,76 @@
 /*
 #include "jsxParts/save.jsx";
-var obj = {
-    "watch": {
-        "document": {
-            "path": "/Users/kawanoshuji/Desktop/sampledata/shiftImageTest/test01/shift01.ai",
-            "name": "shift01.ai"
-        },
-        "placed": {
-            "path": "/Users/kawanoshuji/Desktop/sampledata/shiftImageTest/test01/cat.psd",
-            "name": "cat.psd"
-        },
-        "ext": {
-            "ai": false,
-            "pdf": true
-        },
-        "export": false,
-        "extFolder": {
-            "path": "/Users/kawanoshuji/Desktop/test_images/",
-            "name": "test_images"
+*/
+
+/*
+    {
+        func: string,
+        documents: {
+            name:string,
+            path:string,
+            exportPath:string,
+            checked:boolean,
+            isExport:boolean,
+            format:Format,
+            images:PlacedImage[]
+        }, 
+        options{
+            pdfver: string
+            close: boolean
         }
-    },
-    "option": {
-        "PDFver": "ACROBAT5",
-        "close": true
+    }
+*/
+
+function getSaveMethod(doc,options){
+    if(doc.format === 'PDF'){
+        saveAIdata(doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
+    }else{
+        saveAIdata(options.pdfver doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
     }
 }
-hostScript(obj);
-*/
+
+function openDoc(doc){
+    try{
+        var f = new File(doc);
+        app.open(f);
+        return true;
+    }catch(e){
+        alert(e);
+        return false;
+    }
+}
+
+function openDocs(obj){
+    var docs = obj.documents;
+    var options = obj.options;
+    for(var i=0;i<docs.length;i++){
+        if(!openDoc(docs[i].path))continue;
+        try{
+            getSaveMethod(docs[i],options);
+        }catch(e){
+            alert(e);
+            continue;
+        }
+    }
+}
+
+
 
 function hostScript(obj){
     "use strinct";
+    switch(obj.func){
+        case 'open':
+        openDocs(obj);
+        break;
+
+        case 'watch':
+        break;
+
+        default:
+        return false;
+    }
+    return true;
+    /*
     var watch = obj.watch;
     var option = obj.option;
     if(!openDoc(watch.document.path)){
@@ -48,19 +89,11 @@ function hostScript(obj){
     }
     if(option.close)activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 
-    function openDoc(doc){
-        try{
-            var f = new File(doc);
-            app.open(f);
-            return true;
-        }catch(e){
-            alert(e);
-            return false;
-        }
-    }
+    
     function validateExport(extFolder){
         var f = new Folder(extFolder);
         flag = f.exists;
         return flag ? f : false;
     }
+    */
 }

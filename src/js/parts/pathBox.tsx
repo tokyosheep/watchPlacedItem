@@ -37,7 +37,7 @@ const ExportFilePathBase = styled(BasePathBox)<{checked:boolean}>`
     border: 1px solid #000;
     transition: .3s linear;
     &:hover{
-        background: rgba(255,255,255,0.1);
+        background: ${props => props.checked ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0)'};
     }
     color: ${props => props.checked ? '#fff' : '222'};
     background: ${props => props.checked ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0)'};

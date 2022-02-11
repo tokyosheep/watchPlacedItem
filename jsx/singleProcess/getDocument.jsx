@@ -21,15 +21,20 @@
     }
     var doc = { 
         name:decodeURI(activeDoc.name),
-        path:decodeURI(activeDoc.path),
+        path:decodeURI(activeDoc.fullName),
         checked:false,
         images: [] 
     };
     for(var i=0;i<activeDoc.placedItems.length;i++){
-        doc.images[i] = {
-            name:decodeURI(activeDoc.placedItems[i].file.name.toString()),
-            path:decodeURI(activeDoc.placedItems[i].file.toString()),
-            checked:false
+        try{
+            doc.images.push({
+                name:decodeURI(activeDoc.placedItems[i].file.name.toString()),
+                path:decodeURI(activeDoc.placedItems[i].file.toString()),
+                checked:false
+            });
+        }catch(e){
+            alert(e);
+            continue;
         }
     }
     return JSON.stringify(doc);

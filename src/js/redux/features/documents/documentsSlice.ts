@@ -40,6 +40,10 @@ const documentsSlice = createSlice({
       if (state.value.some(v => v.path === action.payload.path)) return;
       state.value = [...state.value, action.payload];
     },
+    deleteDocs: (state, action:PayloadAction) => {
+      const deletedState = state.value.filter(s => s.checked === true);
+      state.value = deletedState;
+    },
     /* initialize all of documents */
     resetDocus: (state, action) => {
       state.value = [];
@@ -80,7 +84,7 @@ const documentsSlice = createSlice({
   }
 });
 
-export const { checkDoc, loadDocument, resetDocus, checkImage, setExportPath, setExportOption, setFormat, checkAllImgs } = documentsSlice.actions;
+export const { checkDoc, loadDocument, resetDocus, deleteDocs, checkImage, setExportPath, setExportOption, setFormat, checkAllImgs } = documentsSlice.actions;
 
 export const documents = (state:RootState) => state.documents;
 

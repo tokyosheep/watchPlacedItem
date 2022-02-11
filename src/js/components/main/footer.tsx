@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { MainContainer } from '../../../styles/containers';
 import { StdButton } from '../../parts/buttons';
-import { useAppDispatch } from '../../redux/app/hooks';
-import { loadDocument } from '../../redux/features/documents/documentsSlice';
+import { useAppDispatch, useAppSelector } from '../../redux/app/hooks';
+import { loadDocument, deleteDocs } from '../../redux/features/documents/documentsSlice';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
 const { FooterCompo } = MainContainer;
 
@@ -37,6 +37,7 @@ const Footer = () => {
   const theme = useContext(ThemeContext);
   const btnColor = theme.gray;
   const dispatch = useAppDispatch();
+  const documents = useAppSelector(state => state.documents.value);
   const loadDocumentFromAI = async () => {
     const connect = new SendHostScript('getDocument.jsx');
     const r = await connect.callJsx();
@@ -57,7 +58,8 @@ const Footer = () => {
         format: 'PDF'
       }));
   };
-  const watchLaunch = () => {};
+  const watchLaunch = () => {
+  };
   return (
       <FooterCompo>
           <ButtonWrapper>
@@ -68,10 +70,21 @@ const Footer = () => {
               <StdButton func={loadDocumentFromAI} color={btnColor} name='load' />
             </li>
             <li>
-              <StdButton func={() => {}} color={btnColor} name='delete' />
+              <StdButton func={() => dispatch(deleteDocs())} color={btnColor} name='delete' />
             </li>
             <li>
-              <StdButton func={() => {}} color={btnColor} name='open' />
+              <StdButton func={async () => {
+                const targets = documents.filter(doc => doc.checked === true);
+                if (targets.length < 1) return;
+                const connect = new SendHostScript();
+                await connect.callHostScript({
+                  documents,
+                  func: 'open'
+                });
+              }} color={btnColor} name='open' />
+            </li>
+            <li>
+              <StdButton func={() => {}} color={btnColor} name='options' />
             </li>
           </ButtonWrapper>
       </FooterCompo>

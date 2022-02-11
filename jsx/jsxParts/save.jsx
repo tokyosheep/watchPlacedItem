@@ -1,9 +1,21 @@
-
-function getSaveMethod(ext,path,ver){
-    if(ext.ai)return saveAIdata(path);
-    if(ext.pdf)return savePDF(ver,path);
-    return false;
-}
+/*
+    {
+        func: string,
+        documents: {
+            name:string,
+            path:string,
+            exportPath:string,
+            checked:boolean,
+            isExport:boolean,
+            format:Format,
+            images:PlacedImage[]
+        }, 
+        options{
+            pdfver: string
+            close: boolean
+        }
+    }
+*/
 function saveAIdata(path){
     try{
         path = path || app.activeDocument.fullName;

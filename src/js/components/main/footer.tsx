@@ -6,6 +6,7 @@ import { showWindow } from '../../redux/features/windowMode/windowSlice';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hooks';
 import { loadDocument, deleteDocs } from '../../redux/features/documents/documentsSlice';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
+import useWatch from './watchHooks/useWatch';
 const { FooterCompo } = MainContainer;
 
 const ButtonWrapper = styled.ul`
@@ -35,6 +36,7 @@ type InitDoc = {
 }
 
 const Footer = () => {
+  const { launchWatch } = useWatch();
   const theme = useContext(ThemeContext);
   const btnColor = theme.gray;
   const dispatch = useAppDispatch();
@@ -59,13 +61,11 @@ const Footer = () => {
         format: 'PDF'
       }));
   };
-  const watchLaunch = () => {
-  };
   return (
       <FooterCompo>
           <ButtonWrapper>
             <li>
-              <StdButton func={watchLaunch} color={theme.green} name='watch' />
+              <StdButton func={() => launchWatch(documents)} color={theme.green} name='watch' />
             </li>
             <li>
               <StdButton func={loadDocumentFromAI} color={btnColor} name='load' />

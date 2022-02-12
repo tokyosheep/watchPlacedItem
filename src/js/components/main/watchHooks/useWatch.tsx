@@ -4,64 +4,80 @@ import { useAppSelector } from '../../../redux/app/hooks';
 import { Document } from '../../../redux/features/documents/documentsSlice';
 import { alertFromJSX } from '../../../fileSystem/init';
 
-type CencoredImgs = {
-    path:string,
-    checked:boolean,
-    ownersIndex:number[]
-}
-
 class WatchData {
     private watcher:chokidar.FSWatcher|null;
     constructor () {
       this.watcher = null;
     }
 
-    launchtoWatch (options, imgPath) {
-      this.watcher = chokidar.watch(imgPath, {
+    watchBegin (filePath) {
+      this.watcher = chokidar.watch(filePath, {
         persistent: true,
         ignoreInitial: true,
         depth: 0
       });
 
-      this.watcher.on('ready', () => console.log('ready'))
-        .on('change', (filePath, stats) => {
+      this.watcher
+        .on('ready', () => console.log('ready'))
+        .on('change', async (watchedPath, stats) => {
+          console.log(watchedPath);
           console.log(stats);
-          console.log(filePath);
+          await this.stopWatch();
         })
         .on('error', err => alertFromJSX(err));
     }
+
+    async stopWatch():Promise<void> {
+      await this.watcher.close();
+      console.log('stop');
+    }
+}
+
+type TargetDoc = Omit<Document, 'images'>& {imageCount:number};
+
+type TargetImg = {
+    path:string,
+    parentPaths:string[]
 }
 
 const useWatch = () => {
-  const [targets, setTargets] = useState<Document[]>([]);
-  const [targetImgs, setTargetImgs] = useState<CencoredImgs[]>([]);
-  const docs = useAppSelector(state => state.documents.value);
+  const [targetDocs, setTargetDocs] = useState<TargetDoc[]>([]);
+  const [targetImgs, setTargetImgs] = useState<TargetImg[]>([]);
+  // const docs = useAppSelector(state => state.documents.value);
+  const launchWatch:(docs:Document[])=>void = docs => {
+    const checkedDocs = docs.filter(doc => doc.checked === true);
+    /* filtered checked documents */
+    if (checkedDocs.length < 1) return;
+    /**
+     * turned
+     * @type {Document} into ->
+     * @type {TargetDoc}
+     * added imageount
+     */
+    const targets = checkedDocs.map((doc, i) => {
+      const { images, ...data } = doc;
+      return { ...data, imageCount: images.length };
+    });
+    console.log(targets);
+    setTargetDocs(targets);
 
-  const dispatchChange = imgPath => {
-    const checkedTargets = targets.map(doc => {
-      const imgs = doc.images.map(img => {
-        const flag = img.path === imgPath ? true : img.checked;
-        return { ...img, checked: flag };
+    /**
+     * @type {PlacedImage} ->
+     * @type {TargetImg}
+     */
+    const images:TargetImg[] = checkedDocs.reduce((acc, current) => {
+      const imgs = current.images.filter(img => img.checked === true).filter(img => {
+        const index = acc.findIndex(a => a.path === img.path);
+        if (index === -1) return true;
+        acc[index].parentPaths.push(img.path);
+        return false;
       });
-      return { ...doc, images: imgs };
-    });
-    const finished = checkedTargets.filter(ta => ta.images.every(img => img.checked === true));
-    if (finished.length >= 1) {
-      // func something
-      
-    }
+      return [...acc, ...imgs.map(img => ({ path: img.path, parentPath: current.path }))];
+    }, []);
+    console.log(images);
+    setTargetImgs(images);
   }
-
-  const watchDocs = () => {
-    const initTargets = docs.filter(doc => doc.checked === true);
-    if (initTargets.length < 1) {
-      alert("there's no checked document");
-      return;
-    }
-    initTargets.forEach(t => {
-      t.images = t.images.filter(img => img.checked === true).map(img => ({ path: img.path, name: img.name, checked: false }));
-    });
-    setTargets(initTargets);
-
-  }
+  return { launchWatch };
 }
+
+export default useWatch;

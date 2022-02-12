@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 
+import OptionsPage from './options';
 import MainPage from './mainPage';
 import ImagePage from './image';
 
@@ -11,6 +12,7 @@ const Layout = () => {
   }, []);
   return (
       <>
+        <OptionsPage />
         <ImagePage />
         <MainPage />
       </>

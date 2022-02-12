@@ -1,21 +1,25 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 
-type PDFValues = 'ACROBAT4'|'ACROBAT5'|'ACROBAT6'|'ACROBAT7'|'ACROBAT8';
+export type PDFValues = 'ACROBAT4'|'ACROBAT5'|'ACROBAT6'|'ACROBAT7'|'ACROBAT8';
 
 type OptionsType = {
     pdfver: PDFValues,
-    isClose: boolean
+    isClose: boolean,
+    timeStamp: boolean
 }
 
 interface OptionState {
     value: OptionsType
 }
+const emps = new Array(5).fill('');
+export const PDFvers = emps.map((emp, i) => 'ACROBAT' + (i + 4));
 
 const initialState:OptionState = {
   value: {
     pdfver: 'ACROBAT7',
-    isClose: true
+    isClose: true,
+    timeStamp: false
   }
 };
 

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import { MainContainer } from '../../../styles/containers';
 import { StdButton } from '../../parts/buttons';
+import { showWindow } from '../../redux/features/windowMode/windowSlice';
 import { useAppDispatch, useAppSelector } from '../../redux/app/hooks';
 import { loadDocument, deleteDocs } from '../../redux/features/documents/documentsSlice';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
@@ -84,7 +85,7 @@ const Footer = () => {
               }} color={btnColor} name='open' />
             </li>
             <li>
-              <StdButton func={() => {}} color={btnColor} name='options' />
+              <StdButton func={() => dispatch(showWindow('options'))} color={btnColor} name='options' />
             </li>
           </ButtonWrapper>
       </FooterCompo>

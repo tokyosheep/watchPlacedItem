@@ -63,3 +63,31 @@ export const ImageContainer = {
     background: ${CoverColor};
   `
 };
+
+export const OptionsContainer = {
+  CoverLayer: styled.div<{checked:boolean}>`
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: .3s linear;
+    opacity: ${props => props.checked ? 1 : 0};
+    pointer-events: ${props => props.checked ? 'auto' : 'none'};
+  `,
+  Container: styled.div`
+    width: 325px;
+    height: 220px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 15;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #555;
+    padding: 10px;
+    box-sizing: border-box;
+  `
+}

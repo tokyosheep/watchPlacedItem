@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useAppDispatch } from '../../redux/app/hooks';
-import { turnOffPage } from '../../redux/features/pages/imagePage'
+import { turnOffPage } from '../../redux/features/pages/imagePage';
 import { ImageContainer } from '../../../styles/containers';
 import { SwitchButton } from '../../parts/buttons';
 const { HeaderCompo } = ImageContainer;

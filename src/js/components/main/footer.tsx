@@ -7,6 +7,8 @@ import { useAppDispatch, useAppSelector } from '../../redux/app/hooks';
 import { loadDocument, deleteDocs } from '../../redux/features/documents/documentsSlice';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
 import useWatch from './watchHooks/useWatch';
+import { writeDebugData } from '../../fileSystem/init';
+
 const { FooterCompo } = MainContainer;
 
 const ButtonWrapper = styled.ul`
@@ -41,6 +43,7 @@ const Footer = () => {
   const btnColor = theme.gray;
   const dispatch = useAppDispatch();
   const documents = useAppSelector(state => state.documents.value);
+  const options = useAppSelector(state => state.options.value);
   const loadDocumentFromAI = async () => {
     const connect = new SendHostScript('getDocument.jsx');
     const r = await connect.callJsx();
@@ -78,10 +81,17 @@ const Footer = () => {
                 const targets = documents.filter(doc => doc.checked === true);
                 if (targets.length < 1) return;
                 const connect = new SendHostScript();
-                await connect.callHostScript({
+                await writeDebugData({
                   documents,
-                  func: 'open'
+                  func: 'open',
+                  options
                 });
+                const r = await connect.callHostScript({
+                  documents,
+                  func: 'open',
+                  options
+                });
+                console.log(r);
               }} color={btnColor} name='open' />
             </li>
             <li>

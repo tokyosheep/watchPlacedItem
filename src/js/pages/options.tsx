@@ -17,6 +17,6 @@ const OptionsPage = () => {
           </Container>
       </CoverLayer>
   );
-}
+};
 
 export default OptionsPage;

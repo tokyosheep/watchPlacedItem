@@ -66,14 +66,14 @@ const DocumentBox:FC<DocumentBoxProps> = (doc) => {
     const index = docs.findIndex(d => d.path === doc.path);
     if (index === undefined) return;
     dispatch(turnOnPage(index));
-  }
+  };
 
   const getExportPathFromJSX = async () => {
     const connect = new SendHostScript('getFolderPath.jsx');
     const filePath = await connect.callJsx();
     if (typeof filePath === 'boolean' || filePath === 'false') return;
     dispatch(setExportPath({ docPath: doc.path, exportPath: filePath }));
-  }
+  };
   return (
       <DocumentBoxBase color={theme.gray}>
           <TitleWrapper>

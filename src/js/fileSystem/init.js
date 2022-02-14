@@ -11,6 +11,13 @@ const dir_desktop = path.join(dir_home, `Desktop`);//デスクトップパス
 const jsxParts = `${extensionRoot}/jsxParts`;
 const polyFillFolder = `${extensionRoot}/polyFill`;
 
+const debug = true;
+
+export const writeDebugData = obj =>{
+    if(!debug)return;
+    fs.writeFileSync(`${extensionRoot}/data.json`,JSON.stringify(obj));
+}
+
 const readDirFiles = (path) =>{
     return new Promise((resolve,reject)=>{
         fs.readdir(path,(err,files)=>{
@@ -39,11 +46,6 @@ const init = async() =>{
 
 const openFolderDialog = () =>{
     const f = cep.fs.showOpenDialog(false,true,"open",dir_desktop);
-    return f.data[0];
-}
-
-const openImageDialog = () =>{
-    const f = cep.fs.showOpenDialog(false,false,"open",dir_desktop);
     return f.data[0];
 }
 

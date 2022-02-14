@@ -10,7 +10,7 @@ export const MainContainer = {
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 40px minmax(300px,1fr) 50px;
+    grid-template-rows: 40px minmax(300px,500px) 50px;
     grid-template-areas:
     "header"
     "main"
@@ -90,4 +90,4 @@ export const OptionsContainer = {
     padding: 10px;
     box-sizing: border-box;
   `
-}
+};

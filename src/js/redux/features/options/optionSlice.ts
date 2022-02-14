@@ -3,7 +3,7 @@ import { RootState } from '../../app/store';
 
 export type PDFValues = 'ACROBAT4'|'ACROBAT5'|'ACROBAT6'|'ACROBAT7'|'ACROBAT8';
 
-type OptionsType = {
+export type OptionsType = {
     pdfver: PDFValues,
     isClose: boolean,
     timeStamp: boolean

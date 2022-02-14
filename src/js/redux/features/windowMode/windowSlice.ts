@@ -17,7 +17,7 @@ const initialState:WindowState = {
     options: false,
     loading: false
   }
-}
+};
 
 const windowSlice = createSlice({
   name: 'window',

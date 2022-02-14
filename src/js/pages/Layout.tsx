@@ -3,6 +3,7 @@ import React, { useMemo } from 'react';
 import OptionsPage from './options';
 import MainPage from './mainPage';
 import ImagePage from './image';
+import LoadingLayer from '../components/loading/loading';
 
 import { init } from '../fileSystem/init';
 
@@ -12,6 +13,7 @@ const Layout = () => {
   }, []);
   return (
       <>
+        <LoadingLayer />
         <OptionsPage />
         <ImagePage />
         <MainPage />

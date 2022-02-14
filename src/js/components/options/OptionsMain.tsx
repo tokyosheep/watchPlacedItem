@@ -41,7 +41,7 @@ const OptionsMain = () => {
     const connect = new SendHostScript('timeStamp.jsx');
     const r = await connect.callJsx();
     console.log(r);
-  }
+  };
   return (
       <MainWrapper>
           <StdButton width={120} color={theme.darkGray} name='add time' func={addTimeStampe} />
@@ -59,7 +59,7 @@ const OptionsMain = () => {
         }} />
         <SwitchButton name='back' func={() => dispatch(closeWindow('options'))} />
       </MainWrapper>
-  )
+  );
 };
 
 export default OptionsMain;

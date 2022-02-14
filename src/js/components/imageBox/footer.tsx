@@ -24,7 +24,7 @@ const ImageBox:FC<{docPath:string|null}> = ({ docPath }) => {
   const allSwitching:(v:boolean)=>void = flag => {
     if (docPath === null) return;
     dispatch(checkAllImgs({ docPath, checked: flag }));
-  }
+  };
   return (
       <FooterCompo>
           <ButtonWrapper>

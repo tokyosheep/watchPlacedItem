@@ -1,5 +1,7 @@
+
 /*
-#include "jsxParts/save.jsx";
+ #include "./jsxParts/save.jsx";
+ #include "./jsxParts/updateTimeStamp.jsx";
 */
 
 /*
@@ -20,13 +22,60 @@
         }
     }
 */
+/*
+var obj = {
+    "documents": [
+        {
+            "name": "Cat02.ai",
+            "path": "~/Desktop/テスト/Cat02.ai",
+            "checked": true,
+            "images": [
+                {
+                    "name": "cat_patternA.psd",
+                    "path": "~/Desktop/テスト/image02/cat_patternA.psd",
+                    "checked": false
+                }
+            ],
+            "exportPath": "",
+            "isExport": false,
+            "format": "PDF"
+        }
+    ],
+    "func": "open",
+    "options": {
+        "pdfver": "ACROBAT7",
+        "isClose": true,
+        "timeStamp": false
+    }
+}
+
+hostScript(obj);
+*/
+function hostScript(obj){
+    "use strict";
+    switch(obj.func){
+        case 'open':
+        openDocs(obj);
+        break;
+
+        case 'watch':
+        detected(obj);
+        break;
+
+        default:
+        return false;
+    }
+    return true;
+}
 
 function getSaveMethod(doc,options){
-    if(doc.format === 'PDF'){
+    if(doc.format !== 'PDF'){
         saveAIdata(doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
     }else{
-        saveAIdata(options.pdfver doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
+        savePDF(options.pdfver, doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
     }
+    if(options.timeStamp)updataTimeStamp();
+    if(options.isClose)activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 }
 
 function openDoc(doc){
@@ -54,46 +103,21 @@ function openDocs(obj){
     }
 }
 
-
-
-function hostScript(obj){
-    "use strinct";
-    switch(obj.func){
-        case 'open':
-        openDocs(obj);
-        break;
-
-        case 'watch':
-        break;
-
-        default:
-        return false;
+/*
+    type Document = {
+        name: string;
+        path: string;
+        exportPath: string;
+        checked: boolean;
+        isExport: boolean;
+        format: Format;
+        images: PlacedImage[];
     }
-    return true;
-    /*
-    var watch = obj.watch;
-    var option = obj.option;
-    if(!openDoc(watch.document.path)){
-        alert("the document path is invalid");
-        return false;
-    }
-    if(watch.export){
-        var folderObj = validateExport(watch.extFolder.path);
-        if(!folderObj){
-            alert("the folder path is invalid");
-            return false;
-        }
-        if(!getSaveMethod(watch.ext,folderObj+"/"+activeDocument.name,option.PDFver))return false;;
-    }else{
-        if(!getSaveMethod(watch.ext,app.activeDocument.fullName,option.PDFver))return false;;
-    }
-    if(option.close)activeDocument.close(SaveOptions.DONOTSAVECHANGES);
+*/
 
-    
-    function validateExport(extFolder){
-        var f = new Folder(extFolder);
-        flag = f.exists;
-        return flag ? f : false;
-    }
-    */
+function detected(obj){
+    var doc = obj.doc;
+    var options = obj.options;
+    if(!openDoc(doc.path))return;
+    getSaveMethod(doc,options);
 }

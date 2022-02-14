@@ -41,7 +41,7 @@ const ImageBox:FC<PlacedImage&{index:number, docPath:string}> = (img) => {
   const dispatch = useAppDispatch();
   const handleCheckbox = useCallback((e) => {
     dispatch(checkImage({ docPath: img.docPath, ImgIndex: img.index, checked: e.target.checked }));
-  }, [img.checked]);
+  }, [img]);
   return (
       <ImageBoxBase color={theme.gray} >
           <TitleWrapper>

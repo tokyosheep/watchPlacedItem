@@ -18,7 +18,7 @@ const Header = () => {
       <HeaderWrapper>
           <Title>Options</Title>
       </HeaderWrapper>
-  )
-}
+  );
+};
 
 export default Header;

@@ -38,5 +38,5 @@ export const PDFSelector:FC<SelectorType<string>> = ({ options, value, func }) =
       <ListBox value={value} onChange={(e) => func(e)}>
           {optionList}
       </ListBox>
-  )
+  );
 };

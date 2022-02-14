@@ -70,5 +70,5 @@ export const SimpleCheckBox:FC<StdCheckProps> = ({ checked, func }) => {
           <input type='checkbox' checked={checked} onChange={(e) => func(e)} />
           <SimpleTitle>export</SimpleTitle>
       </SimpleCheckBoxBase>
-  )
+  );
 };

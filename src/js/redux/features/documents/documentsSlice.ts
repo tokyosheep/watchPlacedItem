@@ -41,7 +41,7 @@ const documentsSlice = createSlice({
       state.value = [...state.value, action.payload];
     },
     deleteDocs: (state, action:PayloadAction) => {
-      const deletedState = state.value.filter(s => s.checked === true);
+      const deletedState = state.value.filter(s => s.checked === false);
       state.value = deletedState;
     },
     /* initialize all of documents */
@@ -64,7 +64,7 @@ const documentsSlice = createSlice({
     checkAllImgs: (state, action:PayloadAction<{docPath:string, checked:boolean}>) => {
       const docIndex = getIndex(state.value, action.payload.docPath);
       if (docIndex === undefined) return;
-      state.value[docIndex].images.forEach(i => { i.checked = action.payload.checked });
+      state.value[docIndex].images.forEach(i => { i.checked = action.payload.checked; });
     },
     setExportPath: (state, action:PayloadAction<{docPath:string, exportPath:string}>) => {
       const docIndex = getIndex(state.value, action.payload.docPath);

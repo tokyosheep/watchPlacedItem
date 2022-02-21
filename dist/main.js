@@ -3264,11 +3264,11 @@ __webpack_require__.r(__webpack_exports__);
 var TitleWrapper = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "main_docBox__TitleWrapper",
   componentId: "sc-1kpc43t-0"
-})(["display:flex;margin:5px;justify-content:flex-start;"]);
+})(["display:flex;margin:5px;justify-content:flex-start;align-items:center;"]);
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].h4.withConfig({
   displayName: "main_docBox__Title",
   componentId: "sc-1kpc43t-1"
-})(["color:#fff;font-weight:300;font-size:15px;padding:0;margin:0;margin-left:10px;"]);
+})(["color:#fff;font-weight:300;font-size:15px;padding:0;margin:0;margin-left:10px;width:80%;overflow:hidden;white-space:nowrap;"]);
 var DocumentBoxBase = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].div.withConfig({
   displayName: "main_docBox__DocumentBoxBase",
   componentId: "sc-1kpc43t-2"
@@ -51615,7 +51615,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_5__.createGlobalStyle)(["body{margin:0;font-family:\"Helvetica Neue\",Helvetica,Arial,Verdana,Roboto,\"\u6E38\u30B4\u30B7\u30C3\u30AF\",\"Yu Gothic\",\"\u6E38\u30B4\u30B7\u30C3\u30AF\u4F53\",\"YuGothic\",\"\u30D2\u30E9\u30AE\u30CE\u89D2\u30B4 Pro W3\",\"Hiragino Kaku Gothic Pro\",\"Meiryo UI\",\"\u30E1\u30A4\u30EA\u30AA\",Meiryo,\"\uFF2D\uFF33 \uFF30\u30B4\u30B7\u30C3\u30AF\",\"MS PGothic\",sans-serif;background:", ";}"], function (props) {
+var GlobalStyle = (0,styled_components__WEBPACK_IMPORTED_MODULE_5__.createGlobalStyle)(["body{margin:0;font-family:\"Helvetica Neue\",Helvetica,Arial,Verdana,Roboto,\"\u6E38\u30B4\u30B7\u30C3\u30AF\",\"Yu Gothic\",\"\u6E38\u30B4\u30B7\u30C3\u30AF\u4F53\",\"YuGothic\",\"\u30D2\u30E9\u30AE\u30CE\u89D2\u30B4 Pro W3\",\"Hiragino Kaku Gothic Pro\",\"Meiryo UI\",\"\u30E1\u30A4\u30EA\u30AA\",Meiryo,\"\uFF2D\uFF33 \uFF30\u30B4\u30B7\u30C3\u30AF\",\"MS PGothic\",sans-serif;background:", ";overflow:hidden;}"], function (props) {
   return props.bg;
 });
 var ColorTheme = {

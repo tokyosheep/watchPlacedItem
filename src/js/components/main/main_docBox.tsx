@@ -14,6 +14,7 @@ const TitleWrapper = styled.div`
     display: flex;
     margin: 5px;
     justify-content: flex-start;
+    align-items:center;
 `;
 
 const Title = styled.h4`
@@ -23,6 +24,9 @@ const Title = styled.h4`
     padding: 0;
     margin: 0;
     margin-left: 10px;
+    width: 80%;
+    overflow:hidden;
+    white-space: nowrap;
 `;
 
 const DocumentBoxBase = styled.div<{color:string}>`

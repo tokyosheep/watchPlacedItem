@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { scrollStyle } from './mixin';
 
 const CoverColor = '#272727';
 
@@ -23,6 +24,7 @@ export const MainContainer = {
   MainCompo: styled.main`
     grid-area: main;
     overflow: scroll;
+    ${scrollStyle};
   `,
   FooterCompo: styled.footer`
     grid-area: footer;

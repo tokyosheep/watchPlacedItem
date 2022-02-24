@@ -69,12 +69,12 @@ function hostScript(obj){
 }
 
 function getSaveMethod(doc,options){
+    if(options.timeStamp)updataTimeStamp();
     if(doc.format !== 'PDF'){
         saveAIdata(doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
     }else{
         savePDF(options.pdfver, doc.isExport ? doc.exportPath + '/' + app.activeDocument.name : null);
     }
-    if(options.timeStamp)updataTimeStamp();
     if(options.isClose)activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 }
 

@@ -34,13 +34,12 @@ class WatchData {
 
       this.watcher
         .on('ready', () => console.log('ready'))
-        .on('change', async (watchedPath, stats) => {
-          console.log(watchedPath);
-          console.log(stats);
+        .on('change', async (watchedPath) => {
           await this.stopWatch();
           await func(watchedPath, itSelf);
         })
         .on('error', err => alertFromJSX(err).then());
+      console.log(this.watcher);
     }
 
     async stopWatch ():Promise<void> {
@@ -54,8 +53,14 @@ class WatchContainer {
     private watchObjects:WatchData[];
     private toJsx:SendHostScript;
     private options:OptionsType;
+    public originalTargetImgs:TargetImg[];
     constructor (public targetDocs:TargetDoc[], public targetImgs:TargetImg[], options:OptionsType) {
       this.targetDocs = targetDocs;
+      /**
+       * original targetImgs @type {TargetDoc[]}
+       * after updated all of targetimgs, it restores targetimgs array to targetimgs
+       */
+      this.originalTargetImgs = targetImgs;
       this.targetImgs = targetImgs;
       this.toJsx = new SendHostScript();
       this.options = options;
@@ -68,9 +73,7 @@ class WatchContainer {
      * if updated , it'll update pdf or ai file
      */
     async isAllChecked (doc:TargetDoc) {
-      console.log('open and save');
-      console.log(this);
-      if (doc.targetImages.length < 1) {
+      if (this.targetImgs.length < 1) {
         // open and save
         const r = await this.toJsx.callHostScript({
           func: 'watch',
@@ -78,26 +81,29 @@ class WatchContainer {
           options: this.options
         });
         console.log(r);
-        doc.targetImages = [...doc.originalImages];
-        doc.targetImages.forEach(img => {
-          const watch = new WatchData(img);
+        /**
+         * restore target images
+         */
+        this.targetImgs = [...this.originalTargetImgs];
+        this.targetImgs.forEach(img => {
+          const watch = new WatchData(img.path);
           watch.watchBegin(this.checkedImg, this);
           this.watchObjects.push(watch);
         });
       }
-      console.log(doc);
     }
 
     async checkedImg (imgPath, mySelf:WatchContainer) {
       console.log('checked');
-      console.log(mySelf);
+      console.log(mySelf === this);
       Promise.allSettled(mySelf.targetImgs.map(async (img) => {
         if (img.path === imgPath) {
           for (let i = 0; i < mySelf.targetDocs.length; i++) {
             const doc = mySelf.targetDocs[i];
             console.log(img.parentPaths);
             if (img.parentPaths.some(parent => parent === doc.path)) {
-              doc.targetImages = doc.targetImages.filter(targetImg => targetImg !== imgPath);
+              mySelf.targetImgs = mySelf.targetImgs.filter(targetImg => targetImg.path !== imgPath);
+              console.log(mySelf.targetImgs);
               await mySelf.isAllChecked(doc);
             }
           }
@@ -107,7 +113,13 @@ class WatchContainer {
     }
 
     watchAllImages () {
+      /**
+       * create @type {WatchContainer} instances
+       */
       this.watchObjects = this.targetImgs.map(img => new WatchData(img.path));
+      /**
+       * dispatch watchBegin mathod
+       */
       this.watchObjects.forEach(obj => obj.watchBegin(this.checkedImg, this));
     }
 
@@ -117,6 +129,8 @@ class WatchContainer {
       }));
     }
 }
+
+/* hooks */
 
 const useWatch = () => {
   const dispatch = useAppDispatch();
@@ -144,9 +158,13 @@ const useWatch = () => {
      * @type {TargetImg}
      */
     const images:TargetImg[] = checkedDocs.reduce((acc, current) => {
-      const imgs = current.images.filter(img => img.checked === true).filter(img => {
+      const r = current.images.filter(img => img.checked === true);
+      const imgs = r.filter(img => {
         const index = acc.findIndex(a => a.path === img.path);
         if (index === -1) return true;
+        /**
+         * if array has already same image, push to parent path to parent property
+         */
         acc[index].parentPaths.push(img.path);
         return false;
       });

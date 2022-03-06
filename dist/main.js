@@ -3855,21 +3855,19 @@ var WatchData = /*#__PURE__*/function () {
       this.watcher.on('ready', function () {
         return console.log('ready');
       }).on('change', /*#__PURE__*/function () {
-        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee(watchedPath, stats) {
+        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee(watchedPath) {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
-                  console.log(watchedPath);
-                  console.log(stats);
-                  _context.next = 4;
+                  _context.next = 2;
                   return _this.stopWatch();
 
-                case 4:
-                  _context.next = 6;
+                case 2:
+                  _context.next = 4;
                   return func(watchedPath, itSelf);
 
-                case 6:
+                case 4:
                 case "end":
                   return _context.stop();
               }
@@ -3877,12 +3875,13 @@ var WatchData = /*#__PURE__*/function () {
           }, _callee);
         }));
 
-        return function (_x, _x2) {
+        return function (_x) {
           return _ref.apply(this, arguments);
         };
       }()).on('error', function (err) {
         return (0,_fileSystem_init__WEBPACK_IMPORTED_MODULE_10__.alertFromJSX)(err).then();
       });
+      console.log(this.watcher);
     }
   }, {
     key: "stopWatch",
@@ -3938,7 +3937,15 @@ var WatchContainer = /*#__PURE__*/function () {
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "options", void 0);
 
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "originalTargetImgs", void 0);
+
     this.targetDocs = targetDocs;
+    /**
+     * original targetImgs @type {TargetDoc[]}
+     * after updated all of targetimgs, it restores targetimgs array to targetimgs
+     */
+
+    this.originalTargetImgs = targetImgs;
     this.targetImgs = targetImgs;
     this.toJsx = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_14__.SendHostScript();
     this.options = options;
@@ -3962,36 +3969,34 @@ var WatchContainer = /*#__PURE__*/function () {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                console.log('open and save');
-                console.log(this);
-
-                if (!(doc.targetImages.length < 1)) {
-                  _context3.next = 9;
+                if (!(this.targetImgs.length < 1)) {
+                  _context3.next = 7;
                   break;
                 }
 
-                _context3.next = 5;
+                _context3.next = 3;
                 return this.toJsx.callHostScript({
                   func: 'watch',
                   doc: doc,
                   options: this.options
                 });
 
-              case 5:
+              case 3:
                 r = _context3.sent;
                 console.log(r);
-                doc.targetImages = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(doc.originalImages);
-                doc.targetImages.forEach(function (img) {
-                  var watch = new WatchData(img);
+                /**
+                 * restore target images
+                 */
+
+                this.targetImgs = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(this.originalTargetImgs);
+                this.targetImgs.forEach(function (img) {
+                  var watch = new WatchData(img.path);
                   watch.watchBegin(_this2.checkedImg, _this2);
 
                   _this2.watchObjects.push(watch);
                 });
 
-              case 9:
-                console.log(doc);
-
-              case 10:
+              case 7:
               case "end":
                 return _context3.stop();
             }
@@ -3999,7 +4004,7 @@ var WatchContainer = /*#__PURE__*/function () {
         }, _callee3, this);
       }));
 
-      function isAllChecked(_x3) {
+      function isAllChecked(_x2) {
         return _isAllChecked.apply(this, arguments);
       }
 
@@ -4014,7 +4019,7 @@ var WatchContainer = /*#__PURE__*/function () {
             switch (_context6.prev = _context6.next) {
               case 0:
                 console.log('checked');
-                console.log(mySelf);
+                console.log(mySelf === this);
                 Promise.allSettled(mySelf.targetImgs.map( /*#__PURE__*/function () {
                   var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee4(img) {
                     var _loop, i;
@@ -4040,17 +4045,18 @@ var WatchContainer = /*#__PURE__*/function () {
                                       if (!img.parentPaths.some(function (parent) {
                                         return parent === doc.path;
                                       })) {
-                                        _context4.next = 6;
+                                        _context4.next = 7;
                                         break;
                                       }
 
-                                      doc.targetImages = doc.targetImages.filter(function (targetImg) {
-                                        return targetImg !== imgPath;
+                                      mySelf.targetImgs = mySelf.targetImgs.filter(function (targetImg) {
+                                        return targetImg.path !== imgPath;
                                       });
-                                      _context4.next = 6;
+                                      console.log(mySelf.targetImgs);
+                                      _context4.next = 7;
                                       return mySelf.isAllChecked(doc);
 
-                                    case 6:
+                                    case 7:
                                     case "end":
                                       return _context4.stop();
                                   }
@@ -4080,7 +4086,7 @@ var WatchContainer = /*#__PURE__*/function () {
                     }, _callee4);
                   }));
 
-                  return function (_x6) {
+                  return function (_x5) {
                     return _ref2.apply(this, arguments);
                   };
                 }()));
@@ -4091,10 +4097,10 @@ var WatchContainer = /*#__PURE__*/function () {
                 return _context6.stop();
             }
           }
-        }, _callee5);
+        }, _callee5, this);
       }));
 
-      function checkedImg(_x4, _x5) {
+      function checkedImg(_x3, _x4) {
         return _checkedImg.apply(this, arguments);
       }
 
@@ -4105,9 +4111,16 @@ var WatchContainer = /*#__PURE__*/function () {
     value: function watchAllImages() {
       var _this3 = this;
 
+      /**
+       * create @type {WatchContainer} instances
+       */
       this.watchObjects = this.targetImgs.map(function (img) {
         return new WatchData(img.path);
       });
+      /**
+       * dispatch watchBegin mathod
+       */
+
       this.watchObjects.forEach(function (obj) {
         return obj.watchBegin(_this3.checkedImg, _this3);
       });
@@ -4138,7 +4151,7 @@ var WatchContainer = /*#__PURE__*/function () {
                     }, _callee6);
                   }));
 
-                  return function (_x7) {
+                  return function (_x6) {
                     return _ref3.apply(this, arguments);
                   };
                 }()));
@@ -4161,6 +4174,8 @@ var WatchContainer = /*#__PURE__*/function () {
 
   return WatchContainer;
 }();
+/* hooks */
+
 
 var useWatch = function useWatch() {
   var dispatch = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_13__.useAppDispatch)();
@@ -4209,13 +4224,18 @@ var useWatch = function useWatch() {
      */
 
     var images = checkedDocs.reduce(function (acc, current) {
-      var imgs = current.images.filter(function (img) {
+      var r = current.images.filter(function (img) {
         return img.checked === true;
-      }).filter(function (img) {
+      });
+      var imgs = r.filter(function (img) {
         var index = acc.findIndex(function (a) {
           return a.path === img.path;
         });
         if (index === -1) return true;
+        /**
+         * if array has already same image, push to parent path to parent property
+         */
+
         acc[index].parentPaths.push(img.path);
         return false;
       });
@@ -53005,7 +53025,13 @@ const callPathDialog = callType =>{/*callType folder or image */
     return callType === "folder" ? openFolderDialog : openImageDialog;
 }
 
-const alertFromJSX = msg => csInterface.evalScript(`$.evalFile(alert("${msg}"))`);
+const alertFromJSX = msg => {
+    return new Promise(resolve => {
+        csInterface.evalScript(`$.evalFile(alert("${msg}"))`,() => {
+            resolve();
+        })
+    })
+};
 
 
 

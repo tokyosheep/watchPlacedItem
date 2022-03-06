@@ -3,6 +3,7 @@ import styled, { ThemeContext } from 'styled-components';
 import { StdCheckBox } from '../../parts/checkBoxes';
 import { PlacedImage, checkImage } from '../../redux/features/documents/documentsSlice';
 import { useAppDispatch } from '../../redux/app/hooks';
+import { enterArea, leaveArea, setPosition } from '../../redux/features/floatBox/floatBoxSlice';
 
 const TitleWrapper = styled.div`
     display: flex;
@@ -43,7 +44,24 @@ const ImageBox:FC<PlacedImage&{index:number, docPath:string}> = (img) => {
     dispatch(checkImage({ docPath: img.docPath, ImgIndex: img.index, checked: e.target.checked }));
   }, [img]);
   return (
-      <ImageBoxBase color={theme.gray} >
+      <ImageBoxBase color={theme.gray}
+        onMouseEnter={(e) => {
+          dispatch(enterArea({
+            msg: img.path,
+            x: e.clientX,
+            y: e.clientY
+          }));
+        }}
+        onMouseMove={(e) => {
+          dispatch(setPosition({
+            x: e.clientX,
+            y: e.clientY
+          }));
+        }}
+        onMouseLeave={() => {
+          dispatch(leaveArea());
+        }}
+      >
           <TitleWrapper>
               <StdCheckBox func={handleCheckbox} checked={img.checked} />
               <Title>{img.name}</Title>

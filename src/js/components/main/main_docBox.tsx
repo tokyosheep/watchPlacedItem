@@ -1,5 +1,6 @@
 import React, { FC, useContext, useCallback } from 'react';
 import styled, { ThemeContext } from 'styled-components';
+import { isDirectory } from '../../fileSystem/basic';
 import { Document, checkDoc, setExportOption, setFormat, Format, setExportPath } from '../../redux/features/documents/documentsSlice';
 import { turnOnPage } from '../../redux/features/pages/imagePage';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
@@ -9,6 +10,8 @@ import { StdCheckBox, SimpleCheckBox } from '../../parts/checkBoxes';
 import { StdRadioBox } from '../../parts/radioBoxes';
 import { PathBox, ExportPathBox } from '../../parts/pathBox';
 import { SwitchButton } from '../../parts/buttons';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { DndProvider } from 'react-dnd';
 
 const TitleWrapper = styled.div`
     display: flex;
@@ -78,6 +81,17 @@ const DocumentBox:FC<DocumentBoxProps> = (doc) => {
     if (typeof filePath === 'boolean' || filePath === 'false') return;
     dispatch(setExportPath({ docPath: doc.path, exportPath: filePath }));
   };
+  const handleFileDrop = useCallback((monitor) => {
+    console.log(monitor);
+    if (monitor) {
+      const dropped = monitor.getItem().files[0];
+      console.log(dropped);
+      (async () => {
+        if (await !isDirectory(dropped.path)) return;
+        dispatch(setExportPath({ docPath: doc.path, exportPath: dropped.path }));
+      })();
+    }
+  }, [doc]);
   return (
       <DocumentBoxBase color={theme.gray}>
           <TitleWrapper>
@@ -85,7 +99,9 @@ const DocumentBox:FC<DocumentBoxProps> = (doc) => {
             <Title>{doc.name}</Title>
           </TitleWrapper>
           <PathBox filePath={doc.path} />
-          <ExportPathBox filePath={doc.exportPath} checked={doc.isExport} func={getExportPathFromJSX} />
+          <DndProvider backend={HTML5Backend} >
+            <ExportPathBox onDrop={handleFileDrop} filePath={doc.exportPath} checked={doc.isExport} func={getExportPathFromJSX} />
+          </DndProvider>
           <OptionalWrapper>
             <SimpleCheckBox checked={doc.isExport} func={handleIsExport} />
             <RadioWrapper>

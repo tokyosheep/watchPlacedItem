@@ -37,8 +37,20 @@ const reload = () =>{
     csInterface.addEventListener("com.adobe.csxs.events.WindowVisibilityChanged",()=>{location.reload(true)},false);
 }
 
+const preventDragEvent = () =>{
+    window.addEventListener(`drop`,prevent_dragnaddrop,false);
+    
+    window.addEventListener(`dragover`,prevent_dragnaddrop,false);
+    
+    function prevent_dragnaddrop(e){
+        e.stopPropagation();
+        e.preventDefault();
+    }
+}
+
 const init = async() =>{
     reload();
+    preventDragEvent();
     csInterface.evalScript(`$.evalFile("${extensionRoot}json2.js")`);//json2読み込み
     await loadJsx(jsxParts);
     //await loadJsx(polyFillFolder);
@@ -53,6 +65,12 @@ const callPathDialog = callType =>{/*callType folder or image */
     return callType === "folder" ? openFolderDialog : openImageDialog;
 }
 
-const alertFromJSX = msg => csInterface.evalScript(`$.evalFile(alert("${msg}"))`);
+const alertFromJSX = msg => {
+    return new Promise(resolve => {
+        csInterface.evalScript(`$.evalFile(alert("${msg}"))`,() => {
+            resolve();
+        })
+    })
+};
 
 export {csInterface,extensionId,extFolder,extensionRoot,init,reload,callPathDialog,alertFromJSX};

@@ -40,7 +40,7 @@ class WatchData {
           await this.stopWatch();
           await func(watchedPath, itSelf);
         })
-        .on('error', err => alertFromJSX(err));
+        .on('error', err => alertFromJSX(err).then());
     }
 
     async stopWatch ():Promise<void> {

@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { DropTargetMonitor, useDrop } from 'react-dnd';
+import { NativeTypes } from 'react-dnd-html5-backend';
+import { enterArea, leaveArea, setPosition } from '../redux/features/floatBox/floatBoxSlice';
+import { useAppDispatch } from '../redux/app/hooks';
 
 type PathBoxProps = {
     filePath:string
@@ -20,8 +24,26 @@ const BasePathBox = styled.div`
 `;
 
 export const PathBox:FC<PathBoxProps> = ({ filePath }) => {
+  const dispatch = useAppDispatch();
   return (
-      <BasePathBox>
+      <BasePathBox
+        onMouseEnter={(e) => {
+          dispatch(enterArea({
+            msg: filePath,
+            x: e.clientX,
+            y: e.clientY
+          }));
+        }}
+        onMouseMove={(e) => {
+          dispatch(setPosition({
+            x: e.clientX,
+            y: e.clientY
+          }));
+        }}
+        onMouseLeave={() => {
+          dispatch(leaveArea());
+        }}
+      >
           {filePath}
       </BasePathBox>
   );
@@ -30,25 +52,65 @@ export const PathBox:FC<PathBoxProps> = ({ filePath }) => {
 type ExportPathProps = {
     filePath:string,
     func:() => void,
-    checked:boolean
+    checked:boolean,
+    onDrop:(monitor:DropTargetMonitor) => void
 };
 
-const ExportFilePathBase = styled(BasePathBox)<{checked:boolean}>`
+const ExportFilePathBase = styled(BasePathBox)<{checked:boolean, color:string}>`
     border: 1px solid #000;
     transition: .3s linear;
     &:hover{
-        background: ${props => props.checked ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0)'};
+        background: ${props => props.checked ? props.color : 'rgba(255,255,255,0)'};
     }
     color: ${props => props.checked ? '#fff' : '222'};
-    background: ${props => props.checked ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0)'};
+    background: ${props => props.checked ? props.color : 'rgba(0,0,0,0)'};
     color: ${props => props.checked ? '#fff' : '#888'};
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    box-sizing: border-box;
     cursor:pointer;
 `;
 
-export const ExportPathBox:FC<ExportPathProps> = ({ filePath = 'export path', func, checked }) => {
+export const ExportPathBox:FC<ExportPathProps> = ({ filePath = 'export path', func, checked, onDrop }) => {
+  const dispatch = useAppDispatch();
+  const [{ canDrop, isOver }, drop] = useDrop({
+    accept: [NativeTypes.FILE],
+    drop (item, monitor) {
+      if (onDrop) {
+        onDrop(monitor);
+      }
+    },
+    collect: (monitor) => ({
+      isOver: monitor.isOver(),
+      canDrop: monitor.canDrop()
+    })
+  });
+  const color = canDrop && isOver ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.3)';
   return (
-      <ExportFilePathBase onClick={func} checked={checked} >
-          {filePath}
-      </ExportFilePathBase>
+        <ExportFilePathBase
+          ref={drop}
+          color={color}
+          onClick={func}
+          checked={checked}
+          onMouseEnter={(e) => {
+            dispatch(enterArea({
+              msg: filePath,
+              x: e.clientX,
+              y: e.clientY
+            }));
+          }}
+          onMouseMove={(e) => {
+            dispatch(setPosition({
+              x: e.clientX,
+              y: e.clientY
+            }));
+          }}
+          onMouseLeave={() => {
+            dispatch(leaveArea());
+          }}
+        >
+            {filePath}
+        </ExportFilePathBase>
   );
 };

@@ -11,7 +11,7 @@ const FloatBase = styled.div<{x:number, y:number, visible:boolean}>`
     overflow: hidden;
     display: ${props => props.visible ? 'block' : 'none'};
     position: fixed;
-    top: ${props => props.y - 50}px;
+    top: ${props => props.y - 60}px;
     left:${props => props.x - 30}px;
     z-index: 15;
     border: 1px solid #000;

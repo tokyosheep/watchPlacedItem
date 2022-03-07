@@ -4019,7 +4019,6 @@ var WatchContainer = /*#__PURE__*/function () {
             switch (_context6.prev = _context6.next) {
               case 0:
                 console.log('checked');
-                console.log(mySelf === this);
                 Promise.allSettled(mySelf.targetImgs.map( /*#__PURE__*/function () {
                   var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee4(img) {
                     var _loop, i;
@@ -4092,12 +4091,12 @@ var WatchContainer = /*#__PURE__*/function () {
                 }()));
                 console.log(mySelf.targetDocs);
 
-              case 4:
+              case 3:
               case "end":
                 return _context6.stop();
             }
           }
-        }, _callee5, this);
+        }, _callee5);
       }));
 
       function checkedImg(_x3, _x4) {
@@ -4963,7 +4962,7 @@ var FloatBase = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.wi
 })(["width:300px;height:40px;color:#000;font-size:11px;font-weight:200;overflow:hidden;display:", ";position:fixed;top:", "px;left:", "px;z-index:15;border:1px solid #000;border-radius:3px;background:#f3baa1cc;padding:3px;box-sizing:border;"], function (props) {
   return props.visible ? 'block' : 'none';
 }, function (props) {
-  return props.y - 50;
+  return props.y - 60;
 }, function (props) {
   return props.x - 30;
 });

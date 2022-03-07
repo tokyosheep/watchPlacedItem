@@ -95,7 +95,6 @@ class WatchContainer {
 
     async checkedImg (imgPath, mySelf:WatchContainer) {
       console.log('checked');
-      console.log(mySelf === this);
       Promise.allSettled(mySelf.targetImgs.map(async (img) => {
         if (img.path === imgPath) {
           for (let i = 0; i < mySelf.targetDocs.length; i++) {

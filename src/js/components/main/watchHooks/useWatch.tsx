@@ -8,125 +8,73 @@ import { OptionsType } from '../../../redux/features/options/optionSlice';
 import { useAppSelector, useAppDispatch } from '../../../redux/app/hooks';
 import { SendHostScript } from '../../../fileSystem/connectHostScript';
 
-type TargetDoc = Omit<Document, 'images'>& {
-    originalImages:string[],
-    targetImages:string[]
-};
-
-type TargetImg = {
-    path:string,
-    parentPaths:string[]
-}
-
-class WatchData {
-    private watcher:chokidar.FSWatcher|null;
-    constructor (private filePath:string) {
-      this.watcher = null;
-      this.filePath = filePath;
-    }
-
-    watchBegin (func:(filePath:string, mySelf:WatchContainer)=>void, itSelf:WatchContainer) {
-      this.watcher = chokidar.watch(this.filePath, {
-        persistent: true,
-        ignoreInitial: true,
-        depth: 0
-      });
-
-      this.watcher
-        .on('ready', () => console.log('ready'))
-        .on('change', async (watchedPath) => {
-          await this.stopWatch();
-          await func(watchedPath, itSelf);
-        })
-        .on('error', err => alertFromJSX(err).then());
-      console.log(this.watcher);
-    }
-
-    async stopWatch ():Promise<void> {
-      if (this.watcher === null) return;
-      await this.watcher.close();
-      console.log('stop');
-    }
-}
-
 class WatchContainer {
-    private watchObjects:WatchData[];
-    private toJsx:SendHostScript;
-    private options:OptionsType;
-    public originalTargetImgs:TargetImg[];
-    constructor (public targetDocs:TargetDoc[], public targetImgs:TargetImg[], options:OptionsType) {
-      this.targetDocs = targetDocs;
-      /**
-       * original targetImgs @type {TargetDoc[]}
-       * after updated all of targetimgs, it restores targetimgs array to targetimgs
-       */
-      this.originalTargetImgs = targetImgs;
-      this.targetImgs = targetImgs;
-      this.toJsx = new SendHostScript();
-      this.options = options;
-    }
+  private docs:AIDocument[];
+  private watcher:chokidar.FSWatcher|null;
+  constructor (docs) {
+    this.docs = docs;
+    this.watcher = null;
+  }
 
-    /**
-     * @param doc
-     * @type {TargetDoc}
-     * check whether all images updated or not
-     * if updated , it'll update pdf or ai file
-     */
-    async isAllChecked (doc:TargetDoc) {
-      if (this.targetImgs.length < 1) {
-        // open and save
-        const r = await this.toJsx.callHostScript({
-          func: 'watch',
-          doc,
-          options: this.options
-        });
-        console.log(r);
-        /**
-         * restore target images
-         */
-        this.targetImgs = [...this.originalTargetImgs];
-        this.targetImgs.forEach(img => {
-          const watch = new WatchData(img.path);
-          watch.watchBegin(this.checkedImg, this);
-          this.watchObjects.push(watch);
-        });
-      }
-    }
+  beginWatch () {
+    const targets = this.docs.map(doc => [...doc.targets]).flat();
+    console.log(targets);
+    this.watcher = chokidar.watch(targets, {
+      persistent: true,
+      ignoreInitial: true,
+      depth: 1
+    });
+    this.watcher
+      .on('ready', () => console.log('ready'))
+      .on('change', async (watchedPath) => {
+        console.log('change');
+        this.watcher.unwatch(watchedPath);
+        await Promise.allSettled(this.docs.map(async doc => {
+          const hasTargets = await doc.lookFortarget(watchedPath);
+          if (hasTargets) this.watcher.add(hasTargets);
+        }));
+      }).on('error', err => alertFromJSX(err).then());
+    console.log(this.watcher);
+  }
 
-    async checkedImg (imgPath, mySelf:WatchContainer) {
-      console.log('checked');
-      Promise.allSettled(mySelf.targetImgs.map(async (img) => {
-        if (img.path === imgPath) {
-          for (let i = 0; i < mySelf.targetDocs.length; i++) {
-            const doc = mySelf.targetDocs[i];
-            console.log(img.parentPaths);
-            if (img.parentPaths.some(parent => parent === doc.path)) {
-              mySelf.targetImgs = mySelf.targetImgs.filter(targetImg => targetImg.path !== imgPath);
-              console.log(mySelf.targetImgs);
-              await mySelf.isAllChecked(doc);
-            }
-          }
-        }
-      }));
-      console.log(mySelf.targetDocs);
-    }
+  stopWatch () {
+    this.watcher.close();
+  }
+}
 
-    watchAllImages () {
-      /**
-       * create @type {WatchContainer} instances
-       */
-      this.watchObjects = this.targetImgs.map(img => new WatchData(img.path));
-      /**
-       * dispatch watchBegin mathod
-       */
-      this.watchObjects.forEach(obj => obj.watchBegin(this.checkedImg, this));
-    }
+class AIDocument {
+  public jsxProp: Omit<Document, 'images'>;
+  public targets: string[];
+  public originTargets: string[];
+  public path: string;
+  private toJsx:SendHostScript;
+  private options:OptionsType;
+  constructor (targets:string[], filePath:string, options:OptionsType, jsxProp:Omit<Document, 'images'>) {
+    this.jsxProp = jsxProp;
+    this.targets = targets;
+    this.originTargets = targets;
+    this.path = filePath;
+    this.toJsx = new SendHostScript();
+    this.options = options;
+  }
 
-    async stopWatchAllImags () {
-      await Promise.allSettled(this.watchObjects.map(async (obj) => {
-        await obj.stopWatch();
-      }));
+  async lookFortarget (imgPath) {
+    this.targets = this.targets.filter(target => target !== imgPath);
+    console.log(this.targets);
+    if (this.targets.length < 1) {
+      // open and save
+      const r = await this.toJsx.callHostScript({
+        func: 'watch',
+        doc: this.jsxProp,
+        options: this.options
+      });
+      console.log(r);
+      this.targets = [...this.originTargets];
+      return this.targets;
+    } else {
+      return false;
     }
+  }
 }
 
 /* hooks */
@@ -140,44 +88,24 @@ const useWatch = () => {
     const checkedDocs = docs.filter(doc => doc.checked === true);
     /* filtered checked documents */
     if (checkedDocs.length < 1) return;
-    /**
-     * turned
-     * @type {Document} into ->
-     * @type {TargetDoc}
-     * added imageount
-     */
-    const targets = checkedDocs.map((doc, i) => {
-      const { images, ...data } = doc;
-      const newimages = doc.images.map(img => replaceDesktop(img.path));
-      return { ...data, targetImages: newimages, originalImages: newimages };
+    const aiDocs:AIDocument[] = checkedDocs.map((doc, i) => {
+      return new AIDocument(
+        doc.images.filter(img => img.checked).map(img => replaceDesktop(img.path)),
+        doc.path,
+        options,
+        { images: {}, ...doc }
+      );
     });
-    console.log(targets);
-    /**
-     * @type {PlacedImage} ->
-     * @type {TargetImg}
-     */
-    const images:TargetImg[] = checkedDocs.reduce((acc, current) => {
-      const r = current.images.filter(img => img.checked === true);
-      const imgs = r.filter(img => {
-        const index = acc.findIndex(a => a.path === img.path);
-        if (index === -1) return true;
-        /**
-         * if array has already same image, push to parent path to parent property
-         */
-        acc[index].parentPaths.push(img.path);
-        return false;
-      });
-      return [...acc, ...imgs.map(img => ({ path: replaceDesktop(img.path), parentPaths: [current.path] }))];
-    }, []);
-    console.log(images);
-    const watchContainer = new WatchContainer(targets, images, options);
-    watchContainer.watchAllImages();
+    console.log(aiDocs);
+    const watchContainer = new WatchContainer(aiDocs);
+    watchContainer.beginWatch();
     setController(watchContainer);
     dispatch(showWindow('loading'));
   };
 
   const stopWatch = async () => {
-    await watchController.stopWatchAllImags();
+    watchController.stopWatch();
+    setController(null);
   }
 
   useMemo(() => {

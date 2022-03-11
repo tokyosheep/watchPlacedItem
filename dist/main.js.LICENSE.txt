@@ -1,0 +1,3446 @@
+/*
+
+  Container {
+    constructor(){
+      this.targets = [];
+      this.docs = [];
+      this.watchers = [];
+    }
+  }
+
+  TargetImages {
+    constructor(imgPath,parentPath) {
+      this.imgPath:string,
+      this.parentPath:string
+    }
+  }
+
+  Document{
+    constructor(targets,path){
+      this.targets = targets;
+      this.originTargets = targets;
+      this.path = path;
+    }
+
+    lookFortarget (imgPath) {
+      this.targets = this.targets.filter(target => target !== imgPath);
+      if(this.targets.length < 1){
+        //doing something;
+        this.targets = [...this.originTargets];
+      }
+    }
+  }
+*/
+
+/*
+
+WatchData {
+  private watcher:chokidar.FSWatcher|null;
+  constructor (private filePath:string) {
+    this.watcher = null;
+    this.filePath = filePath;
+  }
+
+  watchBegin (func:(filePath:string,func)=>void) {
+    this.watcher = chokidar.watch(this.filePath, {
+      persistent: true,
+      ignoreInitial: true,
+      depth: 0
+    });
+    this.watcher
+      .on('ready', () => console.log('ready'))
+      .on('change', async (watchedPath) => {
+        await this.stopWatch();
+        func(watchedPath);
+      })
+      .on('error', err => alertFromJSX(err).then());
+    console.log(this.watcher);
+  }
+
+  async stopWatch ():Promise<void> {
+    if (this.watcher === null) return;
+    await this.watcher.close();
+    console.log('stop');
+  }
+}
+
+WatchContainer:{
+  docs: documents:[],
+  allTargets: img[],
+
+  getTargets() {
+    this.allTargets = Arra.from(new Set([
+      this.docs.reducer((acc,current) => [...acc,...current.targets]);
+    ]),[]);
+  }
+
+  reducerTarget (imgPath) {
+    this.docs.forEach(doc => {
+      const flag = doc.hasTarget(imgPath);
+      if(!flag) return;
+    });
+  }
+
+  allWatches() {
+
+  }
+}
+
+Document: {
+  watchers,
+  targets: img[],
+  origins: img[],
+  path: string,
+  options,
+  toJsx
+
+  constructor(images, path, options, toJsx){
+    this.images = images;
+    this.path = path;
+    this.options = options;
+    this.toJsx = toJsx
+  }
+
+  hasTarget(imgPath) {
+    this.targets = this.targets.filter(target => target !== imgPath);
+    if(this.targets.length < 1){
+      // doing jsx
+      this.targets = [...this.origins];
+      return this.targets;
+    }
+    return false;
+  }
+}
+*/
+
+/*
+        switching check on image
+    */
+
+/*
+    load document from Illustrator
+    */
+
+/*
+ * This is a dummy function to check if the function name has been altered by minification.
+ * If the function has been minified and NODE_ENV !== 'production', warn the user.
+ */
+
+/*
+ Modernizr 3.0.0pre (Custom Build) | MIT
+*/
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*   */
+
+/* ! */
+
+/* " */
+
+/* # */
+
+/* % */
+
+/* & */
+
+/* ' */
+
+/* ( */
+
+/* ) */
+
+/* * */
+
+/* + */
+
+/* , */
+
+/* - */
+
+/* . */
+
+/* / */
+
+/* 0 */
+
+/* 9 */
+
+/* : */
+
+/* ::<number | string, string, string> */
+
+/* ; */
+
+/* < */
+
+/* = */
+
+/* > */
+
+/* ? */
+
+/* @ */
+
+/* A */
+
+/* Z */
+
+/* Z+1 */
+
+/* [ */
+
+/* \ */
+
+/* \f */
+
+/* \n */
+
+/* \r */
+
+/* \t */
+
+/* \u00A0 */
+
+/* \uFEFF */
+
+/* ] */
+
+/* ^ */
+
+/* _ */
+
+/* ` */
+
+/* a */
+
+/* eslint-disable no-unused-vars */
+
+/* eslint-disable no-unused-vars, prefer-destructuring */
+
+/* eslint-disable-next-line @typescript-eslint/no-this-alias */
+
+/* eslint-disable-next-line no-new */
+
+/* eslint-enable no-unused-vars */
+
+/* eslint-enable no-unused-vars, prefer-destructuring */
+
+/* filtered checked documents */
+
+/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+
+/* globals self */
+
+/* harmony default export */
+
+/* initialize all of documents */
+
+/* n */
+
+/* o */
+
+/* watch */
+
+/* webpack/runtime/compat get default export */
+
+/* z */
+
+/* { */
+
+/* | */
+
+/* } */
+
+/*!
+ * fill-range <https://github.com/jonschlinkert/fill-range>
+ *
+ * Copyright (c) 2014-present, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+/*!
+ * is-extglob <https://github.com/jonschlinkert/is-extglob>
+ *
+ * Copyright (c) 2014-2016, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
+/*!
+ * is-glob <https://github.com/jonschlinkert/is-glob>
+ *
+ * Copyright (c) 2014-2017, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * is-number <https://github.com/jonschlinkert/is-number>
+ *
+ * Copyright (c) 2014-present, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * normalize-path <https://github.com/jonschlinkert/normalize-path>
+ *
+ * Copyright (c) 2014-2018, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*!
+ * to-regex-range <https://github.com/micromatch/to-regex-range>
+ *
+ * Copyright (c) 2015-present, Jon Schlinkert.
+ * Released under the MIT License.
+ */
+
+/*#__PURE__*/
+
+/**
+		 * If the global context was used to store the DND context
+		 * then where theres no more references to it we should
+		 * clean it up to avoid memory leaks
+		 */
+
+/**
+	 * Generate profiling statistics for the HTML5Backend.
+	 */
+
+/**
+	 * Get the root element to use for event subscriptions
+	 */
+
+/**
+                 * restore target images
+                 */
+
+/**
+         * if array has already same image, push to parent path to parent property
+         */
+
+/**
+       * The minimal observable subscription method.
+       * @param {Object} observer Any object that can be used as an observer.
+       * The observer object should have a `next` method.
+       * @returns {subscription} An object with an `unsubscribe` method that can
+       * be used to unsubscribe the observable from the store, and prevent further
+       * emission of values from the observable.
+       */
+
+/**
+       * create @type {WatchContainer} instances
+       */
+
+/**
+       * dispatch watchBegin mathod
+       */
+
+/**
+     * @type {'add'|'addDir'|'unlink'|'unlinkDir'}
+     */
+
+/**
+     * Braces
+     */
+
+/**
+     * Comma: ','
+     */
+
+/**
+     * Commas
+     */
+
+/**
+     * Dot: '.'
+     */
+
+/**
+     * Dots
+     */
+
+/**
+     * Double quotes
+     */
+
+/**
+     * Escaped characters
+     */
+
+/**
+     * Escaped chars
+     */
+
+/**
+     * Exclamation
+     */
+
+/**
+     * If we're inside a quoted string, continue
+     * until we reach the closing double quote.
+     */
+
+/**
+     * If we're inside a regex character class, continue
+     * until we reach the closing bracket.
+     */
+
+/**
+     * Invalid chars
+     */
+
+/**
+     * Left curly brace: '{'
+     */
+
+/**
+     * Left square bracket: '['
+     */
+
+/**
+     * Parentheses
+     */
+
+/**
+     * Pipes
+     */
+
+/**
+     * Plain text
+     */
+
+/**
+     * Plus
+     */
+
+/**
+     * Question marks
+     */
+
+/**
+     * Quotes: '|"|`
+     */
+
+/**
+     * Right curly brace: '}'
+     */
+
+/**
+     * Right square bracket (literal): ']'
+     */
+
+/**
+     * Slashes
+     */
+
+/**
+     * Square brackets
+     */
+
+/**
+     * Stars
+     */
+
+/**
+     * Text
+     */
+
+/**
+     * original targetImgs @type {TargetDoc[]}
+     * after updated all of targetimgs, it restores targetimgs array to targetimgs
+     */
+
+/**
+     * turned
+     * @type {Document} into ->
+     * @type {TargetDoc}
+     * added imageount
+     */
+
+/**
+   * @param doc
+   * @type {TargetDoc}
+   * check whether all images updated or not
+   * if updated , it'll update pdf or ai file
+   */
+
+/**
+   * @param {Path} dir
+   * @param {Function} removeWatcher
+   */
+
+/**
+   * @returns {Array<String>}
+   */
+
+/**
+   * @type {Array<String>}
+   */
+
+/**
+   * Adds a change listener. It will be called any time an action is dispatched,
+   * and some part of the state tree may potentially have changed. You may then
+   * call `getState()` to read the current state tree inside the callback.
+   *
+   * You may call `dispatch()` from a change listener, with the following
+   * caveats:
+   *
+   * 1. The subscriptions are snapshotted just before every `dispatch()` call.
+   * If you subscribe or unsubscribe while the listeners are being invoked, this
+   * will not have any effect on the `dispatch()` that is currently in progress.
+   * However, the next `dispatch()` call, whether nested or not, will use a more
+   * recent snapshot of the subscription list.
+   *
+   * 2. The listener should not expect to see all state changes, as the state
+   * might have been updated multiple times during a nested `dispatch()` before
+   * the listener is called. It is, however, guaranteed that all subscribers
+   * registered before the `dispatch()` started will be called with the latest
+   * state by the time it exits.
+   *
+   * @param {Function} listener A callback to be invoked on every dispatch.
+   * @returns {Function} A function to remove this change listener.
+   */
+
+/**
+   * Create EXTGLOB_CHARS
+   */
+
+/**
+   * Create GLOB_CHARS
+   */
+
+/**
+   * Dispatches an action. It is the only way to trigger a state change.
+   *
+   * The `reducer` function, used to create the store, will be called with the
+   * current state tree and the given `action`. Its return value will
+   * be considered the **next** state of the tree, and the change listeners
+   * will be notified.
+   *
+   * The base implementation only supports plain object actions. If you want to
+   * dispatch a Promise, an Observable, a thunk, or something else, you need to
+   * wrap your store creating function into the corresponding middleware. For
+   * example, see the documentation for the `redux-thunk` package. Even the
+   * middleware will eventually dispatch plain object actions using this method.
+   *
+   * @param {Object} action A plain object representing “what changed”. It is
+   * a good idea to keep actions serializable so you can record and replay user
+   * sessions, or use the time travelling `redux-devtools`. An action must have
+   * a `type` property which may not be `undefined`. It is a good idea to use
+   * string constants for action types.
+   *
+   * @returns {Object} For convenience, the same action object you dispatched.
+   *
+   * Note that, if you use a custom middleware, it may wrap `dispatch()` to
+   * return something else (for example, a Promise you can await).
+   */
+
+/**
+   * Fast paths
+   */
+
+/**
+   * Helpers
+   */
+
+/**
+   * Interoperability point for observable/reactive libraries.
+   * @returns {observable} A minimal observable of state changes.
+   * For more information, see the observable proposal:
+   * https://github.com/tc39/proposal-observable
+   */
+
+/**
+   * Reads the state tree managed by the store.
+   *
+   * @returns {any} The current state tree of your application.
+   */
+
+/**
+   * Replaces the reducer currently used by the store to calculate the state.
+   *
+   * You might need this if your app implements code splitting and you want to
+   * load some of the reducers dynamically. You might also need this if you
+   * implement a hot reloading mechanism for Redux.
+   *
+   * @param {Function} nextReducer The reducer for the store to use instead.
+   * @returns {void}
+   */
+
+/**
+   * This makes a shallow copy of currentListeners so we can use
+   * nextListeners as a temporary list while dispatching.
+   *
+   * This prevents any bugs around consumers calling
+   * subscribe/unsubscribe in the middle of a dispatch.
+   */
+
+/**
+   * Tokenize input until we reach end-of-string
+   */
+
+/**
+   * Tokenizing helpers
+   */
+
+/**
+ *
+ * @param monitor The monitor to collect state from
+ * @param collect The collecting function
+ * @param onUpdate A method to invoke when updates occur
+ */
+
+/**
+ *
+ * @param {Path} newPath
+ * @param {fs.Stats} stats
+ */
+
+/**
+ *
+ * @param {Path} path
+ * @param {Function} closer
+ */
+
+/**
+ * @mixin
+ */
+
+/**
+ * @param {AnymatchPattern} matcher
+ * @param {object} options
+ * @returns {AnymatchFn}
+ */
+
+/**
+ * @param {any} obj The object to inspect.
+ * @returns {boolean} True if the argument appears to be a plain object.
+ */
+
+/**
+ * @param {import("../index").FSWatcher} fsW
+ */
+
+/**
+ * @param {import('../index').FSWatcher} fsw
+ */
+
+/**
+ * @param {string} str
+ * @param {Object} opts
+ * @param {boolean} [opts.flipBackslashes=true]
+ * @returns {string}
+ */
+
+/**
+ * @type {Map<String,FsWatchContainer>}
+ */
+
+/**
+ * @typedef {Object} FsWatchContainer
+ * @property {Set} listeners
+ * @property {Set} errHandlers
+ * @property {Set} rawEmitters
+ * @property {fs.FSWatcher=} watcher
+ * @property {Boolean=} watcherUnusable
+ */
+
+/**
+ * @typedef {Object} ReaddirpArguments
+ * @property {Function=} fileFilter
+ * @property {Function=} directoryFilter
+ * @property {String=} type
+ * @property {Number=} depth
+ * @property {String=} root
+ * @property {Boolean=} lstat
+ * @property {Boolean=} bigint
+ */
+
+/**
+ * @typedef {String} Path
+ */
+
+/**
+ * A React component that provides the React-DnD context
+ */
+
+/**
+ * A hook to access the redux `dispatch` function.
+ *
+ * @returns {any|function} redux store's `dispatch` function
+ *
+ * @example
+ *
+ * import React, { useCallback } from 'react'
+ * import { useDispatch } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const dispatch = useDispatch()
+ *   const increaseCounter = useCallback(() => dispatch({ type: 'increase-counter' }), [])
+ *   return (
+ *     <div>
+ *       <span>{value}</span>
+ *       <button onClick={increaseCounter}>Increase counter</button>
+ *     </div>
+ *   )
+ * }
+ */
+
+/**
+ * A hook to access the redux store's state. This hook takes a selector function
+ * as an argument. The selector is called with the store state.
+ *
+ * This hook takes an optional equality comparison function as the second parameter
+ * that allows you to customize the way the selected state is compared to determine
+ * whether the component needs to be re-rendered.
+ *
+ * @param {Function} selector the selector function
+ * @param {Function=} equalityFn the function that will be used to determine equality
+ *
+ * @returns {any} the selected state
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useSelector } from 'react-redux'
+ *
+ * export const CounterComponent = () => {
+ *   const counter = useSelector(state => state.counter)
+ *   return <div>{counter}</div>
+ * }
+ */
+
+/**
+ * A hook to access the redux store.
+ *
+ * @returns {any} the redux store
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useStore } from 'react-redux'
+ *
+ * export const ExampleComponent = () => {
+ *   const store = useStore()
+ *   return <div>{store.getState()}</div>
+ * }
+ */
+
+/**
+ * A hook to access the value of the `ReactReduxContext`. This is a low-level
+ * hook that you should usually not need to call directly.
+ *
+ * @returns {any} the value of the `ReactReduxContext`
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useReduxContext } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const { store } = useReduxContext()
+ *   return <div>{store.getState()}</div>
+ * }
+ */
+
+/**
+ * A hook to retrieve the DragDropManager from Context
+ */
+
+/**
+ * Adapted from React: https://github.com/facebook/react/blob/master/packages/shared/formatProdErrorMessage.js
+ *
+ * Do not require this module directly! Use normal throw error calls. These messages will be replaced with error codes
+ * during build.
+ * @param {number} code
+ */
+
+/**
+ * Adds paths to be watched on an existing FSWatcher instance
+ * @param {Path|Array<Path>} paths_
+ * @param {String=} _origAdd private; for handling non-existent paths to be watched
+ * @param {Boolean=} _internal private; indicates a non-user add
+ * @returns {FSWatcher} for chaining
+ */
+
+/**
+ * Awaits write operation to finish.
+ * Polls a newly created file for size variations. When files size does not change for 'threshold' milliseconds calls callback.
+ * @param {Path} path being acted upon
+ * @param {Number} threshold Time in milliseconds a file size must be fixed before acknowledging write OP is finished
+ * @param {EventName} event
+ * @param {Function} awfEmit Callback to be called when ready for event to be emitted.
+ */
+
+/**
+ * Cache
+ */
+
+/**
+ * Calls a task as soon as possible after returning, in its own event, with priority
+ * over other events like animation, reflow, and repaint. An error thrown from an
+ * event will not interrupt, nor even substantially slow down the processing of
+ * other events, but will be rather postponed to a lower priority event.
+ * @param {{call}} task A callable object, typically a function that takes no
+ * arguments.
+ */
+
+/**
+ * Changes the hue of the color. Hue is a number between 0 to 360. The first
+ * argument for adjustHue is the amount of degrees the color is rotated around
+ * the color wheel, always producing a positive hue value.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: adjustHue(180, '#448'),
+ *   background: adjustHue('180', 'rgba(101,100,205,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${adjustHue(180, '#448')};
+ *   background: ${adjustHue('180', 'rgba(101,100,205,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#888844";
+ *   background: "rgba(136,136,68,0.7)";
+ * }
+ */
+
+/**
+ * Check for read permissions.
+ * Based on this answer on SO: https://stackoverflow.com/a/11781404/1358405
+ * @param {fs.Stats} stats - object, result of fs_stat
+ * @returns {Boolean} indicates whether the file can be read
+*/
+
+/**
+ * Checks if a string is a CSS named color and returns its equivalent hex value, otherwise returns the original color.
+ * @private
+ */
+
+/**
+ * Close watchers and remove all listeners from watched paths.
+ * @returns {Promise<void>}.
+*/
+
+/**
+ * Close watchers or start ignoring events from specified paths.
+ * @param {Path|Array<Path>} paths_ - string or array of strings, file/directory paths and/or globs
+ * @returns {FSWatcher} for chaining
+*/
+
+/**
+ * Closes all watchers for a path
+ * @param {Path} path
+ */
+
+/**
+ * Closes only file-specific watchers
+ * @param {Path} path
+ */
+
+/**
+ * Common handler for errors
+ * @param {Error} error
+ * @returns {Error|Boolean} The error if defined, otherwise the value of the FSWatcher instance's `closed` flag
+ */
+
+/**
+ * Compile a regular expression from the `state` object returned by the
+ * [parse()](#parse) method.
+ *
+ * @param {Object} `state`
+ * @param {Object} `options`
+ * @param {Boolean} `returnOutput` Intended for implementors, this argument allows you to return the raw output from the parser.
+ * @param {Boolean} `returnState` Adds the state to a `state` property on the returned regex. Useful for implementors and debugging.
+ * @return {RegExp}
+ * @api public
+ */
+
+/**
+ * Compiles a brace pattern into a regex-compatible, optimized string.
+ * This method is called by the main [braces](#braces) function by default.
+ *
+ * ```js
+ * const braces = require('braces');
+ * console.log(braces.compile('a/{b,c}/d'));
+ * //=> ['a/(b|c)/d']
+ * ```
+ * @param {String} `input` Brace pattern or AST.
+ * @param {Object} `options`
+ * @return {Array} Returns an array of expanded values.
+ * @api public
+ */
+
+/**
+ * Composes single-argument functions from right to left. The rightmost
+ * function can take multiple arguments as it provides the signature for
+ * the resulting composite function.
+ *
+ * @param {...Function} funcs The functions to compose.
+ * @returns {Function} A function obtained by composing the argument functions
+ * from right to left. For example, compose(f, g, h) is identical to doing
+ * (...args) => f(g(h(...args))).
+ */
+
+/**
+ * Constants
+ */
+
+/**
+ * Convert a range to a regex pattern
+ * @param {Number} `start`
+ * @param {Number} `stop`
+ * @return {String}
+ */
+
+/**
+ * Converts a RgbColor, RgbaColor, HslColor or HslaColor object to a color string.
+ * This util is useful in case you only know on runtime which color object is
+ * used. Otherwise we recommend to rely on `rgb`, `rgba`, `hsl` or `hsla`.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: toColorString({ red: 255, green: 205, blue: 100 }),
+ *   background: toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 }),
+ *   background: toColorString({ hue: 240, saturation: 1, lightness: 0.5 }),
+ *   background: toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${toColorString({ red: 255, green: 205, blue: 100 })};
+ *   background: ${toColorString({ red: 255, green: 205, blue: 100, alpha: 0.72 })};
+ *   background: ${toColorString({ hue: 240, saturation: 1, lightness: 0.5 })};
+ *   background: ${toColorString({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0.72 })};
+ * `
+ *
+ * // CSS in JS Output
+ * element {
+ *   background: "#ffcd64";
+ *   background: "rgba(255,205,100,0.72)";
+ *   background: "#00f";
+ *   background: "rgba(179,25,25,0.72)";
+ * }
+ */
+
+/**
+ * Coordinate addition
+ * @param a The first coordinate
+ * @param b The second coordinate
+ */
+
+/**
+ * Coordinate subtraction
+ * @param a The first coordinate
+ * @param b The second coordinate
+ */
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+
+/**
+ * Create a regular expression from a parsed glob pattern.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * const state = picomatch.parse('*.js');
+ * // picomatch.compileRe(state[, options]);
+ *
+ * console.log(picomatch.compileRe(state));
+ * //=> /^(?:(?!\.)(?=.)[^/]*?\.js)$/
+ * ```
+ * @param {String} `state` The object returned from the `.parse` method.
+ * @param {Object} `options`
+ * @param {Boolean} `returnOutput` Implementors may use this argument to return the compiled output, instead of a regular expression. This is not exposed on the options to prevent end-users from mutating the result.
+ * @param {Boolean} `returnState` Implementors may use this argument to return the state from the parsed glob with the returned regular expression.
+ * @return {RegExp} Returns a regex created from the given pattern.
+ * @api public
+ */
+
+/**
+ * Create a regular expression from the given regex source string.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch.toRegex(source[, options]);
+ *
+ * const { output } = picomatch.parse('*.js');
+ * console.log(picomatch.toRegex(output));
+ * //=> /^(?:(?!\.)(?=.)[^/]*?\.js)$/
+ * ```
+ * @param {String} `source` Regular expression source string.
+ * @param {Object} `options`
+ * @return {RegExp}
+ * @api public
+ */
+
+/**
+ * Create an error file out of errors.md for development and a simple web link to the full errors
+ * in production mode.
+ * @private
+ */
+
+/**
+ * Create the React Context
+ */
+
+/**
+ * Creates a Redux store that holds the state tree.
+ * The only way to change the data in the store is to call `dispatch()` on it.
+ *
+ * There should only be a single store in your app. To specify how different
+ * parts of the state tree respond to actions, you may combine several reducers
+ * into a single reducer function by using `combineReducers`.
+ *
+ * @param {Function} reducer A function that returns the next state tree, given
+ * the current state tree and the action to handle.
+ *
+ * @param {any} [preloadedState] The initial state. You may optionally specify it
+ * to hydrate the state from the server in universal apps, or to restore a
+ * previously serialized user session.
+ * If you use `combineReducers` to produce the root reducer function, this must be
+ * an object with the same shape as `combineReducers` keys.
+ *
+ * @param {Function} [enhancer] The store enhancer. You may optionally specify it
+ * to enhance the store with third-party capabilities such as middleware,
+ * time travel, persistence, etc. The only store enhancer that ships with Redux
+ * is `applyMiddleware()`.
+ *
+ * @returns {Store} A Redux store that lets you read the state, dispatch actions
+ * and subscribe to changes.
+ */
+
+/**
+ * Creates a braces string from an AST, or an AST node.
+ *
+ * ```js
+ * const braces = require('braces');
+ * let ast = braces.parse('foo/{a,b}/bar');
+ * console.log(stringify(ast.nodes[2])); //=> '{a,b}'
+ * ```
+ * @param {String} `input` Brace pattern or AST.
+ * @param {Object} `options`
+ * @return {Array} Returns an array of expanded values.
+ * @api public
+ */
+
+/**
+ * Creates a matcher function from one or more glob patterns. The
+ * returned function takes a string to match as its first argument,
+ * and returns true if the string is a match. The returned matcher
+ * function also takes a boolean as the second argument that, when true,
+ * returns an object with additional information.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch(glob[, options]);
+ *
+ * const isMatch = picomatch('*.!(*a)');
+ * console.log(isMatch('a.a')); //=> false
+ * console.log(isMatch('a.b')); //=> true
+ * ```
+ * @name picomatch
+ * @param {String|Array} `globs` One or more glob patterns.
+ * @param {Object=} `options`
+ * @return {Function=} Returns a matcher function.
+ * @api public
+ */
+
+/**
+ * Creates a store enhancer that applies middleware to the dispatch method
+ * of the Redux store. This is handy for a variety of tasks, such as expressing
+ * asynchronous actions in a concise manner, or logging every action payload.
+ *
+ * See `redux-thunk` package as an example of the Redux middleware.
+ *
+ * Because middleware is potentially asynchronous, this should be the first
+ * store enhancer in the composition chain.
+ *
+ * Note that each middleware will be given the `dispatch` and `getState` functions
+ * as named arguments.
+ *
+ * @param {...Function} middlewares The middleware chain to be applied.
+ * @returns {Function} A store enhancer applying the middleware.
+ */
+
+/**
+ * Determine if two cartesian coordinate offsets are equal
+ * @param offsetA
+ * @param offsetB
+ */
+
+/**
+ * Determines if the given handler IDs are dirty or not.
+ *
+ * @param dirtyIds The set of dirty handler ids
+ * @param handlerIds The set of handler ids to check
+ */
+
+/**
+ * Determines if two arrays of items are equal
+ * @param a The first array of items
+ * @param b The second array of items
+ */
+
+/**
+ * Determines the x,y offset between the client offset and the initial client offset
+ *
+ * @param state The offset state to compute from
+ */
+
+/**
+ * Determines whether user has asked to ignore this path.
+ * @param {Path} path filepath or dir
+ * @param {fs.Stats=} stats result of fs.stat
+ * @returns {Boolean}
+ */
+
+/**
+ * Directory entry.
+ * @property {Path} path
+ * @property {Set<Path>} items
+ */
+
+/**
+ * Escape the given node with '\\' before node.value
+ */
+
+/**
+ * Expands a brace pattern into an array. This method is called by the
+ * main [braces](#braces) function when `options.expand` is true. Before
+ * using this method it's recommended that you read the [performance notes](#performance))
+ * and advantages of using [.compile](#compile) instead.
+ *
+ * ```js
+ * const braces = require('braces');
+ * console.log(braces.expand('a/{b,c}/d'));
+ * //=> ['a/b/d', 'a/c/d'];
+ * ```
+ * @param {String} `pattern` Brace pattern
+ * @param {Object} `options`
+ * @return {Array} Returns an array of expanded values.
+ * @api public
+ */
+
+/**
+ * Expose "braces"
+ */
+
+/**
+ * Expose "picomatch"
+ */
+
+/**
+ * Expose `toRegexRange`
+ */
+
+/**
+ * Expose list of watched paths
+ * @returns {Object} for chaining
+*/
+
+/**
+ * Fast paths for creating regular expressions for common glob patterns.
+ * This can significantly speed up processing and has very little downside
+ * impact when none of the fast paths match.
+ */
+
+/**
+ * Find a node of the given type
+ */
+
+/**
+ * Flatten an array
+ */
+
+/**
+ * Handle added file, directory, or glob pattern.
+ * Delegates call to _handleFile / _handleDir after checks.
+ * @param {String} path to file or ir
+ * @param {Boolean} initialAdd was the file added at watch instantiation?
+ * @param {Object} priorWh depth relative to user-supplied path
+ * @param {Number} depth Child path actually targeted for watch
+ * @param {String=} target Child path actually targeted for watch
+ * @returns {Promise}
+ */
+
+/**
+ * Handle added path with fsevents
+ * @param {String} path file/dir path or glob pattern
+ * @param {Function|Boolean=} transform converts working path to what the user expects
+ * @param {Boolean=} forceAdd ensure add is emitted
+ * @param {Number=} priorDepth Level of subdirectories already traversed.
+ * @returns {Promise<void>}
+ */
+
+/**
+ * Handle symlinks encountered during directory scan
+ * @param {String} linkPath path to symlink
+ * @param {String} fullPath absolute path to the symlink
+ * @param {Function} transform pre-existing path transformer
+ * @param {Number} curDepth level of subdirectories traversed to where symlink is
+ * @returns {Promise<void>}
+ */
+
+/**
+ * Handle symlinks encountered during directory scan
+ * @param {String} watchPath  - file/dir path to be watched with fsevents
+ * @param {String} realPath   - real path (in case of symlinks)
+ * @param {Function} transform  - path transformer
+ * @param {Function} globFilter - path filter in case a glob pattern was provided
+ * @returns {Function} closer for the watcher instance
+*/
+
+/**
+ * Handle symlinks encountered while reading a dir.
+ * @param {Object} entry returned by readdirp
+ * @param {String} directory path of dir being read
+ * @param {String} path of this item
+ * @param {String} item basename of this item
+ * @returns {Promise<Boolean>} true if no more processing is needed for this entry.
+ */
+
+/**
+ * Handles emitting unlink events for
+ * files and directories, and via recursion, for
+ * files and directories within directories that are unlinked
+ * @param {String} directory within which the following item is located
+ * @param {String} item      base path of item/directory
+ * @returns {void}
+*/
+
+/**
+ * Helper for passing fs_watch event data to a collection of listeners
+ * @param {Path} fullPath absolute path bound to fs_watch instance
+ * @param {String} type listener type
+ * @param {*=} val1 arguments to be passed to listeners
+ * @param {*=} val2
+ * @param {*=} val3
+ */
+
+/**
+ * Helper utility for throttling
+ * @param {ThrottleType} actionType type being throttled
+ * @param {Path} path being acted upon
+ * @param {Number} timeout duration of time to suppress duplicate actions
+ * @returns {Object|false} tracking object or false if action should be suppressed
+ */
+
+/**
+ * Hook factory, which creates a `useDispatch` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useDispatch` hook bound to the specified context.
+ */
+
+/**
+ * Hook factory, which creates a `useSelector` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useSelector` hook bound to the specified context.
+ */
+
+/**
+ * Hook factory, which creates a `useStore` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useStore` hook bound to the specified context.
+ */
+
+/**
+ * Instantiates the fs_watch interface
+ * @param {String} path to be watched
+ * @param {Object} options to be passed to fs_watch
+ * @param {Function} listener main event handler
+ * @param {Function} errHandler emits info about errors
+ * @param {Function} emitRaw emits raw event data
+ * @returns {fs.FSWatcher} new fsevents instance
+ */
+
+/**
+ * Instantiates the fs_watch interface or binds listeners
+ * to an existing one covering the same file system entry
+ * @param {String} path
+ * @param {String} fullPath absolute path
+ * @param {Object} options to be passed to fs_watch
+ * @param {Object} handlers container for event listener functions
+ */
+
+/**
+ * Instantiates the fsevents interface or binds listeners to an existing one covering
+ * the same file tree.
+ * @param {Path} path           - to be watched
+ * @param {Path} realPath       - real path for symlinks
+ * @param {Function} listener   - called when fsevents emits events
+ * @param {Function} rawEmitter - passes data to listeners of the 'raw' event
+ * @returns {Function} closer
+ */
+
+/**
+ * Internal utility hook to get an array-version of spec.accept.
+ * The main utility here is that we aren't creating a new array on every render if a non-array spec.accept is passed in.
+ * @param spec
+ */
+
+/**
+ * Main function which ends up calling readdirRec and reads all files and directories in given root recursively.
+ * @param {String} root Root directory
+ * @param {ReaddirpArguments=} options Options to specify root (start directory), filters and recursion depth
+ */
+
+/**
+ * Match the basename of a filepath.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch.matchBase(input, glob[, options]);
+ * console.log(picomatch.matchBase('foo/bar.js', '*.js'); // true
+ * ```
+ * @param {String} `input` String to test.
+ * @param {RegExp|String} `glob` Glob pattern or regex created by [.makeRe](#makeRe).
+ * @return {Boolean}
+ * @api public
+ */
+
+/**
+ * Normalize and emit events.
+ * Calling _emit DOES NOT MEAN emit() would be called!
+ * @param {EventName} event Type of event
+ * @param {Path} path File or directory path
+ * @param {*=} val1 arguments to be passed with event
+ * @param {*=} val2
+ * @param {*=} val3
+ * @returns the error if defined, otherwise the value of the FSWatcher instance's `closed` flag
+ */
+
+/**
+ * Parse a glob pattern to create the source string for a regular
+ * expression.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * const result = picomatch.parse(pattern[, options]);
+ * ```
+ * @param {String} `pattern`
+ * @param {Object} `options`
+ * @return {Object} Returns an object with useful properties and output to be used as a regex source string.
+ * @api public
+ */
+
+/**
+ * Parse the given `str` with the given `options`.
+ *
+ * ```js
+ * // braces.parse(pattern, [, options]);
+ * const ast = braces.parse('a/{b,c}/d');
+ * console.log(ast);
+ * ```
+ * @param {String} pattern Brace pattern to parse
+ * @param {Object} options
+ * @return {Object} Returns an AST
+ * @api public
+ */
+
+/**
+ * Picomatch constants.
+ * @return {Object}
+ */
+
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */
+
+/**
+ * Processes a brace pattern and returns either an expanded array
+ * (if `options.expand` is true), a highly optimized regex-compatible string.
+ * This method is called by the main [braces](#braces) function.
+ *
+ * ```js
+ * const braces = require('braces');
+ * console.log(braces.create('user-{200..300}/project-{a,b,c}-{1..10}'))
+ * //=> 'user-(20[0-9]|2[1-9][0-9]|300)/project-(a|b|c)-([1-9]|10)'
+ * ```
+ * @param {String} `pattern` Brace pattern
+ * @param {Object} `options`
+ * @return {Array} Returns an array of expanded values.
+ * @api public
+ */
+
+/**
+ * Provides a set of common helpers and properties relating to symlink and glob handling.
+ * @param {Path} path file, directory, or glob pattern being watched
+ * @param {Number=} depth at any depth > 0, this isn't a glob
+ * @returns {WatchHelper} object containing helpers for this path
+ */
+
+/**
+ * Provides directory tracking objects
+ * @param {String} directory path of the directory
+ * @returns {DirEntry} the directory's tracking object
+ */
+
+/**
+ * Read directory to add / remove files from `@watched` list and re-read it on change.
+ * @param {String} dir fs path
+ * @param {fs.Stats} stats
+ * @param {Boolean} initialAdd
+ * @param {Number} depth relative to user-supplied path
+ * @param {String} target child path targeted for watch
+ * @param {Object} wh Common watch helpers for this path
+ * @param {String} realpath
+ * @returns {Promise<Function>} closer for the watcher instance.
+ */
+
+/**
+ * Reduce an array of text nodes.
+ */
+
+/**
+ * Reduces hex values if possible e.g. #ff8866 to #f86
+ * @private
+ */
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsl(359, 0.75, 0.4),
+ *   background: hsl({ hue: 360, saturation: 0.75, lightness: 0.4 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsl(359, 0.75, 0.4)};
+ *   background: ${hsl({ hue: 360, saturation: 0.75, lightness: 0.4 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#b3191c";
+ *   background: "#b3191c";
+ * }
+ */
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgb(255, 205, 100),
+ *   background: rgb({ red: 255, green: 205, blue: 100 }),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgb(255, 205, 100)};
+ *   background: ${rgb({ red: 255, green: 205, blue: 100 })};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#ffcd64";
+ *   background: "#ffcd64";
+ * }
+ */
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: hsla(359, 0.75, 0.4, 0.7),
+ *   background: hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 }),
+ *   background: hsla(359, 0.75, 0.4, 1),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${hsla(359, 0.75, 0.4, 0.7)};
+ *   background: ${hsla({ hue: 360, saturation: 0.75, lightness: 0.4, alpha: 0,7 })};
+ *   background: ${hsla(359, 0.75, 0.4, 1)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "rgba(179,25,28,0.7)";
+ *   background: "#b3191c";
+ * }
+ */
+
+/**
+ * Returns a string value for the color. The returned result is the smallest possible rgba or hex notation.
+ *
+ * Can also be used to fade a color by passing a hex value or named CSS color along with an alpha value.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: rgba(255, 205, 100, 0.7),
+ *   background: rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 }),
+ *   background: rgba(255, 205, 100, 1),
+ *   background: rgba('#ffffff', 0.4),
+ *   background: rgba('black', 0.7),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${rgba(255, 205, 100, 0.7)};
+ *   background: ${rgba({ red: 255, green: 205, blue: 100, alpha: 0.7 })};
+ *   background: ${rgba(255, 205, 100, 1)};
+ *   background: ${rgba('#ffffff', 0.4)};
+ *   background: ${rgba('black', 0.7)};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "rgba(255,205,100,0.7)";
+ *   background: "#ffcd64";
+ *   background: "rgba(255,255,255,0.4)";
+ *   background: "rgba(0,0,0,0.7)";
+ * }
+ */
+
+/**
+ * Returns a string value for the darkened color.
+ *
+ * @example
+ * // Styles as object usage
+ * const styles = {
+ *   background: darken(0.2, '#FFCD64'),
+ *   background: darken('0.2', 'rgba(255,205,100,0.7)'),
+ * }
+ *
+ * // styled-components usage
+ * const div = styled.div`
+ *   background: ${darken(0.2, '#FFCD64')};
+ *   background: ${darken('0.2', 'rgba(255,205,100,0.7)')};
+ * `
+ *
+ * // CSS in JS Output
+ *
+ * element {
+ *   background: "#ffbd31";
+ *   background: "rgba(255,189,49,0.7)";
+ * }
+ */
+
+/**
+ * Returns an HslColor or HslaColor object. This utility function is only useful
+ * if want to extract a color component. With the color util `toColorString` you
+ * can convert a HslColor or HslaColor object back to a string.
+ *
+ * @example
+ * // Assigns `{ hue: 0, saturation: 1, lightness: 0.5 }` to color1
+ * const color1 = parseToHsl('rgb(255, 0, 0)');
+ * // Assigns `{ hue: 128, saturation: 1, lightness: 0.5, alpha: 0.75 }` to color2
+ * const color2 = parseToHsl('hsla(128, 100%, 50%, 0.75)');
+ */
+
+/**
+ * Returns an RgbColor or RgbaColor object. This utility function is only useful
+ * if want to extract a color component. With the color util `toColorString` you
+ * can convert a RgbColor or RgbaColor object back to a string.
+ *
+ * @example
+ * // Assigns `{ red: 255, green: 0, blue: 0 }` to color1
+ * const color1 = parseToRgb('rgb(255, 0, 0)');
+ * // Assigns `{ red: 92, green: 102, blue: 112, alpha: 0.75 }` to color2
+ * const color2 = parseToRgb('hsla(210, 10%, 40%, 0.75)');
+ */
+
+/**
+ * Returns the cartesian distance of the drag source component's position, based on its position
+ * at the time when the current drag operation has started, and the movement difference.
+ *
+ * Returns null if no item is being dragged.
+ *
+ * @param state The offset state to compute from
+ */
+
+/**
+ * Returns true if **any** of the given glob `patterns` match the specified `string`.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch.isMatch(string, patterns[, options]);
+ *
+ * console.log(picomatch.isMatch('a.a', ['b.*', '*.a'])); //=> true
+ * console.log(picomatch.isMatch('a.a', 'b.*')); //=> false
+ * ```
+ * @param {String|Array} str The string to test.
+ * @param {String|Array} patterns One or more glob patterns to use for matching.
+ * @param {Object} [options] See available [options](#options).
+ * @return {Boolean} Returns true if any patterns match `str`
+ * @api public
+ */
+
+/**
+ * Returns true if a brace node is invalid.
+ */
+
+/**
+ * Returns true if a node is an open or close node
+ */
+
+/**
+ * Returns true if the given brace node should be enclosed in literal braces
+ */
+
+/**
+ * Scan a glob pattern to separate the pattern into segments.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch.scan(input[, options]);
+ *
+ * const result = picomatch.scan('!./foo/*.js');
+ * console.log(result);
+ * { prefix: '!./',
+ *   input: '!./foo/*.js',
+ *   start: 3,
+ *   base: 'foo',
+ *   glob: '*.js',
+ *   isBrace: false,
+ *   isBracket: false,
+ *   isGlob: true,
+ *   isExtglob: false,
+ *   isGlobstar: false,
+ *   negated: true }
+ * ```
+ * @param {String} `input` Glob pattern to scan.
+ * @param {Object} `options`
+ * @return {Object} Returns an object with
+ * @api public
+ */
+
+/**
+ * Test `input` with the given `regex`. This is used by the main
+ * `picomatch()` function to test the input string.
+ *
+ * ```js
+ * const picomatch = require('picomatch');
+ * // picomatch.test(input, regex[, options]);
+ *
+ * console.log(picomatch.test('foo/bar', /^(?:([^/]*?)\/([^/]*?))$/));
+ * // { isMatch: true, match: [ 'foo/', 'foo', 'bar' ], output: 'foo/bar' }
+ * ```
+ * @param {String} `input` String to test.
+ * @param {RegExp} `regex`
+ * @return {Object} Returns an object with matching info.
+ * @api public
+ */
+
+/**
+ * These are private action types reserved by Redux.
+ * For any unknown actions, you must return the current state.
+ * If the current state is undefined, you must return the initial state.
+ * Do not reference these action types directly in your code.
+ */
+
+/**
+ * Turns an object whose values are different reducer functions, into a single
+ * reducer function. It will call every child reducer, and gather their results
+ * into a single state object, whose keys correspond to the keys of the passed
+ * reducer functions.
+ *
+ * @param {Object} reducers An object whose values correspond to different
+ * reducer functions that need to be combined into one. One handy way to obtain
+ * it is to use ES6 `import * as reducers` syntax. The reducers may never return
+ * undefined for any action. Instead, they should return their initial state
+ * if the state passed to them was undefined, and the current state for any
+ * unrecognized action.
+ *
+ * @returns {Function} A reducer function that invokes every reducer inside the
+ * passed object, and builds a state object with the same shape.
+ */
+
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+/**
+ * Watch a file and emit add event if warranted.
+ * @param {Path} file Path
+ * @param {fs.Stats} stats result of fs_stat
+ * @param {Boolean} initialAdd was the file added at watch instantiation?
+ * @returns {Function} closer for the watcher instance
+ */
+
+/**
+ * Watch file for changes with fs_watchFile or fs_watch.
+ * @param {String} path to file or dir
+ * @param {Function} listener on fs change
+ * @returns {Function} closer for the watcher instance
+ */
+
+/**
+ * Watches files & directories for changes. Emitted events:
+ * `add`, `addDir`, `change`, `unlink`, `unlinkDir`, `all`, `error`
+ *
+ *     new FSWatcher()
+ *       .add(directories)
+ *       .on('add', path => log('File', path, 'was added'))
+ */
+
+/**
+ * Zip strings
+ */
+
+/**
+ * drop-in replacement for _.get
+ * @param obj
+ * @param path
+ * @param defaultValue
+ */
+
+/**
+ * drop-in replacement for _.isString
+ * @param input
+ */
+
+/**
+ * drop-in replacement for _.without
+ */
+
+/**
+ * replacement for _.intersection
+ * @param itemsA
+ * @param itemsB
+ */
+
+/**
+ * replacement for _.xor
+ * @param itemsA
+ * @param itemsB
+ */
+
+/**
+ * useDropTarget Hook
+ * @param spec The drop target specification (object or function, function preferred)
+ * @param deps The memoization deps array to use when evaluating spec changes
+ */
+
+/** @class */
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @type Array<any> */
+
+/** @type {Map<Path, Object>} */
+
+/** @type {Map<Path, String|Boolean>} */
+
+/** @type {Map<String, Array>} */
+
+/** @type {Map<String, DirEntry>} */
+
+/** @type {Map<ThrottleType, Map>} */
+
+/** @type {Object} */
+
+/** @type {Set<Path>} */
+
+/** @type {Set<String>} */
+
+/** @type {fs.FSWatcher=} */
+
+/** @type {object|boolean} */
+
+/** A function that accepts a potential "extra argument" value to be injected later,
+ * and returns an instance of the thunk middleware that uses that value
+ */
+
+/************************************************************************/
+
+/******/
+
+/***/
+
+//
+
+//         channel.port2.postMessage(0);
+
+//         setImmediate(callback);
+
+//     channel.port1.onmessage = callback;
+
+//     return function requestCall() {
+
+//     var channel = new MessageChannel();
+
+//     };
+
+//   * https://github.com/react-dnd/react-dnd/issues/869
+
+//   * https://github.com/react-dnd/react-dnd/pull/928
+
+// "Upgrade" the watcher to persistence or a quicker interval.
+
+// "consumed" by the delegate iterator. If context.method was
+
+// "drop and blow away the whole document" action.
+
+// "return" to "throw", let that override the TypeError below.
+
+// "return", allow the original .return call to continue in the
+
+// (https://github.com/paulmillr/chokidar/blob/e1753ddbc9571bdc33b4a4af172d52cb6e611c10/lib/nodefs-handler.js#L612),
+
+// (may be shared across chokidar FSWatcher instances)
+
+// (other than symlinks being followed, which will be tracked soon)
+
+// - Android 4-4.3
+
+// - Chrome 26-34
+
+// - Firefox 14-29
+
+// - Internet Explorer 11
+
+// - Safari 6-7
+
+// - iPad Safari 6-7.1
+
+// - iPhone Safari 7-7.1
+
+// ------------
+
+// --------------
+
+// -----------------
+
+// .constructor.prototype properties for functions that return Generator
+
+// .throw, and .return (see defineIteratorMethods).
+
+// .throw, and .return methods.
+
+// <div ref={node => connectDragSource(connectDropTarget(node))}/>
+
+// @@iterator function is called on it. Some browsers' implementations of the
+
+// @ts-ignore
+
+// A .throw or .return when the delegate iterator has no .throw
+
+// A Generator should always return itself as the iterator object when the
+
+// A native item (such as URL) dragged from inside the document
+
+// A native item (such as file or URL) dragged from outside the document
+
+// Advance the index before calling the task. This ensures that we will
+
+// Align at the center
+
+// Allow injecting another batching function later
+
+// Alphabet chars.
+
+// Always default to polling on IBM i because fs.watch() is not available on IBM i.
+
+// An exception thrown by a task will permanently interrupt the processing of
+
+// Any non-magical string (`.ts`) or even nested expression (`.{ts,tsx}`) can follow after the closing parenthesis.
+
+// Any reducers that existed in both the new and old rootReducer
+
+// Array-as-queue is good enough here, since we are just dealing with exceptions.
+
+// Assign the result of the finished delegate to the temporary
+
+// AsyncIterator objects; they just return a Promise for the value of
+
+// Attach the factory function so users can create a customized version
+
+// Avoid calling selector multiple times if the store's state has not changed
+
+// Avoid conflicts if we later create another file with the same name
+
+// Avoid crashing if we missed a drop event or our previous drag died
+
+// Avoid failures from read-only properties
+
+// Avoid propagating failures to Promises returned by later
+
+// Be forgiving, per 25.3.3.3.3 of the spec:
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/construct.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeFunction.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js
+
+// CONCATENATED MODULE: ./node_modules/@emotion/is-prop-valid/dist/is-prop-valid.esm.js
+
+// CONCATENATED MODULE: ./node_modules/@emotion/memoize/dist/memoize.esm.js
+
+// CONCATENATED MODULE: ./node_modules/@emotion/stylis/dist/stylis.esm.js
+
+// CONCATENATED MODULE: ./node_modules/@react-dnd/asap/dist/esm/browser/asap.js
+
+// CONCATENATED MODULE: ./node_modules/@react-dnd/asap/dist/esm/browser/raw.js
+
+// CONCATENATED MODULE: ./node_modules/@react-dnd/invariant/dist/esm/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/@react-dnd/shallowequal/dist/esm/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/beginDrag.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/drop.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/endDrag.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/hover.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/local/setClientOffset.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/publishDragSource.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/dragDrop/types.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/actions/registry.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/classes/DragDropManagerImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/classes/DragDropMonitorImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/classes/HandlerRegistryImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/contracts.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/createDragDropManager.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/interfaces.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/dirtyHandlerIds.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/dragOffset.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/dragOperation.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/refCount.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/reducers/stateId.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/coords.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/dirtiness.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/equality.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/getNextUniqueId.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/js_utils.mjs
+
+// CONCATENATED MODULE: ./node_modules/dnd-core/dist/esm/utils/matchesType.mjs
+
+// CONCATENATED MODULE: ./node_modules/immer/dist/immer.esm.js
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/BrowserDetector.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/EnterLeaveCounter.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/HTML5BackendImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/MonotonicInterpolant.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/NativeDragSource.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/getDataFromDataTransfer.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/NativeDragSources/nativeTypesConfig.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/NativeTypes.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/OptionsReader.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/index.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd-html5-backend/dist/esm/utils/js_utils.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/core/DndContext.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/core/DndProvider.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useCollectedProps.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useCollector.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDragDropManager.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/DropTargetImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/connectors.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useAccept.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useDrop.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useDropTarget.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useDropTargetConnector.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useDropTargetMonitor.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useDrop/useRegisteredDropTarget.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useIsomorphicLayoutEffect.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useMonitorOutput.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/hooks/useOptionalFactory.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/internals/DropTargetMonitorImpl.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/internals/TargetConnector.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/internals/isRef.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/internals/registration.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-dnd/dist/esm/internals/wrapConnectorHooks.mjs
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/components/Provider.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/hooks/useDispatch.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/hooks/useReduxContext.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/hooks/useStore.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/index.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/utils/Subscription.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/utils/batch.js
+
+// CONCATENATED MODULE: ./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js
+
+// CONCATENATED MODULE: ./node_modules/redux-thunk/es/index.js
+
+// CONCATENATED MODULE: ./node_modules/redux/es/redux.js
+
+// CONCATENATED MODULE: ./node_modules/styled-components/dist/styled-components.esm.js
+
+// CONCATENATED MODULE: ./src/js/components/imageBox/footer.tsx
+
+// CONCATENATED MODULE: ./src/js/components/imageBox/header.tsx
+
+// CONCATENATED MODULE: ./src/js/components/imageBox/main.tsx
+
+// CONCATENATED MODULE: ./src/js/components/loading/loading.tsx
+
+// CONCATENATED MODULE: ./src/js/components/main/footer.tsx
+
+// CONCATENATED MODULE: ./src/js/components/main/header.tsx
+
+// CONCATENATED MODULE: ./src/js/components/main/main.tsx
+
+// CONCATENATED MODULE: ./src/js/components/main/main_docBox.tsx
+
+// CONCATENATED MODULE: ./src/js/fileSystem/connectHostScript.ts
+
+// CONCATENATED MODULE: ./src/js/fileSystem/init.js
+
+// CONCATENATED MODULE: ./src/js/main.tsx
+
+// CONCATENATED MODULE: ./src/js/pages/image.tsx
+
+// CONCATENATED MODULE: ./src/js/pages/mainPage.tsx
+
+// CONCATENATED MODULE: ./src/js/parts/buttons.tsx
+
+// CONCATENATED MODULE: ./src/js/parts/floatingBox.tsx
+
+// CONCATENATED MODULE: ./src/js/parts/pathBox.tsx
+
+// CONCATENATED MODULE: ./src/js/parts/radioBoxes.tsx
+
+// CONCATENATED MODULE: ./src/js/redux/app/hooks.ts
+
+// CONCATENATED MODULE: ./src/js/redux/app/store.ts
+
+// CONCATENATED MODULE: ./src/js/redux/features/floatBox/floatBoxSlice.ts
+
+// CONCATENATED MODULE: ./src/js/redux/features/options/optionSlice.ts
+
+// CONCATENATED MODULE: ./src/js/redux/features/pages/imagePage.ts
+
+// CONCATENATED MODULE: ./src/js/redux/features/windowMode/windowSlice.ts
+
+// CONCATENATED MODULE: ./src/styles/containers.ts
+
+// CSP to forbid Function, and you're not willing to fix either of those
+
+// Call delegate.iterator[context.method](context.arg) and handle the
+
+// Check `path` instead of `absPath` because the cwd portion can't be a glob
+
+// Check if item was on the watched list and remove it
+
+// Check if module is in cache
+
+// Check that change event was not fired because of changed only accessTime.
+
+// Check the target ids at the innermost position. If they are valid, add them
+
+// Check to protect against issue gh-730.
+
+// Common helpers
+
+// Create a new module (and put it into the cache)
+
+// Custom components can no longer be wrapped directly in React DnD 2.0
+
+// Cut out early if the target id has not been set. This should prevent errors
+
+// DCE check should happen before ReactDOM bundle executes so that
+
+// Decide whether or not we should start a new higher-level
+
+// Default to a dummy "batch" implementation that just runs the callback
+
+// Define Generator.prototype.{next,throw,return} in terms of the
+
+// Define the unified helper method that is used to implement .next,
+
+// Deliberately forget the last sent value so that we don't
+
+// Detect buggy property enumeration order in older V8 versions.
+
+// DevTools can report bad minification during injection.
+
+// Digits
+
+// Directory helpers
+
+// Disabling the `fastpaths` option due to a problem with parsing strings as `.ts` in the pattern like `**/!(*.d).ts`.
+
+// Dispatch the exception by looping back around to the
+
+// Dock to the bottom
+
+// Dock to the left
+
+// Dock to the right
+
+// Dock to the top
+
+// Don't publish the source just yet (see why below)
+
+// Don't show a nice cursor but still prevent default
+
+// Dragging some elements, like <a> and <img> may still behave like a native drag event,
+
+// Dummy constructor functions that we use as the .constructor and
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/defineProperty.js
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
+
+// EXTERNAL MODULE: ./node_modules/fast-deep-equal/index.js
+
+// EXTERNAL MODULE: ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js
+
+// EXTERNAL MODULE: ./node_modules/react-dom/index.js
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+
+// Editor atomic write normalization enabled by default with fs.watch
+
+// Enable batched updates in our subscriptions for use
+
+// Enable fsevents on OS X when polling isn't explicitly enabled.
+
+// Equivalent to push, but avoids a function call.
+
+// Even if we were, there is another bug in Internet Explorer 10.
+
+// Exception thrown outside of any try block that could handle
+
+// Execute the module function
+
+// Export FSWatcher class
+
+// FSEVENT_CLONED,
+
+// File helpers
+
+// Files that absent in current directory snapshot
+
+// Files that present in current directory snapshot
+
+// Finally call hover on all matching targets.
+
+// Firefox can dispatch this event in an infinite loop
+
+// Firefox only cares if it's an image, but WebKit also wants it to be detached.
+
+// Firefox won't drag without setting data
+
+// Fix issues where mtime is null but file is still present
+
+// Fixes issue #1042 -> Relative paths were detected and added as symlinks
+
+// For other targets, ask IE
+
+// For reasons explained above, we are also unable to use `setImmediate`
+
+// For the native GeneratorFunction constructor, the best we can
+
+// GenStateExecuting and loop back for another invocation.
+
+// Get consecutive differences and slopes
+
+// Get degree-1 coefficients
+
+// Get degree-2 and degree-3 coefficients
+
+// Get the draggable source
+
+// Get the source client offset
+
+// Global override (useful for end-developers that need to force polling for all
+
+// Helper for defining the .next, .throw, and .return methods of the
+
+// However, `flush` does not make any arrangements to be called again if an
+
+// However, if we ever elect to use timers in Safari, the prevalent work-around
+
+// However, since this timer gets frequently dropped in Firefox
+
+// IE 8 has a broken Object.defineProperty that only works on DOM objects.
+
+// IE doesn't support MIME types in setData
+
+// IE requires this to fire dragover events
+
+// If a rejected Promise was yielded, throw the rejection back
+
+// If a task throws an exception, `flush` ensures that its state will remain
+
+// If an exception is thrown from innerFn, we leave state ===
+
+// If by this time no drag source reacted, tell browser not to drag.
+
+// If child drag source refuses drag but parent agrees,
+
+// If context.method was "throw" but the delegate handled the
+
+// If enqueue has been called before, then we want to wait until
+
+// If maybeInvokeDelegate(context) changed context.method from
+
+// If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+
+// If passed a ReactElement, clone it and attach this function as a ref.
+
+// If source.beginDrag returns null, this is an indicator to cancel the drag
+
+// If the delegate iterator has a return method, give it a
+
+// If the dispatched exception was caught by a catch block,
+
+// If the target changes position as the result of `dragenter`, `dragover` might still
+
+// If this "action" is really a function, call it and return the result.
+
+// If we call `asap` within tasks scheduled by `asap`, the queue will
+
+// If we wait for this file to be fully written, cancel the wait.
+
+// If we've accumulated a substantial number of paths that
+
+// Ignore the finally entry if control is not jumping to a
+
+// In a web browser, exceptions are not fatal. However, to avoid
+
+// In some cases the user may want to override this behavior, e.g.
+
+// In this case, we need to parse the string and use it in the output of the original pattern.
+
+// Initialize the coordinates using the client offset
+
+// Initialize the full coordinates
+
+// Initialize with proper watcher.
+
+// Inlined / shortened version of `kindOf` from https://github.com/jonschlinkert/kind-of
+
+// Inlined version of the `symbol-observable` polyfill
+
+// Inputs and textareas should be selectable
+
+// Instead, we periodically shift 1024 tasks off the queue.
+
+// Interpolate
+
+// It also neatly avoids a situation where render() returns null
+
+// It is not sufficient to assign `setImmediate` to `requestFlush` because
+
+// Iterator interface in terms of a single ._invoke method.
+
+// Its name will be periodically randomized to break any code that
+
+// Its name will be periodically randomized to break any code that depends on
+
+// Just let it drag. It's a native type (URL or text) and will be picked up in
+
+// Launch stream with one parent, the root dir.
+
+// Looks like a Safari bug: dataTransfer.types is null, but there was no draggable.
+
+// Manually shift all values starting at the index back to the
+
+// Mark imbalanced braces and brackets as invalid
+
+// Memory management.
+
+// Multiple actions are dispatched here, which is why this doesn't return an action
+
+// Must use `global` or `self` instead of `window` to work in both frames and web
+
+// MutationObservers are desirable because they have high priority and work
+
+// MutationObservers, so we don't need to fall back in that case.
+
+// NAMESPACE OBJECT: ./node_modules/react-dnd-html5-backend/dist/esm/NativeTypes.mjs
+
+// Never forget.
+
+// Non-alphabetic chars.
+
+// Normalize the directory name on Windows
+
+// Not indenting methods for history sake; for now.
+
+// Not sure about the optimal order of these conditions:
+
+// Note that simple async functions are implemented on top of
+
+// Note that the "Dustbin Stress Test" fails if this is not
+
+// Note: At a later stage we can optimize this function as right now a hsl
+
+// Note: ["return"] must be used for ES3 parsing compatibility.
+
+// Now we are ready to publish the drag source.. or are we not?
+
+// Once a flush has been requested, no further calls to `requestFlush` are
+
+// Only IE requires us to explicitly say
+
+// Only proceed if we have not handled it already.
+
+// Other platforms use non-polling fs_watch.
+
+// Otherwise, pass the action down the middleware chain as usual
+
+// Prevent default "drop and blow away the whole document" action.
+
+// Prevent leaking memory for long chains of recursive calls to `asap`.
+
+// Public methods
+
+// Rather than returning an object with a next method, we keep
+
+// RawTasks are recycled to reduce GC churn.
+
+// React currently throws a warning when using useLayoutEffect on the server.
+
+// React v16.11 and below
+
+// React v16.12 and above
+
+// Rearrange xs and ys so that xs is sorted
+
+// Receiving a mouse event in the middle of a dragging operation
+
+// Recursively remove children directories / files.
+
+// Regardless of whether this script is executing as a CommonJS module
+
+// Remove those targetIds that don't match the targetType.  This
+
+// Removes this instance's listeners and closes the underlying fs_watchFile
+
+// Replace globs with equivalent patterns to reduce parsing time.
+
+// Resetting context._sent for legacy support of Babel's
+
+// Resume execution at the desired location (see delegateYield).
+
+// Return an iterator with no values.
+
+// Return the exports of the module
+
+// SSR Fix (https://github.com/react-dnd/react-dnd/pull/813
+
+// SVG-related properties
+
+// Safari 6 and 6.1 for desktop, iPad, and iPhone are the only browsers that
+
+// Safari 6.0 has a problem where timers will get lost while the user is
+
+// Safari 6.0.5 (at least) intermittently fails to create message ports on a
+
+// Search for the interval x is in, returning the corresponding y if x is one of the original xs
+
+// See https://github.com/facebook/regenerator/issues/274 for more details.
+
+// See:
+
+// Set up default options.
+
+// Setting context._sent for legacy support of Babel's
+
+// Show user-specified drop effect.
+
+// Stop the default behavior when we're not expecting a native item to be dropped.
+
+// Store drag source node so we can check whether
+
+// Suitable patterns: `/!(*.d).ts`, `/!(*.d).{ts,tsx}`, `**/!(*-dbg).@(js)`.
+
+// Suppress event when fs_stat fails, to avoid sending undefined 'stat'
+
+// TODO
+
+// TODO: Strange thing: "should not choke on an ignored watch path" will be failed without 2 ready calls -__-
+
+// TODO: if we ever make a react-native version of this,
+
+// TODO: real check
+
+// Test for A's keys different from B.
+
+// The ._invoke method unifies the implementations of the .next,
+
+// The Entry will either be a directory that just got removed
+
+// The browsers will use the image intrinsic size under different conditions.
+
+// The context.catch method must only be called with a location
+
+// The delegate iterator is finished, so forget it and continue with
+
+// The drop target may either be attached via ref or connect function
+
+// The flush function processes all tasks that have been scheduled with
+
+// The message channel technique was discovered by Malte Ubl and was the
+
+// The module cache
+
+// The require function
+
+// The rightmost point in the dataset should give an exact result
+
+// The root entry object (effectively a try statement without a catch
+
+// The thunk middleware looks for any functions that were passed to `store.dispatch`.
+
+// They are implemented in all modern browsers.
+
+// This action has a similiar effect to ActionTypes.INIT.
+
+// This creates some unlikely edge case issues if the user mixes
+
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+
+// This environment has a native %IteratorPrototype%; use it instead
+
+// This helps us achieve a neat API where user doesn't even know that refs
+
+// This hook exists purely for testing purposes.
+
+// This is a polyfill for %IteratorPrototype% for environments that
+
+// This is for `asap.js` only.
+
+// This is needed because the drag preview needs to be drawn or else it fires an 'mousemove' event
+
+// This is probably a native item type we don't understand.
+
+// This is the reason such behavior is strictly opt-in.
+
+// This is used to make sure we don't warn about the same
+
+// This is useful to prevent an error thrown in a task from stalling the event
+
+// This leads to an incorrect state if the path was recreated:
+
+// This module should not be running in strict mode, so the above
+
+// This needs to be a deep-equality check because some monitor-collected values
+
+// This will create a new entry in the watched object in either case
+
+// To avoid creating an additional object, we just hang the .value
+
+// To get around it, we can conditionally useEffect on the server (no-op) and
+
+// Try/catch helper to minimize deoptimizations. Returns a completion
+
+// Type definitions taken from https://github.com/gcanti/flow-static-land/blob/master/src/Fun.js
+
+// Use bigint stats if it's windows and stat() supports options (node 10+).
+
+// Use custom drag image if user specifies it.
+
+// Use polling on Mac if not using fsevents.
+
+// Use the fastest means possible to execute a task in its own turn, with
+
+// Usually we want to publish it in the next tick so that browser
+
+// Verify that the code above has been dead code eliminated (DCE'd).
+
+// We dispatch a timeout with a specified delay of 0 for engines that
+
+// We don't expect any of the above to throw, but better to be safe.
+
+// We need to wait before we start listening for mousemove events.
+
+// We queue errors to ensure they are thrown in right order (FIFO).
+
+// We wrap tasks with recyclable task objects.  A task object implements
+
+// We'll have to wait for @3x to see if this is entirely correct
+
+// When a store is created, an "INIT" action is dispatched so that every
+
+// When a yielded Promise is resolved, its final value becomes
+
+// When passed a node, call the hook straight away.
+
+// When using a custom drag layer, the only way to prevent
+
+// Whichever timer succeeds will cancel both timers and
+
+// Within the body of any async function, `await x` is transformed to
+
+// Work around @2x coordinate discrepancies in browsers
+
+// Work around Safari 8 positioning bug
+
+// Workaround for https://github.com/joyent/node/issues/4337
+
+// You’re frozen when your heart’s not open.
+
+// `call`, just like a function.
+
+// `hasOwn.call(value, "__await")` to determine if the yielded value is
+
+// `process.on("uncaughtException")` or by a domain.
+
+// `rawAsap` unless and until one of those tasks throws an exception.
+
+// `requestFlush` is implemented using a strategy based on data collected from
+
+// `requestFlush` requests that the high priority event queue be flushed as
+
+// `setImmediate` must be called *by name* and therefore must be wrapped in a
+
+// `setTimeout` does not call the passed callback if the delay is less than
+
+// `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+
+// a path may have been filtered out of this readdir, but
+
+// above the current one, create a watcher on the parent
+
+// accidentally pass it on to the delegate.
+
+// achromatic
+
+// add is about to be emitted if file not already tracked in parent
+
+// add the linkTarget for watching with a wrapper for transform
+
+// all previous Promises have been resolved before calling invoke,
+
+// already have an existing method we want to call, so there's no need
+
+// also ensures that the minifier will not anonymize the function.
+
+// an event 20 times per second until it succeeds.
+
+// ancestor components re-render before descendants
+
+// and .done properties off the next function object itself. This
+
+// and are removed from @watched[directory].
+
+// and height. In this case, though, returning null from render()
+
+// and the statsProp is undefined
+
+// any necessary setup in a predictable way. This predictability
+
+// approximately 7 in web workers in Firefox 8 through 18, and sometimes not
+
+// are being used under the hood.
+
+// argument that corresponds to a known catch block.
+
+// assignment should always work unless something is misconfigured. Just
+
+// assume we should escape the brackets to match literal characters
+
+// assume we should match with a regex character class
+
+// async functions in terms of async generators, it is especially
+
+// available, otherwise a store update may happen between render and the effect,
+
+// backwards-compatibility
+
+// begin flushing on the next task the task throws an error.
+
+// beginning of the queue.
+
+// between events.
+
+// blue case
+
+// but absent in previous are added to watch list and
+
+// but never removed from the map in case the path was deleted.
+
+// but present in previous emit `remove` event
+
+// call `rawAsap.requestFlush` if an exception is thrown.
+
+// call invoke immediately, without waiting on a callback to fire,
+
+// can reliably accommodate that request. This will usually be snapped
+
+// case the file's watcher misses it (and rely on throttling to de-dupe)
+
+// chance to clean up.
+
+// changed
+
+// cheap lodash replacements
+
+// check if there is already a watcher on a parent path
+
+// checking for BOS characters like "!" and "." (not "./")
+
+// closure.
+
+// collapse slashes to reduce potential for exploits
+
+// color would be parsed converted to rgb values and converted back to hsl.
+
+// consistent and will resume where it left off when called again.
+
+// const index = cont.listeners.indexOf(listener);
+
+// context.dispatchException(context.arg) call above.
+
+// context.method was "next", forget context.arg since it has been
+
+// convert to absolute path unless relative path already matches
+
+// correct for wrong events emitted
+
+// could have been consolidated by watching one directory
+
+// create constants based on platform, for windows or posix
+
+// current iteration.
+
+// define __esModule on exports
+
+// define getter functions for harmony exports
+
+// delegate iterator, or by modifying context.method and context.arg,
+
+// depends on its existence.
+
+// determines subdirectory traversal levels from root to path
+
+// do is to check its .name property.
+
+// do not edit .js files directly - edit src/index.jst
+
+// documented since Node 10.4.1
+
+// doesn't seem worthwhile for the added complexity.
+
+// don't follow the same symlink more than once
+
+// don't hoist over string (html) components
+
+// don't natively support it.
+
+// don't recurse further if it would exceed depth setting
+
+// done when the component updates
+
+// dragenter handler.
+
+// either ensure that no exceptions are thrown from your task, or to manually
+
+// emit `add` event.
+
+// emit addDir unless this is a glob parent
+
+// emit an add event if we're supposed to
+
+// emit based on events occurring for files from a directory's watcher in
+
+// empty
+
+// encapsulates the subscription logic for connecting a component to the redux store, as
+
+// enqueue has not been called before, then it is important to
+
+// ensure dir is tracked (harmless if redundant)
+
+// ensure directories are tracked
+
+// ensure empty dirs get tracked
+
+// ensure latest selected state is reused so that a custom equality function can result in identical references
+
+// ensure relativeness of path is preserved in case of watcher reuse
+
+// ensure that win32 namespaces has two leading slashes, so that the path is
+
+// entry may be undefined, because a warning or an error were emitted
+
+// eslint-disable-line no-new-wrappers
+
+// eslint-disable-line no-redeclare
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
+// eslint-disable-next-line no-prototype-builtins
+
+// eslint-disable-next-line no-redeclare
+
+// eslint-disable-next-line no-unused-vars
+
+// eslint-disable-next-line prefer-rest-params
+
+// evaluate what is at the path we're being asked to watch
+
+// even if the current drag event matches a user-defined type.
+
+// even then.
+
+// events in browsers.
+
+// every available SauceLabs Selenium web driver worker at time of writing.
+
+// exception is thrown by a task, that the task queue will continue flushing as
+
+// exception is thrown.
+
+// exception, let the outer generator proceed normally. If
+
+// execute code before the first await. Since we implement simple
+
+// execute the callback.
+
+// executor callback, and why async functions synchronously
+
+// filter out duplicates if specified
+
+// filter out empty strings if specified
+
+// first entry should always have entry.parentDir === EMPTY_STR
+
+// fix negative zero
+
+// fixes shallow isOver which would only be non-shallow because of
+
+// flip windows path separators
+
+// for frozen objects
+
+// for recursive deleting and cleaning of watched object
+
+// formulae from https://en.wikipedia.org/wiki/HSL_and_HSV
+
+// fs_watch helpers
+
+// function makeRequestCallFromMessageChannel(callback) {
+
+// function makeRequestCallFromSetImmediate(callback) {
+
+// function.sent implementation.
+
+// get dispatched despite target being no longer there. The easy solution is to check
+
+// get the location of the block on parent.nodes (block's siblings)
+
+// getDefaultExport function for compatibility with non-harmony modules
+
+// grow, but to avoid an O(n) walk for every task we execute, we don't
+
+// handled properly by the win32 version of path.parse() after being normalized
+
+// has a stable shape and so hopefully should be cheap to allocate.
+
+// have WebKitMutationObserver but not un-prefixed MutationObserver.
+
+// have been (and was previously) designed to take a closure to be
+
+// http://www.nonblocking.io/2011/06/windownexttick.html
+
+// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+
+// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+
+// https://docs.google.com/spreadsheets/d/1mG-5UYGup5qxGdEMWkhP6BWCz053NUb2E1QoUTU16uA/edit#gid=783724593
+
+// https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+
+// https://github.com/paulmillr/chokidar/blob/e1753ddbc9571bdc33b4a4af172d52cb6e611c10/lib/nodefs-handler.js#L553
+
+// https://github.com/react-dnd/react-dnd/issues/1310
+
+// https://msdn.microsoft.com/library/windows/desktop/aa365247(v=vs.85).aspx#namespaces
+
+// https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+
+// if (cont.watcherUnusable) {
+
+// if a Content Security Policy forbids using Function, but in that case
+
+// if a path is being added that was previously ignored, stop ignoring it
+
+// if current directory is removed, do nothing
+
+// if dragend handler does something like showing an alert.
+
+// if it is not a directory, nestedDirectoryChildren will be empty array
+
+// if nothing has changed then don't resubscribe
+
+// if stats doesn't exist the file must have been deleted
+
+// if the beginning of the glob is "./", advance the start
+
+// if the file is already being watched, do nothing
+
+// if the only watched file is removed, watch for its return
+
+// if what is being deleted is a directory, get that directory's paths
+
+// immediately in some browsers.
+
+// important to get this right, even though it requires care.
+
+// in case of intersecting globs;
+
+// in case runtime.js accidentally runs in strict mode, in modern engines
+
+// in every case, so we don't have to touch the arguments object. The
+
+// in the same tick for the source element, and browser freaks out.
+
+// include XYCoord objects that may be equivalent, but do not have instance equality.
+
+// injected easily by `bin/regenerator --include-runtime script.js`.
+
+// instance if there are no more listeners left
+
+// instance if there are no more listeners left.
+
+// instances of chokidar, regardless of usage/dependency depth)
+
+// into the async generator function so it can be handled there.
+
+// invocations of the iterator.
+
+// invoked without arguments, but in all the cases we care about we
+
+// is able to screenshot the current (not yet dragging) state.
+
+// is created synchronously, otherwise a store update may occur before the
+
+// is re-rendered, the selectors are called again, and
+
+// is to add a scroll event listener that calls for a flush.
+
+// is why the Promise constructor synchronously invokes its
+
+// it is removed from DOM and trigger endDrag manually.
+
+// it, so set the completion value of the entire function to
+
+// iterator prototype chain incorrectly implement this, causing the Generator
+
+// its existence.
+
+// keys multiple times.
+
+// kick off the watcher
+
+// listeners.add(listener);
+
+// location outside the try/catch block.
+
+// locations where there is no enclosing try statement.
+
+// lower priority turn.
+
+// make sure rgb are contained in a set of [0, 255]
+
+// means it has ended and the drag source node disappeared from DOM,
+
+// meant to be awaited.
+
+// method always terminates the yield* loop.
+
+// minifier not to mangle the names of these two functions.
+
+// minimatch options support
+
+// modifies `watchPath` to the parent path when it finds a match
+
+// mutation observers, so that implementation is used instead.
+
+// necessary until the next `flush` completes.
+
+// need to check filterPath on dirs b/c filterDir is less restrictive
+
+// no module.id needed
+
+// no module.loaded needed
+
+// no need to use broadcast here
+
+// non-matching targets.
+
+// object to hold per-process fs_watch instances
+
+// object to not be returned from this call. This ensures that doesn't happen.
+
+// objects. For full spec compliance, you may wish to configure your
+
+// of the polyfill.
+
+// one more time for any missed in case changes came in extremely quickly
+
+// only additional allocation required is the completion record, which
+
+// only need to resolve once
+
+// only push if _both_ are negative...
+
+// optionally relax check
+
+// or _both_ are positive
+
+// or a bogus entry to a file, in either case we have to remove it
+
+// or a finally block) gives us a place to store values thrown from
+
+// or not, return the runtime object so that we can declare the variable
+
+// original foundation for this library.
+
+// outer generator.
+
+// page's first load. Thankfully, this version of Safari supports
+
+// parent watcher
+
+// path instead, so that we do consolidate going forward.
+
+// preserve the current depth here since it can't be derived from
+
+// preserve this symlink's target path
+
+// preserves full path in case of trailing path separator
+
+// prettier-ignore
+
+// prevent duplicate handling in case of arriving here nearly simultaneously
+
+// priority over other events including IO, animation, reflow, and redraw
+
+// problems, please detail your unique predicament in a GitHub issue.
+
+// public for test
+
+// push symlinks back to the top of the stack to get handled
+
+// queue if the exception handled by Node.js’s
+
+// rawAsap provides everything we need except exception management.
+
+// rawEmitters.add(rawEmitter);
+
+// real paths past the symlink
+
+// realpath has already been resolved
+
+// rebuild the output if we had to backtrack at any point
+
+// record like context.tryEntries[i].completion. This interface could
+
+// reducer returns their initial state. This effectively populates
+
+// ref objects should be passed straight through without wrapping
+
+// regeneratorRuntime in the outer scope, which allows this module to be
+
+// regular expressions
+
+// reliably everywhere they are implemented.
+
+// remove escape chars and return result
+
+// remove path parts that are globby
+
+// remove single star from output
+
+// removes this instance's listeners and closes the underlying fs_watch
+
+// removes this instance's listeners and closes the underlying fsevents
+
+// replace the (invalid) block with it's nodes
+
+// reset "prev" to the first token
+
+// reset output with globstar
+
+// reset previous token to globstar
+
+// reset the cached userIgnored anymatch fn
+
+// result, either by returning a { value, done } result from the
+
+// return the node so it can be chained (e.g. when within callback refs
+
+// returns boolean indicating whether fsevents can be used
+
+// scan the contents of the dir
+
+// scrolling. This problem does not impact ASAP because Safari 6.0 supports
+
+// set aside negated glob strings
+
+// setting context.delegate to null, and returning the ContinueSentinel.
+
+// settings in a very weird way, but solving for those cases
+
+// shift tasks off the queue after they have been executed.
+
+// shouldn't be removed because it matches a different glob
+
+// slowing down the queue of pending tasks, we rethrow the error in a
+
+// so that results are always delivered in the correct order. If
+
+// so that the async generator function has the opportunity to do
+
+// so that we don't need to depend on findDOMNode() from react-dom.
+
+// so the browser didn't dispatch the dragend event.
+
+// so we got to do the directory check beforehand
+
+// soon as possible, but if you use `rawAsap` directly, you are responsible to
+
+// soon as possible.
+
+// special case for strings ending in enclosure containing path separator
+
+// src/configureStore.ts
+
+// src/createAction.ts
+
+// src/createReducer.ts
+
+// src/createSlice.ts
+
+// src/entities/entity_state.ts
+
+// src/getDefaultMiddleware.ts
+
+// src/immutableStateInvariantMiddleware.ts
+
+// src/index.ts
+
+// src/isPlainObject.ts
+
+// src/mapBuilders.ts
+
+// src/utils.ts
+
+// stats is always present
+
+// stats.mode may be bigint
+
+// strict mode using a global Function call. This could conceivably fail
+
+// strip consecutive `/**/`
+
+// subscription callback always has the selector from the latest render commit
+
+// subscription is created and an inconsistent state may be observed
+
+// subsequent tasks. The higher level `asap` function ensures that if an
+
+// suppress the useLayoutEffect warning on server side.
+
+// suppress unlink events on never before seen files
+
+// that causes emitted paths to incorporate the link's path
+
+// the .value of the Promise<{value,done}> result for the
+
+// the default drag preview from drawing in IE is to screenshot
+
+// the dragging state in which the node itself has zero opacity
+
+// the final result produced by the iterator.
+
+// the initial state tree.
+
+// the method takes exactly one argument, since that happens to be true
+
+// the new state tree with any relevant data from the old one.
+
+// the outer generator.
+
+// the proper solution is to fix the accidental strict mode problem. If
+
+// then let that catch block handle the exception normally.
+
+// things simple and return the next function itself.
+
+// throw the exception.
+
+// to a 4 milisecond delay, but once we're flushing, there's no delay
+
+// to create a new function object. We can even get away with assuming
+
+// to enable drag and drop
+
+// to make ignoredPaths changes effective
+
+// to the current index, and don't add the "./" characters
+
+// to the result
+
+// to the state. This greatly simplifies lookbehinds when
+
+// to work around IE not supporting custom drag previews.
+
+// track new directories
+
+// track new paths
+
+// true if both NaN, false otherwise
+
+// undefined on initial render
+
+// under any circumstances.
+
+// unified ._invoke helper method.
+
+// update the collected properties after react renders.
+
+// use parent's node as drag image. Neither works in IE though.
+
+// use process.nextTick to allow time for listener to be bound
+
+// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
+
+// variable specified by delegate.resultName (see delegateYield).
+
+// via multiple paths (such as _handleFile and _handleDir)
+
+// watch symlink directly (don't follow) and detect changes
+
+// we can explicitly access globalThis. In older engines we can escape
+
+// we ignore all errors here, since when the component
+
+// we want drag drop operation to start
+
+// we'll need to consider how to pull off dev-tooling
+
+// webpackBootstrap
+
+// well as nesting subscriptions of descendant components, so that we can ensure the
+
+// when literal brackets are explicitly disabled
+
+// when literal brackets are explicitly enabled
+
+// when the user specifies nothing, try to match both
+
+// where the user has an older version of dnd-core like in
+
+// whether there actually is a target before firing `hover`.
+
+// which may cause missed updates; we also must ensure the store subscription
+
+// will abruptly end the dragging, which is not obvious.
+
+// will receive the previous state. This effectively populates
+
+// will throw again, if neither props nor store state
+
+// with standard React renderers (ReactDOM, React Native)
+
+// with whatever "extra arg" they want to inject into their thunks
+
+// workers, we enlist an interval handle that will try to fire
+
+// workers. `global` is a provision of Browserify, Mr, Mrs, or Mop.
+
+// you've misconfigured your bundler to force strict mode and applied a
+
+// }
+
+//# sourceMappingURL=DndContext.mjs.map
+
+//# sourceMappingURL=DndProvider.mjs.map
+
+//# sourceMappingURL=DragDropManagerImpl.mjs.map
+
+//# sourceMappingURL=DragDropMonitorImpl.mjs.map
+
+//# sourceMappingURL=DropTargetImpl.mjs.map
+
+//# sourceMappingURL=DropTargetMonitorImpl.mjs.map
+
+//# sourceMappingURL=EnterLeaveCounter.mjs.map
+
+//# sourceMappingURL=HTML5BackendImpl.mjs.map
+
+//# sourceMappingURL=HandlerRegistryImpl.mjs.map
+
+//# sourceMappingURL=MonotonicInterpolant.mjs.map
+
+//# sourceMappingURL=NativeDragSource.mjs.map
+
+//# sourceMappingURL=OffsetUtils.mjs.map
+
+//# sourceMappingURL=OptionsReader.mjs.map
+
+//# sourceMappingURL=TargetConnector.mjs.map
+
+//# sourceMappingURL=beginDrag.mjs.map
+
+//# sourceMappingURL=connectors.mjs.map
+
+//# sourceMappingURL=contracts.mjs.map
+
+//# sourceMappingURL=coords.mjs.map
+
+//# sourceMappingURL=createDragDropManager.mjs.map
+
+//# sourceMappingURL=dirtiness.mjs.map
+
+//# sourceMappingURL=dirtyHandlerIds.mjs.map
+
+//# sourceMappingURL=dragOffset.mjs.map
+
+//# sourceMappingURL=dragOperation.mjs.map
+
+//# sourceMappingURL=drop.mjs.map
+
+//# sourceMappingURL=endDrag.mjs.map
+
+//# sourceMappingURL=equality.mjs.map
+
+//# sourceMappingURL=getDataFromDataTransfer.mjs.map
+
+//# sourceMappingURL=hover.mjs.map
+
+//# sourceMappingURL=immer.esm.js.map
+
+//# sourceMappingURL=index.mjs.map
+
+//# sourceMappingURL=isRef.mjs.map
+
+//# sourceMappingURL=js_utils.mjs.map
+
+//# sourceMappingURL=matchesType.mjs.map
+
+//# sourceMappingURL=nativeTypesConfig.mjs.map
+
+//# sourceMappingURL=publishDragSource.mjs.map
+
+//# sourceMappingURL=redux-toolkit.esm.js.map
+
+//# sourceMappingURL=refCount.mjs.map
+
+//# sourceMappingURL=registry.mjs.map
+
+//# sourceMappingURL=setClientOffset.mjs.map
+
+//# sourceMappingURL=stateId.mjs.map
+
+//# sourceMappingURL=styled-components.esm.js.map
+
+//# sourceMappingURL=useAccept.mjs.map
+
+//# sourceMappingURL=useCollectedProps.mjs.map
+
+//# sourceMappingURL=useCollector.mjs.map
+
+//# sourceMappingURL=useDragDropManager.mjs.map
+
+//# sourceMappingURL=useDrop.mjs.map
+
+//# sourceMappingURL=useDropTarget.mjs.map
+
+//# sourceMappingURL=useDropTargetConnector.mjs.map
+
+//# sourceMappingURL=useDropTargetMonitor.mjs.map
+
+//# sourceMappingURL=useIsomorphicLayoutEffect.mjs.map
+
+//# sourceMappingURL=useMonitorOutput.mjs.map
+
+//# sourceMappingURL=useOptionalFactory.mjs.map
+
+//# sourceMappingURL=useRegisteredDropTarget.mjs.map
+
+//# sourceMappingURL=wrapConnectorHooks.mjs.map
+
+//await loadJsx(polyFillFolder);
+
+//const appID = csInterface.getApplicationID();
+
+//json2読み込み

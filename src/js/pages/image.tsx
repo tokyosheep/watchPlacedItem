@@ -11,10 +11,11 @@ const ImagePage = () => {
   const documents = useAppSelector(state => state.documents);
   const pageStatus = useAppSelector(state => state.imagePageStatus);
   const doc = documents.value.length !== 0 ? documents.value[pageStatus.value.docIndex] : null;
+  console.log(doc);
   return (
       <Container switch={pageStatus.value.isPageOn}>
           <Header />
-          {doc === null ? '' : <ImageMain images={doc.images} docPath={doc.path} />}
+          {doc === null || doc === undefined ? '' : <ImageMain images={doc.images} docPath={doc.path} />}
           <Footer docPath={doc?.path ?? null} />
       </Container>
   );

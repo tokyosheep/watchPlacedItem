@@ -276,62 +276,6 @@ module.exports = _nonIterableSpread, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js ***!
-  \************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithoutPropertiesLoose.js */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js");
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-  var target = objectWithoutPropertiesLoose(source, excluded);
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-module.exports = _objectWithoutProperties, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
-  \*****************************************************************************/
-/***/ ((module) => {
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/slicedToArray.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
@@ -3785,41 +3729,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
-/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
-/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var chokidar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! chokidar */ "./node_modules/chokidar/index.js");
-/* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../fileSystem/init */ "./src/js/fileSystem/init.js");
-/* harmony import */ var _fileSystem_basic__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../fileSystem/basic */ "./src/js/fileSystem/basic.ts");
-/* harmony import */ var _redux_features_windowMode_windowSlice__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../redux/features/windowMode/windowSlice */ "./src/js/redux/features/windowMode/windowSlice.ts");
-/* harmony import */ var _redux_app_hooks__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../redux/app/hooks */ "./src/js/redux/app/hooks.ts");
-/* harmony import */ var _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../fileSystem/connectHostScript */ "./src/js/fileSystem/connectHostScript.ts");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var chokidar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! chokidar */ "./node_modules/chokidar/index.js");
+/* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../fileSystem/init */ "./src/js/fileSystem/init.js");
+/* harmony import */ var _fileSystem_basic__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../fileSystem/basic */ "./src/js/fileSystem/basic.ts");
+/* harmony import */ var _redux_features_windowMode_windowSlice__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../redux/features/windowMode/windowSlice */ "./src/js/redux/features/windowMode/windowSlice.ts");
+/* harmony import */ var _redux_app_hooks__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../redux/app/hooks */ "./src/js/redux/app/hooks.ts");
+/* harmony import */ var _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../fileSystem/connectHostScript */ "./src/js/fileSystem/connectHostScript.ts");
 
 
 
 
 
 
-
-var _excluded = ["images"];
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 
 
@@ -3830,173 +3770,158 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-var WatchData = /*#__PURE__*/function () {
-  function WatchData(filePath) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_4___default()(this, WatchData);
+var WatchContainer = /*#__PURE__*/function () {
+  function WatchContainer(docs) {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, WatchContainer);
 
-    this.filePath = filePath;
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "docs", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "watcher", void 0);
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "watcher", void 0);
 
+    this.docs = docs;
     this.watcher = null;
-    this.filePath = filePath;
   }
 
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_5___default()(WatchData, [{
-    key: "watchBegin",
-    value: function watchBegin(func, itSelf) {
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(WatchContainer, [{
+    key: "beginWatch",
+    value: function beginWatch() {
       var _this = this;
 
-      this.watcher = chokidar__WEBPACK_IMPORTED_MODULE_9__.watch(this.filePath, {
+      var targets = this.docs.map(function (doc) {
+        return _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(doc.targets);
+      }).flat();
+      console.log(targets);
+      this.watcher = chokidar__WEBPACK_IMPORTED_MODULE_8__.watch(targets, {
         persistent: true,
         ignoreInitial: true,
-        depth: 0
+        depth: 1
       });
       this.watcher.on('ready', function () {
         return console.log('ready');
       }).on('change', /*#__PURE__*/function () {
-        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee(watchedPath) {
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee$(_context) {
+        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee2(watchedPath) {
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee2$(_context2) {
             while (1) {
-              switch (_context.prev = _context.next) {
+              switch (_context2.prev = _context2.next) {
                 case 0:
-                  _context.next = 2;
-                  return _this.stopWatch();
+                  console.log('change');
 
-                case 2:
-                  _context.next = 4;
-                  return func(watchedPath, itSelf);
+                  _this.watcher.unwatch(watchedPath);
+
+                  _context2.next = 4;
+                  return Promise.allSettled(_this.docs.map( /*#__PURE__*/function () {
+                    var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee(doc) {
+                      var hasTargets;
+                      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee$(_context) {
+                        while (1) {
+                          switch (_context.prev = _context.next) {
+                            case 0:
+                              _context.next = 2;
+                              return doc.lookFortarget(watchedPath);
+
+                            case 2:
+                              hasTargets = _context.sent;
+                              if (hasTargets) _this.watcher.add(hasTargets);
+
+                            case 4:
+                            case "end":
+                              return _context.stop();
+                          }
+                        }
+                      }, _callee);
+                    }));
+
+                    return function (_x2) {
+                      return _ref2.apply(this, arguments);
+                    };
+                  }()));
 
                 case 4:
                 case "end":
-                  return _context.stop();
+                  return _context2.stop();
               }
             }
-          }, _callee);
+          }, _callee2);
         }));
 
         return function (_x) {
           return _ref.apply(this, arguments);
         };
       }()).on('error', function (err) {
-        return (0,_fileSystem_init__WEBPACK_IMPORTED_MODULE_10__.alertFromJSX)(err).then();
+        return (0,_fileSystem_init__WEBPACK_IMPORTED_MODULE_9__.alertFromJSX)(err).then();
       });
       console.log(this.watcher);
     }
   }, {
     key: "stopWatch",
-    value: function () {
-      var _stopWatch = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee2() {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                if (!(this.watcher === null)) {
-                  _context2.next = 2;
-                  break;
-                }
-
-                return _context2.abrupt("return");
-
-              case 2:
-                _context2.next = 4;
-                return this.watcher.close();
-
-              case 4:
-                console.log('stop');
-
-              case 5:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2, this);
-      }));
-
-      function stopWatch() {
-        return _stopWatch.apply(this, arguments);
-      }
-
-      return stopWatch;
-    }()
+    value: function stopWatch() {
+      this.watcher.close();
+    }
   }]);
 
-  return WatchData;
+  return WatchContainer;
 }();
 
-var WatchContainer = /*#__PURE__*/function () {
-  function WatchContainer(targetDocs, targetImgs, options) {
-    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_4___default()(this, WatchContainer);
+var AIDocument = /*#__PURE__*/function () {
+  function AIDocument(targets, filePath, options, jsxProp) {
+    _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_3___default()(this, AIDocument);
 
-    this.targetDocs = targetDocs;
-    this.targetImgs = targetImgs;
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "jsxProp", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "watchObjects", void 0);
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "targets", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "toJsx", void 0);
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "originTargets", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "options", void 0);
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "path", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(this, "originalTargetImgs", void 0);
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "toJsx", void 0);
 
-    this.targetDocs = targetDocs;
-    /**
-     * original targetImgs @type {TargetDoc[]}
-     * after updated all of targetimgs, it restores targetimgs array to targetimgs
-     */
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "options", void 0);
 
-    this.originalTargetImgs = targetImgs;
-    this.targetImgs = targetImgs;
-    this.toJsx = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_14__.SendHostScript();
+    this.jsxProp = jsxProp;
+    this.targets = targets;
+    this.originTargets = targets;
+    this.path = filePath;
+    this.toJsx = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_13__.SendHostScript();
     this.options = options;
   }
-  /**
-   * @param doc
-   * @type {TargetDoc}
-   * check whether all images updated or not
-   * if updated , it'll update pdf or ai file
-   */
 
-
-  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_5___default()(WatchContainer, [{
-    key: "isAllChecked",
+  _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(AIDocument, [{
+    key: "lookFortarget",
     value: function () {
-      var _isAllChecked = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee3(doc) {
-        var _this2 = this;
-
+      var _lookFortarget = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee3(imgPath) {
         var r;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee3$(_context3) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee3$(_context3) {
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                if (!(this.targetImgs.length < 1)) {
-                  _context3.next = 7;
+                this.targets = this.targets.filter(function (target) {
+                  return target !== imgPath;
+                });
+                console.log(this.targets);
+
+                if (!(this.targets.length < 1)) {
+                  _context3.next = 11;
                   break;
                 }
 
-                _context3.next = 3;
+                _context3.next = 5;
                 return this.toJsx.callHostScript({
                   func: 'watch',
-                  doc: doc,
+                  doc: this.jsxProp,
                   options: this.options
                 });
 
-              case 3:
+              case 5:
                 r = _context3.sent;
                 console.log(r);
-                /**
-                 * restore target images
-                 */
+                this.targets = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(this.originTargets);
+                return _context3.abrupt("return", this.targets);
 
-                this.targetImgs = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(this.originalTargetImgs);
-                this.targetImgs.forEach(function (img) {
-                  var watch = new WatchData(img.path);
-                  watch.watchBegin(_this2.checkedImg, _this2);
+              case 11:
+                return _context3.abrupt("return", false);
 
-                  _this2.watchObjects.push(watch);
-                });
-
-              case 7:
+              case 12:
               case "end":
                 return _context3.stop();
             }
@@ -4004,189 +3929,30 @@ var WatchContainer = /*#__PURE__*/function () {
         }, _callee3, this);
       }));
 
-      function isAllChecked(_x2) {
-        return _isAllChecked.apply(this, arguments);
+      function lookFortarget(_x3) {
+        return _lookFortarget.apply(this, arguments);
       }
 
-      return isAllChecked;
-    }()
-  }, {
-    key: "checkedImg",
-    value: function () {
-      var _checkedImg = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee5(imgPath, mySelf) {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee5$(_context6) {
-          while (1) {
-            switch (_context6.prev = _context6.next) {
-              case 0:
-                console.log('checked');
-                Promise.allSettled(mySelf.targetImgs.map( /*#__PURE__*/function () {
-                  var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee4(img) {
-                    var _loop, i;
-
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee4$(_context5) {
-                      while (1) {
-                        switch (_context5.prev = _context5.next) {
-                          case 0:
-                            if (!(img.path === imgPath)) {
-                              _context5.next = 8;
-                              break;
-                            }
-
-                            _loop = /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _loop(i) {
-                              var doc;
-                              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _loop$(_context4) {
-                                while (1) {
-                                  switch (_context4.prev = _context4.next) {
-                                    case 0:
-                                      doc = mySelf.targetDocs[i];
-                                      console.log(img.parentPaths);
-
-                                      if (!img.parentPaths.some(function (parent) {
-                                        return parent === doc.path;
-                                      })) {
-                                        _context4.next = 7;
-                                        break;
-                                      }
-
-                                      mySelf.targetImgs = mySelf.targetImgs.filter(function (targetImg) {
-                                        return targetImg.path !== imgPath;
-                                      });
-                                      console.log(mySelf.targetImgs);
-                                      _context4.next = 7;
-                                      return mySelf.isAllChecked(doc);
-
-                                    case 7:
-                                    case "end":
-                                      return _context4.stop();
-                                  }
-                                }
-                              }, _loop);
-                            });
-                            i = 0;
-
-                          case 3:
-                            if (!(i < mySelf.targetDocs.length)) {
-                              _context5.next = 8;
-                              break;
-                            }
-
-                            return _context5.delegateYield(_loop(i), "t0", 5);
-
-                          case 5:
-                            i++;
-                            _context5.next = 3;
-                            break;
-
-                          case 8:
-                          case "end":
-                            return _context5.stop();
-                        }
-                      }
-                    }, _callee4);
-                  }));
-
-                  return function (_x5) {
-                    return _ref2.apply(this, arguments);
-                  };
-                }()));
-                console.log(mySelf.targetDocs);
-
-              case 3:
-              case "end":
-                return _context6.stop();
-            }
-          }
-        }, _callee5);
-      }));
-
-      function checkedImg(_x3, _x4) {
-        return _checkedImg.apply(this, arguments);
-      }
-
-      return checkedImg;
-    }()
-  }, {
-    key: "watchAllImages",
-    value: function watchAllImages() {
-      var _this3 = this;
-
-      /**
-       * create @type {WatchContainer} instances
-       */
-      this.watchObjects = this.targetImgs.map(function (img) {
-        return new WatchData(img.path);
-      });
-      /**
-       * dispatch watchBegin mathod
-       */
-
-      this.watchObjects.forEach(function (obj) {
-        return obj.watchBegin(_this3.checkedImg, _this3);
-      });
-    }
-  }, {
-    key: "stopWatchAllImags",
-    value: function () {
-      var _stopWatchAllImags = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee7() {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee7$(_context8) {
-          while (1) {
-            switch (_context8.prev = _context8.next) {
-              case 0:
-                _context8.next = 2;
-                return Promise.allSettled(this.watchObjects.map( /*#__PURE__*/function () {
-                  var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee6(obj) {
-                    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee6$(_context7) {
-                      while (1) {
-                        switch (_context7.prev = _context7.next) {
-                          case 0:
-                            _context7.next = 2;
-                            return obj.stopWatch();
-
-                          case 2:
-                          case "end":
-                            return _context7.stop();
-                        }
-                      }
-                    }, _callee6);
-                  }));
-
-                  return function (_x6) {
-                    return _ref3.apply(this, arguments);
-                  };
-                }()));
-
-              case 2:
-              case "end":
-                return _context8.stop();
-            }
-          }
-        }, _callee7, this);
-      }));
-
-      function stopWatchAllImags() {
-        return _stopWatchAllImags.apply(this, arguments);
-      }
-
-      return stopWatchAllImags;
+      return lookFortarget;
     }()
   }]);
 
-  return WatchContainer;
+  return AIDocument;
 }();
 /* hooks */
 
 
 var useWatch = function useWatch() {
-  var dispatch = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_13__.useAppDispatch)();
-  var windows = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_13__.useAppSelector)(function (state) {
+  var dispatch = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_12__.useAppDispatch)();
+  var windows = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_12__.useAppSelector)(function (state) {
     return state.windows.value;
   });
-  var options = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_13__.useAppSelector)(function (state) {
+  var options = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_12__.useAppSelector)(function (state) {
     return state.options.value;
   });
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(null),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_1___default()(_useState, 2),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_7__.useState)(null),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
       watchController = _useState2[0],
       setController = _useState2[1];
 
@@ -4197,99 +3963,60 @@ var useWatch = function useWatch() {
     /* filtered checked documents */
 
     if (checkedDocs.length < 1) return;
-    /**
-     * turned
-     * @type {Document} into ->
-     * @type {TargetDoc}
-     * added imageount
-     */
-
-    var targets = checkedDocs.map(function (doc, i) {
-      var images = doc.images,
-          data = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default()(doc, _excluded);
-
-      var newimages = doc.images.map(function (img) {
-        return (0,_fileSystem_basic__WEBPACK_IMPORTED_MODULE_11__.replaceDesktop)(img.path);
-      });
-      return _objectSpread(_objectSpread({}, data), {}, {
-        targetImages: newimages,
-        originalImages: newimages
-      });
+    var aiDocs = checkedDocs.map(function (doc, i) {
+      return new AIDocument(doc.images.filter(function (img) {
+        return img.checked;
+      }).map(function (img) {
+        return (0,_fileSystem_basic__WEBPACK_IMPORTED_MODULE_10__.replaceDesktop)(img.path);
+      }), doc.path, options, _objectSpread({
+        images: {}
+      }, doc));
     });
-    console.log(targets);
-    /**
-     * @type {PlacedImage} ->
-     * @type {TargetImg}
-     */
-
-    var images = checkedDocs.reduce(function (acc, current) {
-      var r = current.images.filter(function (img) {
-        return img.checked === true;
-      });
-      var imgs = r.filter(function (img) {
-        var index = acc.findIndex(function (a) {
-          return a.path === img.path;
-        });
-        if (index === -1) return true;
-        /**
-         * if array has already same image, push to parent path to parent property
-         */
-
-        acc[index].parentPaths.push(img.path);
-        return false;
-      });
-      return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(acc), _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(imgs.map(function (img) {
-        return {
-          path: (0,_fileSystem_basic__WEBPACK_IMPORTED_MODULE_11__.replaceDesktop)(img.path),
-          parentPaths: [current.path]
-        };
-      })));
-    }, []);
-    console.log(images);
-    var watchContainer = new WatchContainer(targets, images, options);
-    watchContainer.watchAllImages();
+    console.log(aiDocs);
+    var watchContainer = new WatchContainer(aiDocs);
+    watchContainer.beginWatch();
     setController(watchContainer);
-    dispatch((0,_redux_features_windowMode_windowSlice__WEBPACK_IMPORTED_MODULE_12__.showWindow)('loading'));
+    dispatch((0,_redux_features_windowMode_windowSlice__WEBPACK_IMPORTED_MODULE_11__.showWindow)('loading'));
   };
 
   var stopWatch = /*#__PURE__*/function () {
-    var _ref4 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee8() {
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee8$(_context9) {
+    var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee4() {
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee4$(_context4) {
         while (1) {
-          switch (_context9.prev = _context9.next) {
+          switch (_context4.prev = _context4.next) {
             case 0:
-              _context9.next = 2;
-              return watchController.stopWatchAllImags();
+              watchController.stopWatch();
+              setController(null);
 
             case 2:
             case "end":
-              return _context9.stop();
+              return _context4.stop();
           }
         }
-      }, _callee8);
+      }, _callee4);
     }));
 
     return function stopWatch() {
-      return _ref4.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
 
-  (0,react__WEBPACK_IMPORTED_MODULE_8__.useMemo)(function () {
+  (0,react__WEBPACK_IMPORTED_MODULE_7__.useMemo)(function () {
     if (!windows.loading && watchController !== null) {
-      _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().mark(function _callee9() {
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_7___default().wrap(function _callee9$(_context10) {
+      _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee5() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee5$(_context5) {
           while (1) {
-            switch (_context10.prev = _context10.next) {
+            switch (_context5.prev = _context5.next) {
               case 0:
-                _context10.next = 2;
+                _context5.next = 2;
                 return stopWatch();
 
               case 2:
               case "end":
-                return _context10.stop();
+                return _context5.stop();
             }
           }
-        }, _callee9);
+        }, _callee5);
       }))();
     }
   }, [windows]);
@@ -4717,9 +4444,10 @@ var ImagePage = function ImagePage() {
     return state.imagePageStatus;
   });
   var doc = documents.value.length !== 0 ? documents.value[pageStatus.value.docIndex] : null;
+  console.log(doc);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Container, {
     "switch": pageStatus.value.isPageOn
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_imageBox_header__WEBPACK_IMPORTED_MODULE_3__["default"], null), doc === null ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_imageBox_main__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_imageBox_header__WEBPACK_IMPORTED_MODULE_3__["default"], null), doc === null || doc === undefined ? '' : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_imageBox_main__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: doc.images,
     docPath: doc.path
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_imageBox_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {

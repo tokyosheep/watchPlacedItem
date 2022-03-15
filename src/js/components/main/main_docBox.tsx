@@ -83,6 +83,7 @@ const DocumentBox:FC<DocumentBoxProps> = (doc) => {
   };
   const handleFileDrop = useCallback((monitor) => {
     console.log(monitor);
+    if (!doc.isExport) return;
     if (monitor) {
       const dropped = monitor.getItem().files[0];
       console.log(dropped);

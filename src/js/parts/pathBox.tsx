@@ -21,6 +21,8 @@ const BasePathBox = styled.div`
     overflow:hidden;
     margin: 5px;
     white-space: nowrap;
+    display: flex;
+    align-items:center;
 `;
 
 export const PathBox:FC<PathBoxProps> = ({ filePath }) => {

@@ -3647,6 +3647,7 @@ var DocumentBox = function DocumentBox(doc) {
 
   var handleFileDrop = (0,react__WEBPACK_IMPORTED_MODULE_2__.useCallback)(function (monitor) {
     console.log(monitor);
+    if (!doc.isExport) return;
 
     if (monitor) {
       var dropped = monitor.getItem().files[0];
@@ -4741,7 +4742,7 @@ __webpack_require__.r(__webpack_exports__);
 var BasePathBox = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "pathBox__BasePathBox",
   componentId: "sc-19063b7-0"
-})(["width:310px;height:25px;background:#312F2F;border-radius:3px;border:hidden;color:#fff;font-size:13px;font-weight:300;overflow:hidden;margin:5px;white-space:nowrap;"]);
+})(["width:310px;height:25px;background:#312F2F;border-radius:3px;border:hidden;color:#fff;font-size:13px;font-weight:300;overflow:hidden;margin:5px;white-space:nowrap;display:flex;align-items:center;"]);
 var PathBox = function PathBox(_ref) {
   var filePath = _ref.filePath;
   var dispatch = (0,_redux_app_hooks__WEBPACK_IMPORTED_MODULE_3__.useAppDispatch)();

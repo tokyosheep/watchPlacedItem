@@ -11,9 +11,11 @@ import { SendHostScript } from '../../../fileSystem/connectHostScript';
 class WatchContainer {
   private docs:AIDocument[];
   private watcher:chokidar.FSWatcher|null;
+  private hostConnector:SendHostScript;
   constructor (docs) {
     this.docs = docs;
     this.watcher = null;
+    this.hostConnector = new SendHostScript();
   }
 
   beginWatch () {
@@ -26,8 +28,11 @@ class WatchContainer {
     });
     this.watcher
       .on('ready', () => console.log('ready'))
-      .on('change', async (watchedPath) => {
+      .on('change', async (nodePath) => {
         console.log('change');
+        console.log(nodePath);
+        const watchedPath = await this.hostConnector.callHostScript({ func: 'getJSXPath', nodePath });
+        if (watchedPath === 'false' || typeof watchedPath === 'boolean') return;
         console.log(watchedPath);
         this.watcher.unwatch(watchedPath);
         await Promise.allSettled(this.docs.map(async doc => {

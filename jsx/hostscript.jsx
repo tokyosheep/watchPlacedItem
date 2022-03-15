@@ -51,6 +51,17 @@ var obj = {
 
 hostScript(obj);
 */
+
+function turnNodePathIntoJSXPath(nodePath){
+    try{
+        var f = new File(nodePath);
+        return f.fullName;
+    }catch(e){
+        alert(e);
+        return false;
+    }
+}
+
 function hostScript(obj){
     "use strict";
     switch(obj.func){
@@ -61,6 +72,9 @@ function hostScript(obj){
         case 'watch':
         detected(obj);
         break;
+
+        case 'getJSXPath':
+        return turnNodePathIntoJSXPath(obj.nodePath);
 
         default:
         return false;

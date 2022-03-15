@@ -3779,8 +3779,11 @@ var WatchContainer = /*#__PURE__*/function () {
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "watcher", void 0);
 
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "hostConnector", void 0);
+
     this.docs = docs;
     this.watcher = null;
+    this.hostConnector = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_13__.SendHostScript();
   }
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(WatchContainer, [{
@@ -3800,17 +3803,36 @@ var WatchContainer = /*#__PURE__*/function () {
       this.watcher.on('ready', function () {
         return console.log('ready');
       }).on('change', /*#__PURE__*/function () {
-        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee2(watchedPath) {
+        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee2(nodePath) {
+          var watchedPath;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   console.log('change');
+                  console.log(nodePath);
+                  _context2.next = 4;
+                  return _this.hostConnector.callHostScript({
+                    func: 'getJSXPath',
+                    nodePath: nodePath
+                  });
+
+                case 4:
+                  watchedPath = _context2.sent;
+
+                  if (!(watchedPath === 'false' || typeof watchedPath === 'boolean')) {
+                    _context2.next = 7;
+                    break;
+                  }
+
+                  return _context2.abrupt("return");
+
+                case 7:
                   console.log(watchedPath);
 
                   _this.watcher.unwatch(watchedPath);
 
-                  _context2.next = 5;
+                  _context2.next = 11;
                   return Promise.allSettled(_this.docs.map( /*#__PURE__*/function () {
                     var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee(doc) {
                       var hasTargets;
@@ -3838,7 +3860,7 @@ var WatchContainer = /*#__PURE__*/function () {
                     };
                   }()));
 
-                case 5:
+                case 11:
                 case "end":
                   return _context2.stop();
               }

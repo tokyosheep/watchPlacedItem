@@ -28,6 +28,7 @@ class WatchContainer {
       .on('ready', () => console.log('ready'))
       .on('change', async (watchedPath) => {
         console.log('change');
+        console.log(watchedPath);
         this.watcher.unwatch(watchedPath);
         await Promise.allSettled(this.docs.map(async doc => {
           const hasTargets = await doc.lookFortarget(watchedPath);

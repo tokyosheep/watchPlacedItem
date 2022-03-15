@@ -3806,10 +3806,11 @@ var WatchContainer = /*#__PURE__*/function () {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   console.log('change');
+                  console.log(watchedPath);
 
                   _this.watcher.unwatch(watchedPath);
 
-                  _context2.next = 4;
+                  _context2.next = 5;
                   return Promise.allSettled(_this.docs.map( /*#__PURE__*/function () {
                     var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee(doc) {
                       var hasTargets;
@@ -3837,7 +3838,7 @@ var WatchContainer = /*#__PURE__*/function () {
                     };
                   }()));
 
-                case 4:
+                case 5:
                 case "end":
                   return _context2.stop();
               }

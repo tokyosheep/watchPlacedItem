@@ -3262,7 +3262,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _redux_features_documents_documentsSlice__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../redux/features/documents/documentsSlice */ "./src/js/redux/features/documents/documentsSlice.ts");
 /* harmony import */ var _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../fileSystem/connectHostScript */ "./src/js/fileSystem/connectHostScript.ts");
 /* harmony import */ var _watchHooks_useWatch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./watchHooks/useWatch */ "./src/js/components/main/watchHooks/useWatch.tsx");
-/* harmony import */ var _fileSystem_init__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../fileSystem/init */ "./src/js/fileSystem/init.js");
+/* harmony import */ var _fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../fileSystem/resolveFIlePath */ "./src/js/fileSystem/resolveFIlePath.ts");
 
 
 
@@ -3281,6 +3281,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
+ // import { writeDebugData } from '../../fileSystem/init';
 
 var FooterCompo = _styles_containers__WEBPACK_IMPORTED_MODULE_5__.MainContainer.FooterCompo;
 var ButtonWrapper = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].ul.withConfig({
@@ -3333,7 +3334,8 @@ var Footer = function Footer() {
                 if (acc.some(function (a) {
                   return a.path === current.path;
                 })) return acc;
-                return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default()(acc), [current]);
+                current.path = (0,_fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_12__.resolveFilePath)(current.path);
+                return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default()(acc), [_objectSpread({}, current)]);
               }, []);
               console.log(doc);
               dispatch((0,_redux_features_documents_documentsSlice__WEBPACK_IMPORTED_MODULE_9__.loadDocument)(_objectSpread(_objectSpread({}, doc), {}, {
@@ -3391,26 +3393,26 @@ var Footer = function Footer() {
 
             case 3:
               connect = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_10__.SendHostScript();
-              _context2.next = 6;
-              return (0,_fileSystem_init__WEBPACK_IMPORTED_MODULE_12__.writeDebugData)({
-                documents: documents,
+              /*
+              await writeDebugData({
+                documents,
                 func: 'open',
-                options: options
+                options
               });
+              */
 
-            case 6:
-              _context2.next = 8;
+              _context2.next = 6;
               return connect.callHostScript({
                 documents: documents,
                 func: 'open',
                 options: options
               });
 
-            case 8:
+            case 6:
               r = _context2.sent;
               console.log(r);
 
-            case 10:
+            case 8:
             case "end":
               return _context2.stop();
           }
@@ -3779,11 +3781,8 @@ var WatchContainer = /*#__PURE__*/function () {
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "watcher", void 0);
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(this, "hostConnector", void 0);
-
     this.docs = docs;
     this.watcher = null;
-    this.hostConnector = new _fileSystem_connectHostScript__WEBPACK_IMPORTED_MODULE_13__.SendHostScript();
   }
 
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_4___default()(WatchContainer, [{
@@ -3803,36 +3802,17 @@ var WatchContainer = /*#__PURE__*/function () {
       this.watcher.on('ready', function () {
         return console.log('ready');
       }).on('change', /*#__PURE__*/function () {
-        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee2(nodePath) {
-          var watchedPath;
+        var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee2(watchedPath) {
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().wrap(function _callee2$(_context2) {
             while (1) {
               switch (_context2.prev = _context2.next) {
                 case 0:
                   console.log('change');
-                  console.log(nodePath);
-                  _context2.next = 4;
-                  return _this.hostConnector.callHostScript({
-                    func: 'getJSXPath',
-                    nodePath: nodePath
-                  });
-
-                case 4:
-                  watchedPath = _context2.sent;
-
-                  if (!(watchedPath === 'false' || typeof watchedPath === 'boolean')) {
-                    _context2.next = 7;
-                    break;
-                  }
-
-                  return _context2.abrupt("return");
-
-                case 7:
                   console.log(watchedPath);
 
                   _this.watcher.unwatch(watchedPath);
 
-                  _context2.next = 11;
+                  _context2.next = 5;
                   return Promise.allSettled(_this.docs.map( /*#__PURE__*/function () {
                     var _ref2 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_6___default().mark(function _callee(doc) {
                       var hasTargets;
@@ -3860,7 +3840,7 @@ var WatchContainer = /*#__PURE__*/function () {
                     };
                   }()));
 
-                case 11:
+                case 5:
                 case "end":
                   return _context2.stop();
               }
@@ -4387,6 +4367,27 @@ var SendHostScript = /*#__PURE__*/function () {
 
   return SendHostScript;
 }();
+
+/***/ }),
+
+/***/ "./src/js/fileSystem/resolveFIlePath.ts":
+/*!**********************************************!*\
+  !*** ./src/js/fileSystem/resolveFIlePath.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "resolveFilePath": () => (/* binding */ resolveFilePath)
+/* harmony export */ });
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! path */ "path");
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
+
+var isWin = process.platform === 'win32';
+var resolveFilePath = function resolveFilePath(filePath) {
+  return isWin ? path__WEBPACK_IMPORTED_MODULE_0___default().normalize(filePath) : filePath;
+};
 
 /***/ }),
 

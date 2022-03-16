@@ -7,7 +7,8 @@ import { useAppDispatch, useAppSelector } from '../../redux/app/hooks';
 import { loadDocument, deleteDocs } from '../../redux/features/documents/documentsSlice';
 import { SendHostScript } from '../../fileSystem/connectHostScript';
 import useWatch from './watchHooks/useWatch';
-import { writeDebugData } from '../../fileSystem/init';
+import { resolveFilePath } from '../../fileSystem/resolveFIlePath';
+// import { writeDebugData } from '../../fileSystem/init';
 
 const { FooterCompo } = MainContainer;
 
@@ -53,7 +54,8 @@ const Footer = () => {
     doc.images = doc.images.reduce((acc, current) => {
       console.log(acc.some(a => a.path === current.path));
       if (acc.some(a => a.path === current.path)) return acc;
-      return [...acc, current];
+      current.path = resolveFilePath(current.path);
+      return [...acc, { ...current }];
     }, []);
     console.log(doc);
     dispatch(loadDocument(
@@ -81,11 +83,13 @@ const Footer = () => {
                 const targets = documents.filter(doc => doc.checked === true);
                 if (targets.length < 1) return;
                 const connect = new SendHostScript();
+                /*
                 await writeDebugData({
                   documents,
                   func: 'open',
                   options
                 });
+                */
                 const r = await connect.callHostScript({
                   documents,
                   func: 'open',

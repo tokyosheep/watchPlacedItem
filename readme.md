@@ -5,9 +5,9 @@ like you create poster. something picture is placed on AI file. you have to adju
 the Extension loads document and placed images, and watch placed images.
 it detects when images update automatically, and open document and save or export as a AI or PDF.
 
-![main image](./readmeImg/documents.jpg)
+![main image](./readmeImg/mainPanel.jpg)
 
-![image list](./readmeImg/images.jpg)
+![image list](./readmeImg/panelImages.jpg)
 
 ![watch](./readmeImg/watch.jpg)
 
@@ -15,11 +15,26 @@ it detects when images update automatically, and open document and save or expor
 
 load documents from Illustrator and it'll load placed images as well. after load it, check documents and images you want to target to watch. 
 while panel is watching images, it detects update images.
+after you update all of images you checked, the panel opens document and saves again.
+
+### buttons
+
+1. **watch**
+launch to watch 
+
+2. **load**
+load active document
+
+3. **delete**
+delete document from panel you checked
+
+4. **open**
+open and save document you checked
 
 ### options
 
 1. **export**
-export document after detected update. you can choose place to export.
+export document after detected update. you can choose place to export through dialog or drag and drop.
 
 3. **PDF ver**
 option for PDF version.
@@ -28,5 +43,5 @@ option for PDF version.
 after saveing or exporting document, it closes document automatically.
 
 5. **time stamp**
-literally time stamp. generating it on document date layer. and it updates when the Extension detects and opens document. 
+literally time stamp.generating it on document date layer. and it updates when the Extension detects and opens document. 
 

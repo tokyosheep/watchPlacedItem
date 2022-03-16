@@ -3904,30 +3904,29 @@ var AIDocument = /*#__PURE__*/function () {
                   return (0,_fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_14__.resolveFilePath)(target) !== imgPath;
                 });
                 console.log(this.targets);
-                console.log((0,_fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_14__.resolveFilePath)(this.targets[0]));
 
                 if (!(this.targets.length < 1)) {
-                  _context3.next = 12;
+                  _context3.next = 11;
                   break;
                 }
 
-                _context3.next = 6;
+                _context3.next = 5;
                 return this.toJsx.callHostScript({
                   func: 'watch',
                   doc: this.jsxProp,
                   options: this.options
                 });
 
-              case 6:
+              case 5:
                 r = _context3.sent;
                 console.log(r);
                 this.targets = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_2___default()(this.originTargets);
                 return _context3.abrupt("return", this.targets);
 
-              case 12:
+              case 11:
                 return _context3.abrupt("return", false);
 
-              case 13:
+              case 12:
               case "end":
                 return _context3.stop();
             }

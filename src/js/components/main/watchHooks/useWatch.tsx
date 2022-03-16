@@ -63,7 +63,6 @@ class AIDocument {
   async lookFortarget (imgPath) {
     this.targets = this.targets.filter(target => resolveFilePath(target) !== imgPath);
     console.log(this.targets);
-    console.log(resolveFilePath(this.targets[0]));
     if (this.targets.length < 1) {
       // open and save
       const r = await this.toJsx.callHostScript({

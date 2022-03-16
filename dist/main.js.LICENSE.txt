@@ -1,117 +1,10 @@
 /*
-
-  Container {
-    constructor(){
-      this.targets = [];
-      this.docs = [];
-      this.watchers = [];
-    }
-  }
-
-  TargetImages {
-    constructor(imgPath,parentPath) {
-      this.imgPath:string,
-      this.parentPath:string
-    }
-  }
-
-  Document{
-    constructor(targets,path){
-      this.targets = targets;
-      this.originTargets = targets;
-      this.path = path;
-    }
-
-    lookFortarget (imgPath) {
-      this.targets = this.targets.filter(target => target !== imgPath);
-      if(this.targets.length < 1){
-        //doing something;
-        this.targets = [...this.originTargets];
-      }
-    }
-  }
-*/
-
-/*
-
-WatchData {
-  private watcher:chokidar.FSWatcher|null;
-  constructor (private filePath:string) {
-    this.watcher = null;
-    this.filePath = filePath;
-  }
-
-  watchBegin (func:(filePath:string,func)=>void) {
-    this.watcher = chokidar.watch(this.filePath, {
-      persistent: true,
-      ignoreInitial: true,
-      depth: 0
-    });
-    this.watcher
-      .on('ready', () => console.log('ready'))
-      .on('change', async (watchedPath) => {
-        await this.stopWatch();
-        func(watchedPath);
-      })
-      .on('error', err => alertFromJSX(err).then());
-    console.log(this.watcher);
-  }
-
-  async stopWatch ():Promise<void> {
-    if (this.watcher === null) return;
-    await this.watcher.close();
-    console.log('stop');
-  }
-}
-
-WatchContainer:{
-  docs: documents:[],
-  allTargets: img[],
-
-  getTargets() {
-    this.allTargets = Arra.from(new Set([
-      this.docs.reducer((acc,current) => [...acc,...current.targets]);
-    ]),[]);
-  }
-
-  reducerTarget (imgPath) {
-    this.docs.forEach(doc => {
-      const flag = doc.hasTarget(imgPath);
-      if(!flag) return;
-    });
-  }
-
-  allWatches() {
-
-  }
-}
-
-Document: {
-  watchers,
-  targets: img[],
-  origins: img[],
-  path: string,
-  options,
-  toJsx
-
-  constructor(images, path, options, toJsx){
-    this.images = images;
-    this.path = path;
-    this.options = options;
-    this.toJsx = toJsx
-  }
-
-  hasTarget(imgPath) {
-    this.targets = this.targets.filter(target => target !== imgPath);
-    if(this.targets.length < 1){
-      // doing jsx
-      this.targets = [...this.origins];
-      return this.targets;
-    }
-    return false;
-  }
-}
-*/
+              await writeDebugData({
+                documents,
+                func: 'open',
+                options
+              });
+              */
 
 /*
         switching check on image
@@ -315,28 +208,12 @@ object-assign
 	 */
 
 /**
-                 * restore target images
-                 */
-
-/**
-         * if array has already same image, push to parent path to parent property
-         */
-
-/**
        * The minimal observable subscription method.
        * @param {Object} observer Any object that can be used as an observer.
        * The observer object should have a `next` method.
        * @returns {subscription} An object with an `unsubscribe` method that can
        * be used to unsubscribe the observable from the store, and prevent further
        * emission of values from the observable.
-       */
-
-/**
-       * create @type {WatchContainer} instances
-       */
-
-/**
-       * dispatch watchBegin mathod
        */
 
 /**
@@ -448,25 +325,6 @@ object-assign
 /**
      * Text
      */
-
-/**
-     * original targetImgs @type {TargetDoc[]}
-     * after updated all of targetimgs, it restores targetimgs array to targetimgs
-     */
-
-/**
-     * turned
-     * @type {Document} into ->
-     * @type {TargetDoc}
-     * added imageount
-     */
-
-/**
-   * @param doc
-   * @type {TargetDoc}
-   * check whether all images updated or not
-   * if updated , it'll update pdf or ai file
-   */
 
 /**
    * @param {Path} dir
@@ -2155,6 +2013,8 @@ object-assign
 
 // CONCATENATED MODULE: ./src/js/components/main/main_docBox.tsx
 
+// CONCATENATED MODULE: ./src/js/components/main/watchHooks/useWatch.tsx
+
 // CONCATENATED MODULE: ./src/js/fileSystem/connectHostScript.ts
 
 // CONCATENATED MODULE: ./src/js/fileSystem/init.js
@@ -2257,7 +2117,7 @@ object-assign
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/extends.js
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/objectWithoutProperties.js
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/slicedToArray.js
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/toConsumableArray.js
 
@@ -2779,6 +2639,8 @@ object-assign
 
 // current iteration.
 
+// current.path = resolveFilePath(current.path);
+
 // define __esModule on exports
 
 // define getter functions for harmony exports
@@ -2961,6 +2823,10 @@ object-assign
 
 // immediately in some browsers.
 
+// import { resolveFilePath } from '../../fileSystem/resolveFIlePath';
+
+// import { writeDebugData } from '../../fileSystem/init';
+
 // important to get this right, even though it requires care.
 
 // in case of intersecting globs;
@@ -3122,6 +2988,8 @@ object-assign
 // regular expressions
 
 // reliably everywhere they are implemented.
+
+// reload();
 
 // remove escape chars and return result
 

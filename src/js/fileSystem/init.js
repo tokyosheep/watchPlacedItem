@@ -11,7 +11,7 @@ const dir_desktop = path.join(dir_home, `Desktop`);//デスクトップパス
 const jsxParts = `${extensionRoot}/jsxParts`;
 const polyFillFolder = `${extensionRoot}/polyFill`;
 
-const debug = true;
+const debug = false;
 
 export const writeDebugData = obj =>{
     if(!debug)return;
@@ -49,7 +49,7 @@ const preventDragEvent = () =>{
 }
 
 const init = async() =>{
-    reload();
+    // reload();
     preventDragEvent();
     csInterface.evalScript(`$.evalFile("${extensionRoot}json2.js")`);//json2読み込み
     await loadJsx(jsxParts);

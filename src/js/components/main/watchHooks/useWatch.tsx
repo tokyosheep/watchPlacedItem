@@ -7,6 +7,7 @@ import { showWindow } from '../../../redux/features/windowMode/windowSlice';
 import { OptionsType } from '../../../redux/features/options/optionSlice';
 import { useAppSelector, useAppDispatch } from '../../../redux/app/hooks';
 import { SendHostScript } from '../../../fileSystem/connectHostScript';
+import { resolveFilePath } from '../../../fileSystem/resolveFIlePath';
 
 class WatchContainer {
   private docs:AIDocument[];
@@ -62,6 +63,7 @@ class AIDocument {
   async lookFortarget (imgPath) {
     this.targets = this.targets.filter(target => target !== imgPath);
     console.log(this.targets);
+    console.log(resolveFilePath(this.targets[0]));
     if (this.targets.length < 1) {
       // open and save
       const r = await this.toJsx.callHostScript({

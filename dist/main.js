@@ -3901,7 +3901,7 @@ var AIDocument = /*#__PURE__*/function () {
             switch (_context3.prev = _context3.next) {
               case 0:
                 this.targets = this.targets.filter(function (target) {
-                  return target !== imgPath;
+                  return (0,_fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_14__.resolveFilePath)(target) !== imgPath;
                 });
                 console.log(this.targets);
                 console.log((0,_fileSystem_resolveFIlePath__WEBPACK_IMPORTED_MODULE_14__.resolveFilePath)(this.targets[0]));

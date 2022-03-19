@@ -65,13 +65,13 @@ class AIDocument {
     console.log(this.targets);
     if (this.targets.length < 1) {
       // open and save
+      this.targets = [...this.originTargets];
       const r = await this.toJsx.callHostScript({
         func: 'watch',
         doc: this.jsxProp,
         options: this.options
       });
       console.log(r);
-      this.targets = [...this.originTargets];
       return this.targets;
     } else {
       return false;

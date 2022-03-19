@@ -9,6 +9,13 @@ const TitleWrapper = styled.div`
     display: flex;
     justify-content:flex-start;
     overflow:hidden;
+    width: 95%;
+`;
+
+const TitleRange = styled.div`
+  width: 80%;
+  height: 100%;
+  overflow:hidden;
 `;
 
 const Title = styled.span`
@@ -64,7 +71,9 @@ const ImageBox:FC<PlacedImage&{index:number, docPath:string}> = (img) => {
       >
           <TitleWrapper>
               <StdCheckBox func={handleCheckbox} checked={img.checked} />
-              <Title>{img.name}</Title>
+              <TitleRange>
+                <Title>{img.name}</Title>
+              </TitleRange>
           </TitleWrapper>
           <PathText>
               {img.path}

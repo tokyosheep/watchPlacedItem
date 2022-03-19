@@ -49,7 +49,7 @@ const preventDragEvent = () =>{
 }
 
 const init = async() =>{
-    reload();
+    // reload();
     preventDragEvent();
     csInterface.evalScript(`$.evalFile("${extensionRoot}json2.js")`);//json2読み込み
     await loadJsx(jsxParts);

@@ -1,5 +1,7 @@
 # WatchPlacedItem 2.0
 
+[Japanese explanation is here](https://kawano-shuji.com/justdiary/2022/03/25/extension-watch-placed-image-ver2-0/)
+
 like you create poster. something picture is placed on AI file. you have to adjust picture but edit picture on Photoshop, save it and then open on Illustrator and save as a pdf or ai data. it's bit a lot work. the Extension does it instead you.
 
 the Extension loads document and placed images, and watch placed images.
@@ -16,6 +18,10 @@ it detects when images update automatically, and open document and save or expor
 load documents from Illustrator and it'll load placed images as well. after load it, check documents and images you want to target to watch. 
 while panel is watching images, it detects update images.
 after you update all of images you checked, the panel opens document and saves again.
+
+## Download
+
+download zxp file from [here](https://kawano-shuji.com/strage/watchPlacedItem_2_0.zxp)
 
 ### buttons
 
